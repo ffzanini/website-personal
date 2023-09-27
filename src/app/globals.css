@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	line-height: 1.5;
+	font-family: var(--font-mavenPro);
+	color: theme("colors.gray-400");
+}
+
+html[class="dark"] {
+	--bg: theme("colors.gray-900");
+	--heading-color: theme("colors.gray-100");
+	--text-color: theme("colors.gray-400");
+}
+
+
+html[class="light"] {
+	--bg: theme("colors.gray-100");
+	--heading-color: theme("colors.gray-900");
+	--text-color: theme("colors.gray-700"); 
+}
+
+html {
+	background-color: var(--bg);
+}
+
+h1, h2, h3, h4, path, button {
+	color: var(--heading-color);
+	line-height: 1.25;
+}
+
+h1 {
+	font-size: theme("fontSize.h1");
+}
+
+h2 {
+	font-size: theme("fontSize.h2");
+}
+
+h3 {
+	font-size: theme("fontSize.h3");
+}
+
+p, span, a, li, input, button, label, select, option, textarea {
+	font-size: theme("fontSize.body");
+	color: var(--text-color);
+}
+
+span {
+	color: inherit;
+}
