@@ -1,57 +1,107 @@
 'use client'
-import { MoonIcon, SunIcon } from '@radix-ui/react-icons'
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { useTheme } from 'next-themes'
+import Link from 'next/link'
+
+import {
+  MoonIcon,
+  SunIcon,
+  DragHandleHorizontalIcon,
+} from '@radix-ui/react-icons'
 
 import { fontRyanaLovely } from '@/app/fonts'
 import { useTranslation } from '@/context'
 
 export function Header() {
-  const { location, setLocation } = useTranslation()
+  const { location, setLocation, translations } = useTranslation()
   const { theme, setTheme } = useTheme()
+
+  const [isOpen, setIsOpen] = useState(false)
+
+  const variants = {
+    open: { opacity: 1, x: 0 },
+    closed: { opacity: 0, x: '-100%' },
+  }
 
   function toggleTheme() {
     if (theme === 'dark') {
       setTheme('light')
-      localStorage.setItem('THEME', 'light')
     } else {
       setTheme('dark')
-      localStorage.setItem('THEME', 'dark')
     }
   }
 
   function toggleLocaltion() {
     if (location === 'en') {
       setLocation('pt')
-      localStorage.setItem('LOCATION', 'pt')
     } else {
       setLocation('en')
-      localStorage.setItem('LOCATION', 'en')
     }
   }
   return (
-    <div>
-      <h1 className={fontRyanaLovely.className}>2fz</h1>
-      <motion.button
-        aria-label="Toggle theme"
-        onClick={toggleTheme}
-        type="button"
-        className="bg-dark-mode p-2"
-      >
-        {theme === 'dark' ? (
-          <MoonIcon width={16} height={16} />
-        ) : (
-          <SunIcon width={16} height={16} />
-        )}
-      </motion.button>
-      <motion.button
-        aria-label="Toggle language"
-        onClick={toggleLocaltion}
-        type="button"
-        className="bg-primary-light p-2"
-      >
-        {location === 'en' ? <p>PT</p> : <p>EN</p>}
-      </motion.button>
-    </div>
+    <nav className="bg-white dark:bg-gray-900 fixed w-full border-b border-gray-200 dark:border-gray-600">
+      <div className="flex flex-wrap items-center justify-between mx-auto px-6 py-4">
+        <Link href="/">
+          <h1 className={fontRyanaLovely.className}>2fz</h1>
+        </Link>
+        <div className="flex md:order-2 gap-4">
+          <motion.button
+            aria-label="Toggle theme"
+            onClick={toggleTheme}
+            type="button"
+            className="bg-primary-low-opacity p-4 rounded-full hover:brightness-125 transition-all duration-300"
+          >
+            {theme === 'dark' ? (
+              <MoonIcon width={24} height={24} />
+            ) : (
+              <SunIcon width={24} height={24} />
+            )}
+          </motion.button>
+          <motion.button
+            aria-label="Toggle language"
+            onClick={toggleLocaltion}
+            type="button"
+            className="bg-primary-low-opacity p-4 rounded-full hover:brightness-125 transition-all duration-300"
+          >
+            {location === 'en' ? <h3>PT</h3> : <h3>EN</h3>}
+          </motion.button>
+          <motion.button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            className="inline-flex items-center p-4 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+            onClick={() => setIsOpen((isOpen) => !isOpen)}
+          >
+            <DragHandleHorizontalIcon width={24} height={24} />
+          </motion.button>
+        </div>
+        <motion.div
+          className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          animate={isOpen ? 'open' : 'closed'}
+          variants={variants}
+          id="navbar-sticky"
+        >
+          <motion.ul className="flex flex-row gap-5">
+            <motion.li>
+              <Link href="/">
+                <h2>{translations.navbar.homePage}</h2>
+              </Link>
+            </motion.li>
+            <motion.li>
+              <Link href="/about">
+                <h2>{translations.navbar.aboutPage}</h2>
+              </Link>
+            </motion.li>
+            <motion.li>
+              <Link href="/contact">
+                <h2>{translations.navbar.contactPage}</h2>
+              </Link>
+            </motion.li>
+          </motion.ul>
+        </motion.div>
+      </div>
+    </nav>
   )
 }

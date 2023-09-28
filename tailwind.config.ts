@@ -14,7 +14,7 @@ const config: Config = {
         'primary-light': '#5C609F',
         'primary-dark': '#9A7182',
         'primary-low-opacity': 'rgba(92, 96, 159, 0.2)',
-        'dark-mode': '#FADA5E',
+
         'gray-900': '#040405',
         'gray-800': '#212122',
         'gray-700': '#3E3F3F',
@@ -29,8 +29,8 @@ const config: Config = {
       fontSize: {
         caption: '0.875rem',
         body: '1rem',
-        h3: '1.5rem',
-        h2: '2rem',
+        h3: '1.2rem',
+        h2: '1.6rem',
         h1: '3.375rem',
       },
       container: {
