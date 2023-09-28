@@ -9,16 +9,16 @@
 }
 
 html[class="dark"] {
-	--bg: theme("colors.gray-900");
-	--heading-color: theme("colors.gray-100");
-	--text-color: theme("colors.gray-400");
+	--bg: theme("colors.gray-800");
+	--heading-color: theme("colors.gray-50");
+	--text-color: theme("colors.gray-50");
 }
 
 
 html[class="light"] {
 	--bg: theme("colors.gray-100");
-	--heading-color: theme("colors.gray-900");
-	--text-color: theme("colors.gray-700"); 
+	--heading-color: theme("colors.gray-800");
+	--text-color: theme("colors.gray-800"); 
 }
 
 html {

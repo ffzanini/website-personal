@@ -10,21 +10,24 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'primary-main': '#CE8498',
-        'primary-light': '#5C609F',
-        'primary-dark': '#9A7182',
-        'primary-low-opacity': 'rgba(92, 96, 159, 0.2)',
+        'primary-main': '#127A79',
+        'primary-light': '#55AFAD',
+        'primary-dark': '#004949',
 
-        'gray-900': '#040405',
-        'gray-800': '#212122',
-        'gray-700': '#3E3F3F',
-        'gray-600': '#5B5C5C',
-        'gray-500': '#797979',
-        'gray-400': '#969696',
-        'gray-300': '#D1D5DB',
-        'gray-200': '#E5E7EB',
-        'gray-100': '#EDEEED',
-        'gray-50': '#FCFCFB',
+        'primary-main-low-opacity': 'rgba(18, 122, 121, 0.2)',
+        'primary-light-low-opacity': 'rgba(	85, 175, 173, 0.2)',
+        'primary-dark-low-opacity': 'rgba(62, 122, 121, 0.2)',
+
+        'gray-900': '#090909',
+        'gray-800': '#1A1A1A',
+        'gray-700': '#2A2A2A',
+        'gray-600': '#3A3A3A',
+        'gray-500': '#4B4B4B',
+        'gray-400': '#5B5B5B',
+        'gray-300': '#808080',
+        'gray-200': '#A5A5A5',
+        'gray-100': '#CACACA',
+        'gray-50': '#EFEFEF',
       },
       fontSize: {
         caption: '0.875rem',

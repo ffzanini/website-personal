@@ -1,5 +1,4 @@
 'use client'
-import { HeartIcon } from '@radix-ui/react-icons'
 import { motion } from 'framer-motion'
 
 import { useTranslation } from '@/context'
@@ -10,7 +9,7 @@ export function Footer() {
   const yearNow = new Date().getFullYear()
 
   return (
-    <footer className="bg-white dark:bg-gray-900 flex flex-col md:flex-row justify-between items-center">
+    <footer className="flex flex-col md:flex-row bg-gray-50 dark:bg-gray-900 justify-between items-center border-t border-gray-100 dark:border-gray-800">
       <div className="px-6 pt-6 md:pt-0">
         <div className="container flex justify-center">
           <h3 className="flex flex-col md:flex-row ">
@@ -28,7 +27,7 @@ export function Footer() {
                 key={href}
                 href={href}
                 whileHover={{ scale: 1.2 }}
-                className="bg-primary-low-opacity rounded-full aspect-square p-2 flex justify-center items-center hover:brightness-250 transition-all duration-300"
+                className="bg-primary-light-low-opacity dark:bg-primary-dark-low-opacity rounded-full p-2 flex justify-center items-center hover:brightness-250 transition-all duration-300"
               >
                 <Icon width={24} height={24} />
               </motion.a>

@@ -32,8 +32,8 @@ export function Header() {
     }
   }
   return (
-    <nav className="bg-white dark:bg-gray-900 fixed w-full border-b border-gray-200 dark:border-gray-600">
-      <div className="flex flex-wrap items-center justify-between mx-auto px-6 py-4">
+    <nav className="fixed w-full bg-gray-50 dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800">
+      <div className="flex items-center justify-between mx-auto px-6 py-4">
         <Link href="/">
           <motion.h1 className={fontRyanaLovely.className}>2fz</motion.h1>
         </Link>
@@ -43,7 +43,7 @@ export function Header() {
             onClick={toggleTheme}
             type="button"
             whileHover={{ scale: 1.1 }}
-            className="bg-primary-low-opacity p-4 rounded-full hover:brightness-125 transition-all duration-300"
+            className="bg-primary-light-low-opacity dark:bg-primary-dark-low-opacity p-4 rounded-full hover:transition-all duration-300"
           >
             {theme === 'dark' ? (
               <MoonIcon width={24} height={24} />
@@ -56,7 +56,7 @@ export function Header() {
             onClick={toggleLocaltion}
             type="button"
             whileHover={{ scale: 1.1 }}
-            className="bg-primary-low-opacity p-4 rounded-full hover:brightness-125 transition-all duration-300"
+            className="bg-primary-light-low-opacity dark:bg-primary-dark-low-opacity p-4 rounded-full hover:transition-all duration-300"
           >
             {location === 'en' ? <h3>PT</h3> : <h3>EN</h3>}
           </motion.button>
@@ -75,17 +75,17 @@ export function Header() {
           id="navbar-sticky"
         >
           <motion.ul className="flex flex-row gap-5">
-            <motion.li className="p-4 hover:bg-primary-low-opacity rounded-lg hover:transition-all duration-300">
+            <motion.li className="p-4 hover:bg-primary-light-low-opacity rounded-lg dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300">
               <Link href="/about">
                 <h2>{translations.navbar.aboutPage}</h2>
               </Link>
             </motion.li>
-            <motion.li className="p-4 hover:bg-primary-low-opacity rounded-lg hover:transition-all duration-300">
+            <motion.li className="p-4 hover:bg-primary-light-low-opacity rounded-lg dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300">
               <Link href="/projects">
                 <h2>{translations.navbar.projectsPage}</h2>
               </Link>
             </motion.li>
-            <motion.li className="p-4 hover:bg-primary-low-opacity rounded-lg hover:transition-all duration-300">
+            <motion.li className="p-4 hover:bg-primary-light-low-opacity rounded-lg dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300">
               <Link href="/contact">
                 <h2>{translations.navbar.contactPage}</h2>
               </Link>
