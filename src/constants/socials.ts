@@ -9,19 +9,14 @@ import {
 
 export const socials = [
   {
-    icon: GitHubLogoIcon,
-    href: 'https://github.com/ffzanini/',
-    name: 'GitHub',
-  },
-  {
     icon: LinkedInLogoIcon,
     href: 'https://www.linkedin.com/in/ffzanini/',
     name: 'LinkedIn',
   },
   {
-    icon: EnvelopeClosedIcon,
-    href: 'mailto:daniel.portonunez@gmail.com',
-    name: 'Email',
+    icon: GitHubLogoIcon,
+    href: 'https://github.com/ffzanini/',
+    name: 'GitHub',
   },
   {
     icon: InstagramLogoIcon,
@@ -37,5 +32,10 @@ export const socials = [
     icon: VideoIcon,
     href: 'https://www.youtube.com/channel/UCVHgTgRK0M5kt2Gvi60b7Eg',
     name: 'YouTube',
+  },
+  {
+    icon: EnvelopeClosedIcon,
+    href: 'mailto:devffzanini@gmail.com',
+    name: 'Email',
   },
 ]
