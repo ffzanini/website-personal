@@ -75,17 +75,17 @@ export function Header() {
           id="navbar-sticky"
         >
           <motion.ul className="flex flex-row gap-5">
-            <motion.li className="hover:border-b border-gray-200 hover:brightness-125 transition-all duration-300 ">
+            <motion.li className="p-4 hover:bg-primary-low-opacity rounded-lg hover:transition-all duration-300">
               <Link href="/about">
                 <h2>{translations.navbar.aboutPage}</h2>
               </Link>
             </motion.li>
-            <motion.li className="hover:border-b border-gray-200 hover:brightness-125 transition-all duration-300 ">
+            <motion.li className="p-4 hover:bg-primary-low-opacity rounded-lg hover:transition-all duration-300">
               <Link href="/projects">
                 <h2>{translations.navbar.projectsPage}</h2>
               </Link>
             </motion.li>
-            <motion.li className="hover:border-b border-gray-200 hover:brightness-125 transition-all duration-300 ">
+            <motion.li className="p-4 hover:bg-primary-low-opacity rounded-lg hover:transition-all duration-300">
               <Link href="/contact">
                 <h2>{translations.navbar.contactPage}</h2>
               </Link>
