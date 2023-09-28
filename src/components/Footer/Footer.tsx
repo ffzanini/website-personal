@@ -10,15 +10,11 @@ export function Footer() {
   const yearNow = new Date().getFullYear()
 
   return (
-    <footer className="bg-white dark:bg-gray-900 flex sm:flex-col lg:flex-row justify-between">
-      <div className="px-6 pt-6">
-        <div className="container lg:mb-6 flex justify-center">
-          <h3 className="flex flex-row gap-1 items-center">
-            {translations.footer.made} <HeartIcon width={16} height={16} />
-            {translations.footer.by}.
-            <b>
-              {yearNow} {translations.footer.reserved}
-            </b>
+    <footer className="bg-white dark:bg-gray-900 flex flex-col md:flex-row justify-between items-center">
+      <div className="px-6 pt-6 md:pt-0">
+        <div className="container flex justify-center">
+          <h3 className="flex flex-col md:flex-row ">
+            ©{yearNow} {translations.footer.by}
           </h3>
         </div>
       </div>
