@@ -30,8 +30,8 @@ const config: Config = {
         caption: '0.875rem',
         body: '1rem',
         h3: '1.2rem',
-        h2: '1.6rem',
-        h1: '3.375rem',
+        h2: '1.5rem',
+        h1: '3rem',
       },
       container: {
         center: true,

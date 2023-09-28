@@ -1,5 +1,7 @@
 'use client'
 import { HeartIcon } from '@radix-ui/react-icons'
+import { motion } from 'framer-motion'
+
 import { useTranslation } from '@/context'
 import { socials } from '@/constants'
 
@@ -24,15 +26,16 @@ export function Footer() {
         <div className="container mb-6 flex justify-center">
           <div className="flex flex-row gap-4 items-center">
             {socials.map(({ href, icon: Icon, name }) => (
-              <a
+              <motion.a
                 aria-label={name}
                 target="_blank"
                 key={href}
                 href={href}
-                className="bg-primary-low-opacity rounded-full aspect-square p-2 flex justify-center items-center hover:brightness-125 transition-all duration-300"
+                whileHover={{ scale: 1.2 }}
+                className="bg-primary-low-opacity rounded-full aspect-square p-2 flex justify-center items-center hover:brightness-250 transition-all duration-300"
               >
                 <Icon width={24} height={24} />
-              </a>
+              </motion.a>
             ))}
           </div>
         </div>
