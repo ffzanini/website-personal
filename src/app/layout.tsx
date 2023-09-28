@@ -6,14 +6,23 @@ import { fontMavenPro } from './fonts'
 
 import './globals.css'
 
-const description = `Im ZAZA`
+const description = `A simple men, software engineer, artist, musician, writer and a indie developer enthusiast`
 export const metadata: Metadata = {
   title: 'Felipe Frant Zanini | Software Engineer',
+  icons: '/favicon.ico',
   openGraph: {
     type: 'website',
     url: 'https://ffzanini.dev',
     title: 'Felipe Frant Zanini | Software Engineer',
     description,
+    images: [
+      {
+        url: '/images/visit-card.png',
+        width: 1200,
+        height: 630,
+        alt: 'Felipe Frant Zanini | Software Engineer',
+      },
+    ],
   },
   description,
 }
