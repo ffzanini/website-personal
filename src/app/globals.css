@@ -6,6 +6,8 @@
 	line-height: 1.5;
 	font-family: var(--font-mavenPro);
 	color: theme("colors.gray-400");
+	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	box-sizing: content-box;
 }
 
 html[class="dark"] {
@@ -16,7 +18,7 @@ html[class="dark"] {
 
 
 html[class="light"] {
-	--bg: theme("colors.gray-100");
+	--bg: theme("colors.gray-50");
 	--heading-color: theme("colors.gray-800");
 	--text-color: theme("colors.gray-800"); 
 }
@@ -49,4 +51,25 @@ p, span, a, li, input, button, label, select, option, textarea {
 
 span {
 	color: inherit;
+}
+
+.progress-bar {
+  height: 2px;
+  background: var(--text-color);
+  transform-origin: 0%;
+}
+
+input, textarea {
+	background-color: transparent;
+	border: 1px solid theme("colors.gray-700");
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	padding: 0.5rem;
+	color: var(--heading-color)
+}
+
+input:focus, textarea:focus {
+	outline: none;
+	border-color: theme("colors.primary-main");
 }

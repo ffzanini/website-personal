@@ -14,9 +14,9 @@ const config: Config = {
         'primary-light': '#55AFAD',
         'primary-dark': '#004949',
 
-        'primary-main-low-opacity': 'rgba(18, 122, 121, 0.2)',
-        'primary-light-low-opacity': 'rgba(	85, 175, 173, 0.2)',
-        'primary-dark-low-opacity': 'rgba(62, 122, 121, 0.2)',
+        'primary-main-low-opacity': 'rgba(18, 122, 121, 0.1)',
+        'primary-light-low-opacity': 'rgba(	85, 175, 173, 0.1)',
+        'primary-dark-low-opacity': 'rgba(62, 122, 121, 0.1)',
 
         'gray-900': '#090909',
         'gray-800': '#1A1A1A',
@@ -38,7 +38,6 @@ const config: Config = {
       },
       container: {
         center: true,
-        padding: '8px',
 
         screens: {
           sm: '600px',

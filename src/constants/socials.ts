@@ -20,7 +20,7 @@ export const socials = [
   },
   {
     icon: InstagramLogoIcon,
-    href: 'https://instagram.com/dpnunez/',
+    href: 'https://instagram.com/ffzanini/',
     name: 'Instagram',
   },
   {

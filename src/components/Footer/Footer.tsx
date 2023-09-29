@@ -9,7 +9,13 @@ export function Footer() {
   const yearNow = new Date().getFullYear()
 
   return (
-    <footer className="flex flex-col md:flex-row bg-gray-50 dark:bg-gray-900 justify-between items-center border-t border-gray-100 dark:border-gray-800">
+    <motion.footer
+      className="flex flex-col md:flex-row bg-white dark:bg-gray-900 justify-between items-center"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+    >
       <div className="px-6 pt-6 md:pt-0">
         <div className="container flex justify-center">
           <h3 className="flex flex-col md:flex-row ">
@@ -19,7 +25,7 @@ export function Footer() {
       </div>
       <div className="px-6 pt-6">
         <div className="container mb-6 flex justify-center">
-          <div className="flex flex-row gap-4 items-center">
+          <div className="flex flex-row gap-3 items-center">
             {socials.map(({ href, icon: Icon, name }) => (
               <motion.a
                 aria-label={name}
@@ -35,6 +41,6 @@ export function Footer() {
           </div>
         </div>
       </div>
-    </footer>
+    </motion.footer>
   )
 }
