@@ -10,7 +10,7 @@ export default function PricipalPage() {
 
   return (
     <Wrapper>
-      <div className="flex flex-col items-center justify-center gap-4 p-4">
+      <div className="container flex flex-col items-center justify-center gap-4 p-4">
         <Image
           src="/images/user-eu.jpeg"
           alt="eu"
@@ -28,7 +28,7 @@ export default function PricipalPage() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-center md:justify-start gap-4 p-4">
+      <div className="container flex flex-col md:flex-row justify-center md:justify-start gap-4 p-4">
         <Link
           href="/about"
           className="px-2 py-2 md:px-4 md:py-4 bg-white text-center border border-gray-200 focus:outline-none hover:bg-primary-light rounded-full dark:bg-gray-900 dark:border-gray-600 dark:hover:bg-primary-dark dark:hover:border-gray-600 dark:focus:ring-gray-700"
