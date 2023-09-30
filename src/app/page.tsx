@@ -17,7 +17,7 @@ export default function PricipalPage() {
           alt="eu"
           width={150}
           height={150}
-          className="rounded-full"
+          className="rounded-full border-2 border-gray-900 dark:border-gray-50"
         />
         <div className="flex flex-col items-center justify-center gap-1">
           <h1>{translations.home.name}</h1>
@@ -34,7 +34,7 @@ export default function PricipalPage() {
           href="/about"
           className="px-2 py-2 md:px-4 md:py-4 bg-white text-center border border-gray-200 focus:outline-none hover:bg-primary-light rounded-full dark:bg-gray-900 dark:border-gray-600 dark:hover:bg-primary-dark dark:hover:border-gray-600 dark:focus:ring-gray-700"
         >
-          <h3>Leia mais sobre mim</h3>
+          <h3>{translations.home.textButtonAbout}</h3>
         </Link>
       </div>
     </Wrapper>

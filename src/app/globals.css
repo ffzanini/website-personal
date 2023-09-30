@@ -6,7 +6,7 @@
 	line-height: 1.5;
 	font-family: var(--font-mavenPro);
 	color: theme("colors.gray-400");
-	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	transition: color 0.1s ease-in-out, background-color 0.2s ease-in-out;
 	box-sizing: content-box;
 }
 
