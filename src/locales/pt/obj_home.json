@@ -1,9 +1,10 @@
 {
   "name": "Olá, sou Felipe Frantz Zanini",
-  "descriptionCompany": "Frontend Developer & Tech Lead na ",
+  "roles": "software engineer, artist, musician, writer and a indie developer enthusiast",
   "company": "Nav9",
   "link": "https://nav9.tech",
-  "description": "Meu atual objetivo profissional é potencializar e compartilhar conhecimento, criando uma ponte entre pessoas e tecnologia. Sou apaixonado por viajar, desenhar, ler, tocar teclado e jiu jitsu. Tenho 30 anos e atualmente moro em Balneário Camboriú, Santa Catarina, Brasil. Você pode saber mais sobre mim ",
-  "description_link": "clicando aqui",
+  "descriptionPartOne": "Hoje ocupo a posição de Frontend Developer & Tech Lead especializado em desenvolvimento web na Nav9, onde tenho a oportunidade de ser um parceiro de tecnologia de diversas empresas, auxiliando-as na criação de uma nova geração de produtos para a web. Tenho 30 anos de idade e atualmente resido em Dom Pedrito, Rio Grande do Sul, Brasil.",
+  "descriptionPartTwo": "Em 2010, com 17 anos, iniciei minha jornada na programação ao conquistar meu primeiro estágio como desenvolvedor PHP. Desde então, mantive meu compromisso como desenvolvedor, estudando e aprimorando constantemente minhas habilidades.",
+  "descriptionPartThree": "Meu objetivo é criar um jogo completamente independente e documentar todo o processo em meu canal do YouTube. Para dar vida a esses projetos de desenvolvimento de jogos e conteúdos, tenho investido tempo e energia na especialização em diversas áreas, incluindo criação de roteiros, game design, level design, pixel art, teoria das cores, bem como no estudo do piano e teoria musical.",
   "social": "Me siga nas redes sociais:"
 }

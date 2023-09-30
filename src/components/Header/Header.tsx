@@ -27,6 +27,21 @@ export function Header() {
     restDelta: 0.001,
   })
 
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.5,
+      },
+    },
+  }
+
+  const item = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1 },
+  }
+
   function toggleTheme() {
     if (theme === 'dark') {
       setTheme('light')
@@ -43,16 +58,17 @@ export function Header() {
     }
   }
   return (
-    <motion.nav
-      className="fixed w-full bg-white dark:bg-gray-900"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 1 }}
-    >
+    <motion.nav className="fixed w-full bg-white dark:bg-gray-900">
       <div className="px-4 py-2 mx-auto flex flex-wrap items-center justify-between">
         <Link href="/">
-          <motion.h1 className={fontRyanaLovely.className}>2fz</motion.h1>
+          <motion.h1
+            className={fontRyanaLovely.className}
+            variants={container}
+            initial="hidden"
+            animate="show"
+          >
+            2fz
+          </motion.h1>
         </Link>
         <div className="flex md:order-2 gap-3 md:min-w-[100px]">
           <motion.button
@@ -60,12 +76,9 @@ export function Header() {
             onClick={toggleTheme}
             type="button"
             whileHover={{ scale: 1.1 }}
-            animate={{
-              opacity: 1,
-            }}
-            transition={{
-              delay: 3,
-            }}
+            variants={container}
+            initial="hidden"
+            animate="show"
             className="p-2 hover:bg-primary-light-low-opacity rounded-full dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
           >
             {theme === 'dark' ? (
@@ -79,12 +92,9 @@ export function Header() {
             onClick={toggleLocaltion}
             type="button"
             whileHover={{ scale: 1.1 }}
-            animate={{
-              opacity: 1,
-            }}
-            transition={{
-              delay: 3,
-            }}
+            variants={container}
+            initial="hidden"
+            animate="show"
             className="p-2 hover:bg-primary-light-low-opacity rounded-full dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
           >
             {location === 'en' ? <h3>PT</h3> : <h3>EN</h3>}
@@ -115,18 +125,32 @@ export function Header() {
           }
           id="navbar-sticky"
         >
-          <motion.ul className="flex flex-col md:flex-row list-none lg:ml-auto gap-2">
-            <motion.li className="p-2 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300">
+          <motion.ul
+            className="flex flex-col md:flex-row list-none lg:ml-auto gap-2"
+            variants={container}
+            initial="hidden"
+            animate="show"
+          >
+            <motion.li
+              variants={item}
+              className="p-2 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
+            >
               <Link href="/about" onClick={() => setNavbarOpen(false)}>
                 <h2>{translations.navbar.aboutPage}</h2>
               </Link>
             </motion.li>
-            <motion.li className="p-2 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300">
+            <motion.li
+              variants={item}
+              className="p-2 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
+            >
               <Link href="/projects" onClick={() => setNavbarOpen(false)}>
                 <h2>{translations.navbar.projectsPage}</h2>
               </Link>
             </motion.li>
-            <motion.li className="p-2 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300">
+            <motion.li
+              variants={item}
+              className="p-2 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
+            >
               <Link href="/contact" onClick={() => setNavbarOpen(false)}>
                 <h2>{translations.navbar.contactPage}</h2>
               </Link>

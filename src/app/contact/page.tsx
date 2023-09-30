@@ -1,11 +1,12 @@
 'use client'
+import { Wrapper } from '@/components'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 
 export default function Contact() {
   return (
-    <motion.section className="container flex flex-col items-center justify-center h-[calc(100vh-89px)]">
+    <Wrapper>
       <Link href="/">voltar pra casa</Link>
-    </motion.section>
+    </Wrapper>
   )
 }
