@@ -5,10 +5,10 @@ import Image from 'next/image'
 export default function About() {
   return (
     <Wrapper>
-      <div className="container flex flex-col gap-4 p-4">
+      <div className="flex flex-col gap-4 p-4">
         <h1 className="font-bold">About</h1>
         <h3 className="font-medium">Know me a little more</h3>
-        <div className="grid grid-cols-2">
+        <div className="lg:grid grid-cols-2 flex flex-col gap-4">
           <div className="flex justify-center">
             <h3>
               Hello! My name is Felipe Frantz Zanini, a Frontend Developer &
@@ -32,7 +32,7 @@ export default function About() {
             <Image src="/images/user-eu.jpeg" alt="eu" width={420} height={0} />
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-6">
+        <div className="lg:grid grid-cols-3 flex flex-col">
           <div className="flex flex-col justify-start">
             <h1 className="font-bold">Carrer</h1>
             <h2>Nav9.tech</h2>
@@ -41,7 +41,7 @@ export default function About() {
           </div>
           <div className="flex flex-col justify-center">
             <h1 className="font-bold">Education</h1>
-            <h2>Universidade Federal de Pelotas - UFPel</h2>
+            <h2>Uni. Fed. de Pelotas - UFPel</h2>
             <h3>Mestrado em Ciência da Computação</h3>
             <p>Mar 2019 - Ago 2021 unfinished</p>
           </div>
@@ -52,7 +52,7 @@ export default function About() {
             <p>Jun 2022 - Set 2022</p>
           </div>
         </div>
-        <div className="grid grid-cols-2 pt-12">
+        <div className="grid grid-cols-2 pt-6 md:pt-12">
           <div>
             <h2 className="font-bold">About this website</h2>
             <h3 className="width-2">

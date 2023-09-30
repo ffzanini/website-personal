@@ -1,5 +1,7 @@
 {
   "aboutPage": "About me",
+  "contentsPage": "Contents",
   "projectsPage": "Projects",
-  "contactPage": "Contact"
+  "contactPage": "Contact",
+  "resumePage": "Resume"
 }

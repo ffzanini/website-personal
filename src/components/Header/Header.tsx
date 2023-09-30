@@ -140,6 +140,14 @@ export function Header() {
               variants={item}
               className="p-2 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
             >
+              <Link href="/contents" onClick={() => setNavbarOpen(false)}>
+                <h2>{translations.navbar.contentsPage}</h2>
+              </Link>
+            </motion.li>
+            <motion.li
+              variants={item}
+              className="p-2 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
+            >
               <Link href="/projects" onClick={() => setNavbarOpen(false)}>
                 <h2>{translations.navbar.projectsPage}</h2>
               </Link>
@@ -150,6 +158,14 @@ export function Header() {
             >
               <Link href="/contact" onClick={() => setNavbarOpen(false)}>
                 <h2>{translations.navbar.contactPage}</h2>
+              </Link>
+            </motion.li>
+            <motion.li
+              variants={item}
+              className="p-2 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
+            >
+              <Link href="/resume" onClick={() => setNavbarOpen(false)}>
+                <h2>{translations.navbar.resumePage}</h2>
               </Link>
             </motion.li>
           </motion.ul>
