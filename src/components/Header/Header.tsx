@@ -58,7 +58,7 @@ export function Header() {
     }
   }
   return (
-    <motion.nav className="fixed w-full bg-white dark:bg-gray-900">
+    <nav className="fixed w-full bg-white dark:bg-gray-900">
       <div className="px-4 py-2 mx-auto flex flex-wrap items-center justify-between">
         <Link href="/">
           <motion.h1
@@ -102,12 +102,9 @@ export function Header() {
           <motion.button
             aria-label="Open menu"
             type="button"
-            animate={{
-              opacity: 1,
-            }}
-            transition={{
-              delay: 3,
-            }}
+            variants={container}
+            initial="hidden"
+            animate="show"
             className="inline-flex items-center p-2 justify-center md:hidden hover:transition-all duration-300"
             onClick={() => setNavbarOpen(!navbarOpen)}
           >
@@ -126,7 +123,7 @@ export function Header() {
           id="navbar-sticky"
         >
           <motion.ul
-            className="flex flex-col md:flex-row list-none lg:ml-auto gap-2"
+            className="flex flex-col md:flex-row list-none lg:ml-auto gap-2 pt-10 md:pt-0"
             variants={container}
             initial="hidden"
             animate="show"
@@ -160,6 +157,6 @@ export function Header() {
       </div>
 
       <motion.div className="progress-bar" style={{ scaleX }} />
-    </motion.nav>
+    </nav>
   )
 }

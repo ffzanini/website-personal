@@ -1,10 +1,9 @@
 'use client'
-import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 
 import { useTranslation } from '@/context'
-import { Wrapper } from '@/components'
+import { ScrollToTopButton, Wrapper } from '@/components'
 
 export default function PricipalPage() {
   const { translations } = useTranslation()
@@ -15,8 +14,8 @@ export default function PricipalPage() {
         <Image
           src="/images/user-eu.jpeg"
           alt="eu"
-          width={150}
-          height={150}
+          width={160}
+          height={160}
           className="rounded-full border-2 border-gray-900 dark:border-gray-50"
         />
         <div className="flex flex-col items-center justify-center gap-1">
@@ -37,6 +36,7 @@ export default function PricipalPage() {
           <h3>{translations.home.textButtonAbout}</h3>
         </Link>
       </div>
+      <ScrollToTopButton />
     </Wrapper>
   )
 }

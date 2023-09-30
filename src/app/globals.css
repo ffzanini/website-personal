@@ -73,3 +73,12 @@ input:focus, textarea:focus {
 	outline: none;
 	border-color: theme("colors.primary-main");
 }
+
+*::-webkit-scrollbar{
+	width:0.2rem;
+	background-color: #EFEFEF;
+}
+
+*::-webkit-scrollbar-thumb{
+	background-color: #5B5B5B;
+}
