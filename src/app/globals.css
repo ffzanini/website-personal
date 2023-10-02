@@ -14,13 +14,15 @@ html[class="dark"] {
 	--bg: theme("colors.gray-800");
 	--heading-color: theme("colors.gray-50");
 	--text-color: theme("colors.gray-50");
+	--text-hover-link: theme("colors.primary-dark");
 }
 
 
 html[class="light"] {
 	--bg: theme("colors.gray-50");
 	--heading-color: theme("colors.gray-800");
-	--text-color: theme("colors.gray-800"); 
+	--text-color: theme("colors.gray-800");
+	--text-hover-link: theme("colors.primary-light");
 }
 
 html {
@@ -40,13 +42,18 @@ h2 {
 	font-size: theme("fontSize.h2");
 }
 
-h3 {
+h3, a {
 	font-size: theme("fontSize.h3");
 }
 
-p, span, a, li, input, button, label, select, option, textarea {
+p, span, li, input, button, label, select, option, textarea {
 	font-size: theme("fontSize.body");
 	color: var(--text-color);
+}
+
+b {
+	color: var(--text-color);
+	font-weight: bold;
 }
 
 span {
@@ -67,6 +74,11 @@ input, textarea {
 	border-top: 0;
 	padding: 0.5rem;
 	color: var(--heading-color)
+}
+
+a:hover {
+	transition: color 0.1s ease-in-out;
+	color: var(--text-hover-link);
 }
 
 input:focus, textarea:focus {

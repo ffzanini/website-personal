@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import { useTranslation } from '@/context'
-import { ScrollToTopButton, Wrapper } from '@/components'
+import { RichTextViewer, Wrapper } from '@/components'
 
 export default function PricipalPage() {
   const { translations } = useTranslation()
@@ -22,9 +22,9 @@ export default function PricipalPage() {
           <h1>{translations.home.name}</h1>
           <h2>{translations.home.roles}</h2>
           <div className="flex flex-col items-center justify-center gap-6 pt-3">
-            <h3>{translations.home.descriptionPartOne}</h3>
-            <h3>{translations.home.descriptionPartTwo}</h3>
-            <h3>{translations.home.descriptionPartThree}</h3>
+            <RichTextViewer content={translations.home.descriptionPartOne} />
+            <RichTextViewer content={translations.home.descriptionPartTwo} />
+            <RichTextViewer content={translations.home.descriptionPartThree} />
           </div>
         </div>
       </div>
