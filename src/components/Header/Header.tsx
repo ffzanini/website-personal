@@ -57,6 +57,7 @@ export function Header() {
       setLocation('en')
     }
   }
+
   return (
     <nav className="fixed w-full bg-white dark:bg-gray-900 z-10">
       <div className="px-4 py-2 mx-auto flex flex-wrap items-center justify-between">
