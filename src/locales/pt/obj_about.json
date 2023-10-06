@@ -2,7 +2,8 @@
   "title": "Sobre mim",
   "sub_title": "Me conheça um pouco melhor",
   "description": {
-    "description_one": "Meu nome é Felipe Frantz Zanini, um software engineer que atualmente atua diretamente como um frontend developer & tech lead de projetos. Apaixonado por jiu jitsu, desenvolvimento de jogos independentes, escrita, arte e música. Tenho 30 anos e atualmente moro em Dom Pedrito, Rio Grande do Sul, Brasil."
+    "description_one": "Meu nome é Felipe Frantz Zanini, um software engineer que atualmente atua diretamente como um frontend developer & tech lead de projetos. Sou apaixonado por jiu jitsu, desenvolvimento de jogos independentes, escrita, arte e música. Tenho 30 anos e atualmente moro em Dom Pedrito, Rio Grande do Sul, Brasil.",
+    "description_three": "Meu objetivo é criar um jogo completamente independente e documentar todo o processo em meu <b><u><a href=\"https://www.youtube.com/channel/UCVHgTgRK0M5kt2Gvi60b7Eg\" target=\"_blank\">canal do YouTube</a></u></b>. Para dar vida a esses projetos de desenvolvimento de jogos e conteúdos, tenho investido tempo e energia na especialização em diversas áreas, incluindo criação de roteiros, game design, level design, pixel art, teoria das cores, bem como no estudo do piano e teoria musical."
   },
   "carrer": {
     "title": "Carreira",

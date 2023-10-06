@@ -13,8 +13,11 @@ export default function About() {
         <h1 className="font-bold">{translations.about.title}</h1>
         <h3 className="font-medium">{translations.about.sub_title}</h3>
         <div className="lg:grid grid-cols-2 flex flex-col gap-4">
-          <div className="flex justify-center">
+          <div className="flex flex-col gap-4 text-justify">
             <h3>{translations.about.description.description_one}</h3>
+            <RichTextViewer
+              content={translations.about.description.description_three}
+            />
           </div>
           <div className="flex justify-center">
             <Image src="/images/user-eu.jpeg" alt="eu" width={420} height={0} />
@@ -52,7 +55,7 @@ export default function About() {
             ))}
           </div>
         </div>
-        <div className="flex flex-row md:grid grid-cols-2 pt-6 md:pt-12">
+        <div className="flex flex-row lg:grid grid-cols-2 pt-6 md:pt-12">
           <div>
             <h2 className="font-bold">
               {translations.about.about_section.about_title}

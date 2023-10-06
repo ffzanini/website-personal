@@ -7,7 +7,7 @@ export function Wrapper({ children }: { children: React.ReactNode }) {
       onExitComplete={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
     >
       <motion.section
-        className="container items-center justify-center pt-32 pb-7"
+        className="container min-h-[calc(100vh-13.46rem)] items-center justify-center pt-32"
         initial={{ x: 300, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         exit={{ x: 300, opacity: 0 }}
