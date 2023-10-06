@@ -12,7 +12,7 @@ export default function PricipalPage() {
     <Wrapper>
       <div className="flex flex-col items-center justify-center gap-4 p-4">
         <Image
-          src="/images/user-eu.jpeg"
+          src="/images/me_home.jpeg"
           alt="eu"
           width={200}
           height={200}

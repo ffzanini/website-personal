@@ -1,11 +1,17 @@
 'use client'
-import { Wrapper } from '@/components'
 import Link from 'next/link'
 
+import { useTranslation } from '@/context'
+import { Wrapper } from '@/components'
+
 export default function Contact() {
+  const { translations } = useTranslation()
+
   return (
     <Wrapper>
-      <Link href="/">voltar pra casa</Link>
+      <Link href="/">
+        <h3 className="font-bold">{translations.contact.title}</h3>
+      </Link>
     </Wrapper>
   )
 }

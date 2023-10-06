@@ -161,14 +161,6 @@ export function Header() {
                 <h2>{translations.navbar.contactPage}</h2>
               </Link>
             </motion.li>
-            <motion.li
-              variants={item}
-              className="p-2 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
-            >
-              <Link href="/resume" onClick={() => setNavbarOpen(false)}>
-                <h2>{translations.navbar.resumePage}</h2>
-              </Link>
-            </motion.li>
           </motion.ul>
         </motion.div>
       </div>
