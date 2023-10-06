@@ -1,0 +1,87 @@
+{
+  "title": "About",
+  "sub_title": "Know me a little more",
+  "description": {
+    "description_one": "My name is Felipe Frantz Zanini, a software engineer who currently operates as a frontend developer & tech lead. Passionate about jiu jitsu, independent game development, writing, art and music. I’m 30 years old and currently live in Dom Pedrito, Rio Grande do Sul, Brazil."
+  },
+  "carrer": {
+    "title": "Carrer",
+    "jobs": [
+      {
+        "id": 1,
+        "title": "Nav9.tech",
+        "description": "Frontend Developer & Tech Lead",
+        "date": "Apr 2021 - Present"
+      },
+      {
+        "id": 2,
+        "title": "Uni. Fed. de Pelotas - UFPel",
+        "description": "Scholarship CAPES",
+        "date": "Mar 2020 - Apr 2021"
+      },
+      {
+        "id": 3,
+        "title": "Alpago",
+        "description": "Founder & CTO",
+        "date": "Jan 2016 - Mar 2020"
+      },
+      {
+        "id": 4,
+        "title": "Zapshop Informática",
+        "description": "Software Engineer",
+        "date": "Jan 2011 - Dec 2015"
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "graduations": [
+      {
+        "id": 1,
+        "title": "Uni. Fed. de Pelotas - UFPel",
+        "description": "Mestrado em Ciência da Computação",
+        "date": "Mar 2019 - Aug 2021 (unfinished)"
+      },
+      {
+        "id": 2,
+        "title": "Inst. de Desen. Educacional - IDEAU",
+        "description": "Especialização em Gestão de TI",
+        "date": "Jan 2014 - Dec 2015"
+      },
+      {
+        "id": 3,
+        "title": "Uni. da Região da Campanha - URCAMP",
+        "description": "Gestão da Tecnologia em Informação",
+        "date": "Jan 2011 - Dec 2013"
+      },
+      {
+        "id": 4,
+        "title": "Uni. da Região da Campanha - URCAMP",
+        "description": "Técnico em Informática",
+        "date": "jan 2008 - Dec 2010"
+      }
+      
+    ]
+  },
+  "courses": {
+    "title": "Courses",
+    "graduations_extra":[
+      {
+        "id": 1,
+        "title": "Harvard University",
+        "description": "CS50's Web Programming with JavaScript",
+        "date": "Jun 2022 -  Nov 2022"
+      },
+      {
+        "id": 2,
+        "title": "RocketSeat",
+        "description": "BootCamp Ignite",
+        "date": "Jan 2021 - Feb 2021"
+      }
+    ]
+  },
+  "about_section": {
+    "about_title": "About this website",
+    "about_description": "This website was developed using <b><u><a href='https://nextjs.org/'>Next.js</a></u></b> as a framework, deployed with <b><u><a href='https://vercel.com/'>Vercel</a></u></b>, styled using <b><u><a href='https://tailwindcss.com/'>Tailwind</a></u></b>, and with icons powered by the library <b><u><a href='https://www.radix-ui.com/icons'>Radix UI</a></u></b>. All text is set in the <b><u><a href='https://fonts.google.com/specimen/Maven+Pro'>MavenPro</a></u></b> typeface."
+  }
+}

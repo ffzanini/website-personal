@@ -1,13 +1,13 @@
 import DOMPurify from 'isomorphic-dompurify'
 
-type Props = {
+type RichTextViewerProps = {
   content: string
   typeText?: string
 }
 
-export function RichTextViewer({ content, typeText }: Props) {
+export function RichTextViewer({ content, typeText }: RichTextViewerProps) {
   const __html = DOMPurify.sanitize(content, {
-    ALLOWED_TAGS: ['strong', 'b', 'a', 'p', 'em'],
+    ALLOWED_TAGS: ['strong', 'b', 'u', 'a', 'p', 'em'],
   })
 
   switch (typeText) {

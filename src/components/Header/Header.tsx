@@ -82,7 +82,7 @@ export function Header() {
             animate="show"
             className="p-2 hover:bg-primary-light-low-opacity rounded-full dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
           >
-            {theme !== 'dark' ? (
+            {theme === 'dark' ? (
               <MoonIcon width={24} height={24} />
             ) : (
               <SunIcon width={24} height={24} />
@@ -98,7 +98,7 @@ export function Header() {
             animate="show"
             className="p-2 hover:bg-primary-light-low-opacity rounded-full dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
           >
-            {location === 'en' ? <h3>PT</h3> : <h3>EN</h3>}
+            {location !== 'en' ? <h3>PT</h3> : <h3>EN</h3>}
           </motion.button>
           <motion.button
             aria-label="Open menu"

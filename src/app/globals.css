@@ -5,6 +5,7 @@
 * {
 	line-height: 1.5;
 	font-family: var(--font-mavenPro);
+	text-underline-offset: 4px;
 	color: theme("colors.gray-400");
 	transition: color 0.1s ease-in-out, background-color 0.2s ease-in-out;
 	box-sizing: content-box;
@@ -46,7 +47,7 @@ h3, a {
 	font-size: theme("fontSize.h3");
 }
 
-p, span, li, input, button, label, select, option, textarea {
+p, u, span, li, input, button, label, select, option, textarea {
 	font-size: theme("fontSize.body");
 	color: var(--text-color);
 }
