@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import { useTranslation } from '@/context'
 import { RichTextViewer, ScrollToTopButton, Wrapper } from '@/components'
+import Link from 'next/link'
 
 export default function About() {
   const { translations } = useTranslation()
@@ -31,11 +32,11 @@ export default function About() {
             />
           </div>
         </div>
-        <div className="lg:grid grid-cols-5 flex flex-col gap-4 pb-4 hidden lg:block">
+        <div className="lg:grid grid-cols-5 flex flex-col gap-4 pb-6 hidden lg:block">
           <Image
             src="/images/me_in_beach.jpeg"
             className="rounded"
-            alt="eu"
+            alt="Eu na praia"
             width={1200}
             height={128}
           />
@@ -43,7 +44,7 @@ export default function About() {
           <Image
             src="/images/me_in_rocks.jpeg"
             className="rounded -mt-4"
-            alt="eu"
+            alt="Eu na praia mas nas pedras"
             width={1200}
             height={128}
           />
@@ -51,7 +52,7 @@ export default function About() {
           <Image
             src="/images/me_main.jpeg"
             className="rounded"
-            alt="eu"
+            alt="Eu"
             width={1200}
             height={128}
           />
@@ -59,7 +60,7 @@ export default function About() {
           <Image
             src="/images/me_sitdown.jpeg"
             className="rounded -mt-4"
-            alt="eu"
+            alt="Eu sentado na pedra"
             width={1200}
             height={128}
           />
@@ -67,7 +68,7 @@ export default function About() {
           <Image
             src="/images/me_playing_piano.jpeg"
             className="rounded"
-            alt="eu"
+            alt="Eu tocando teclado"
             width={1200}
             height={128}
           />
@@ -120,9 +121,21 @@ export default function About() {
             <h2 className="font-bold">
               {translations.about.about_contact.contact_title}
             </h2>
-            <RichTextViewer
-              content={translations.about.about_contact.contact_description}
-            />
+            <h3>
+              {translations.about.about_contact.contact_description_one}
+              <Link href="/contact" className="underline font-bold">
+                {translations.about.about_contact.contact_link_one}
+              </Link>
+              {translations.about.about_contact.contact_description_two}
+              <Link
+                href="https://www.linkedin.com/in/ffzanini/"
+                className="underline font-bold"
+                target="_blank"
+              >
+                {translations.about.about_contact.contact_link_two}
+              </Link>
+              .
+            </h3>
           </div>
         </div>
       </div>

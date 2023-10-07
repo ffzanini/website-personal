@@ -1,3 +1,39 @@
 {
-  "title": "Back to home"
+  "title": "Contents",
+  "sub_title": "Under construction",
+  "youtube": {
+    "title": "YouTube",
+    "description": "Description abou what is my channel and what I pretend with this work"
+  },
+  "pixelart": {
+    "title": "Pixel Art",
+    "description": "Description about my arts, some expositions of my work below"
+  },
+  "game_development": {
+    "title": "Game Development",
+    "description": "section to list all my games develop so far, with links, arts, concept and more",
+    "games": [
+      {
+        "id": 1,
+        "title": "game 1",
+        "description": "make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan",
+        "image": "/images/me_coding.jpeg",
+        "link": "https://ffzanini.itch.io/"
+      },
+      {
+        "id": 2,
+        "title": "game 2",
+        "description": "make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan",
+        "image": "/images/me_coding.jpeg",
+        "link": "https://ffzanini.itch.io/"
+      },
+      {
+        "id": 3,
+        "title": "game 3",
+        "description": "make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan make in a game jan",
+        "image": "/images/me_coding.jpeg",
+        "link": "https://ffzanini.itch.io/"
+      }
+    ]
+  }
 }

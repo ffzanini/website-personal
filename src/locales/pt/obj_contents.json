@@ -1,3 +1,39 @@
 {
-  "title": "Voltar para home"
+  "title": "Conteúdos",
+  "sub_title": "Em contrução",
+  "youtube": {
+    "title": "YouTube",
+    "description": "Descrição sobre o que é meu canal, o que eu pretendo com esse trabalho"
+  },
+  "pixelart": {
+    "title": "Pixel Art",
+    "description": "Descrição sobre as minhas artes, exposições sobre o meu trabalho abaixo"
+  },
+  "game_development": {
+    "title": "Game Development",
+    "description": "Seção para listar todos os jogos que eu desenvolvi até o momento, com links, artes, conceitos e mais",
+    "games": [
+      {
+        "id": 1,
+        "title": "jogo 1",
+        "description": "feito em uma game jam feito em uma game jam feito em uma game jam feito em uma game jam feito em uma game jam feito em uma game jam feito em uma game jam feito em uma game jam feito em uma game jam feito em uma game jam feito em uma game jam feito em uma game jam feito em uma game jam feito em uma game jam feito em uma game jam feito em uma game jam feito em uma game jam feito em uma game jam feito em uma game jam feito em uma game jam feito em uma game jam feito em uma game jam feito em uma game jam",
+        "image": "/images/me_coding.jpeg",
+        "link": "https://ffzanini.itch.io/"
+      },
+      {
+        "id": 2,
+        "title": "game 2",
+        "description": "make in a game jan",
+        "image": "/images/me_coding.jpeg",
+        "link": "https://ffzanini.itch.io/"
+      },
+      {
+        "id": 3,
+        "title": "game 3",
+        "description": "make in a game jan",
+        "image": "/images/me_coding.jpeg",
+        "link": "https://ffzanini.itch.io/"
+      }
+    ]
+  }
 }
