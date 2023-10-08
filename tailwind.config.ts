@@ -28,6 +28,9 @@ const config: Config = {
         'gray-200': '#A5A5A5',
         'gray-100': '#CACACA',
         'gray-50': '#EFEFEF',
+
+        'gray-opacity-900': 'rgba(9,9,9, 0.7)',
+        'opacity-white': 'rgba(255,255,255, 0.7)',
       },
       fontSize: {
         caption: '0.875rem',

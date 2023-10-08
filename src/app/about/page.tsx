@@ -96,7 +96,7 @@ export default function About() {
               </div>
             ))}
           </div>
-          <div className="flex flex-col justify-start gap-2">
+          <div className="flex flex-col justify-start gap-2 pt-6 lg:pt-0">
             <h2 className="font-bold">{translations.about.courses.title}</h2>
             {translations.about.courses.graduations_extra.map((course) => (
               <div key={course.id}>
