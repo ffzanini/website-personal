@@ -28,7 +28,8 @@ export default function Contact() {
 
 function ContactForm() {
   const { translations } = useTranslation()
-
+  console.log('env', process.env.NEXT_PUBLIC_NOTION_API_KEY)
+  console.log('data', process.env.NEXT_PUBLIC_NOTION_DATABASE_KEY)
   const { register, handleSubmit, formState, reset } = useForm<{
     name: string
     email: string
@@ -81,7 +82,7 @@ function ContactForm() {
           type="submit"
           className="disabled:grayscale disabled:cursor-not-allowed px-2 py-2 md:px-12 md:py-4 bg-white text-center border border-gray-200 focus:outline-none hover:bg-primary-light rounded-full dark:bg-gray-900 dark:border-gray-600 dark:hover:bg-primary-dark dark:hover:border-gray-600 dark:focus:ring-gray-700"
         >
-          {translations.contact.button_text}
+          <h3>{translations.contact.button_text}</h3>
         </button>
       </div>
     </form>
