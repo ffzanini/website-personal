@@ -1,3 +1,106 @@
 {
-  "title": "Back to home"
+  "title": "Projects",
+  "sub_title": "",
+  "projects": [
+    {
+      "id": 1,
+      "title": "projects 1",
+      "develop_at_text": "Made at ",
+      "develop_at": "Nav9.tech",
+      "develop_at_site": "https://nav9.tech/",
+      "develop_at_button": "Visit the project",
+      "description": "project 1",
+      "image": "/images/me_coding.jpeg",
+      "link": "https://doveresearch.org/",
+      "technologies": ["React", "CSS"]
+    },
+    {
+      "id": 2,
+      "title": "projects 2",
+      "develop_at_text": "Made at ",
+      "develop_at": "",
+      "develop_at_site": "",
+      "develop_at_button": "Visit the project",
+      "description": "project 2",
+      "image": "/images/me_coding.jpeg",
+      "link": "https://doveresearch.org/"
+    },
+    {
+      "id": 3,
+      "title": "projects 3",
+      "develop_at_text": "Made at ",
+      "develop_at": "",
+      "develop_at_site": "",
+      "develop_at_button": "Visit the project",
+      "description": "project 3",
+      "image": "/images/me_coding.jpeg",
+      "link": "https://doveresearch.org/"
+    },
+    {
+      "id": 4,
+      "title": "projects 1",
+      "develop_at_text": "Made at ",
+      "develop_at": "",
+      "develop_at_site": "",
+      "description": "project 1",
+      "develop_at_button": "Visit the project",
+      "image": "/images/me_coding.jpeg",
+      "link": "https://doveresearch.org/"
+    },
+    {
+      "id": 5,
+      "title": "projects 2",
+      "develop_at_text": "Made at ",
+      "develop_at": "",
+      "develop_at_site": "",
+      "description": "project 2",
+      "develop_at_button": "Visit the project",
+      "image": "/images/me_coding.jpeg",
+      "link": "https://doveresearch.org/"
+    },
+    {
+      "id": 6,
+      "title": "projects 3",
+      "develop_at_text": "Made at ",
+      "develop_at": "",
+      "develop_at_site": "",
+      "description": "project 3",
+      "develop_at_button": "Visit the project",
+      "image": "/images/me_coding.jpeg",
+      "link": "https://doveresearch.org/"
+    },
+    {
+      "id": 7,
+      "title": "projects 1",
+      "develop_at_text": "Made at ",
+      "develop_at": "",
+      "develop_at_site": "",
+      "description": "project 1",
+      "develop_at_button": "Visit the project",
+      "image": "/images/me_coding.jpeg",
+      "link": "https://doveresearch.org/"
+    },
+    {
+      "id": 8,
+      "title": "projects 2",
+      "develop_at_text": "Made at ",
+      "develop_at": "",
+      "develop_at_site": "",
+      "description": "project 2",
+      "develop_at_button": "Visit the project",
+      "image": "/images/me_coding.jpeg",
+      "link": "https://doveresearch.org/"
+    },
+    {
+      "id": 9,
+      "title": "projects 3",
+      "develop_at_text": "Made at ",
+      "develop_at": "",
+      "develop_at_site": "",
+      "description": "project 3",
+      "develop_at_button": "Visit the project",
+      "image": "/images/me_coding.jpeg",
+      "link": "https://doveresearch.org/"
+    }
+  ]
 }

@@ -4,7 +4,6 @@ import Image from 'next/image'
 
 import { useTranslation } from '@/context'
 import { RichTextViewer, ScrollToTopButton, Wrapper } from '@/components'
-import { Fragment } from 'react'
 
 export default function Contact() {
   const { translations } = useTranslation()
