@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import { useTranslation } from '@/context'
-import { RichTextViewer, ScrollToTopButton, Wrapper } from '@/components'
+import { ScrollToTopButton, Wrapper } from '@/components'
 
 export default function Contact() {
   const { translations, location } = useTranslation()
