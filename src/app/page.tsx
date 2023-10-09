@@ -18,7 +18,7 @@ export default function PricipalPage() {
           height={200}
           className="rounded-full border-2 border-gray-900 dark:border-gray-50"
         />
-        <div className="flex flex-col items-center justify-center gap-2 p-2">
+        <div className="flex flex-col items-center text-justify justify-center gap-2 p-2">
           <h1>{translations.home.name}</h1>
           <h2>{translations.home.roles}</h2>
           <div className="flex flex-col items-center justify-center gap-6 pt-3">

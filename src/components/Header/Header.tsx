@@ -59,7 +59,7 @@ export function Header() {
   }
 
   return (
-    <nav className="fixed w-full backdrop-filter backdrop-blur bg-opacity-white dark:bg-gray-opacity-900 z-10">
+    <nav className="fixed w-full backdrop-filter backdrop-blur bg-white dark:bg-gray-900 md:bg-opacity-white md:dark:bg-gray-opacity-900 z-10">
       <div className="px-4 py-2 mx-auto flex flex-wrap items-center justify-between">
         <Link href="/">
           <motion.h1
@@ -124,14 +124,14 @@ export function Header() {
           id="navbar-sticky"
         >
           <motion.ul
-            className="flex flex-col md:flex-row list-none lg:ml-auto gap-2 pt-10 md:pt-0"
+            className="flex flex-col md:flex-row list-none lg:ml-auto gap-2 pt-6 md:pt-0"
             variants={container}
             initial="hidden"
             animate="show"
           >
             <motion.li
               variants={item}
-              className="p-2 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
+              className="p-3 text-center justify-center hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
             >
               <Link href="/about" onClick={() => setNavbarOpen(false)}>
                 <h2>{translations.navbar.aboutPage}</h2>
@@ -139,7 +139,7 @@ export function Header() {
             </motion.li>
             <motion.li
               variants={item}
-              className="p-2 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
+              className="p-3 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
             >
               <Link href="/contents" onClick={() => setNavbarOpen(false)}>
                 <h2>{translations.navbar.contentsPage}</h2>
@@ -147,7 +147,7 @@ export function Header() {
             </motion.li>
             <motion.li
               variants={item}
-              className="p-2 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
+              className="p-3 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
             >
               <Link href="/projects" onClick={() => setNavbarOpen(false)}>
                 <h2>{translations.navbar.projectsPage}</h2>
@@ -155,7 +155,7 @@ export function Header() {
             </motion.li>
             <motion.li
               variants={item}
-              className="p-2 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
+              className="p-3 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
             >
               <Link href="/contact" onClick={() => setNavbarOpen(false)}>
                 <h2>{translations.navbar.contactPage}</h2>

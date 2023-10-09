@@ -1,6 +1,8 @@
 {
   "title": "Projects",
-  "sub_title": "",
+  "sub_title": "During my professional life, I have developed several projects with incredible experiences that have had a positive impact on people and their businesses. Here you can find several projects and libraries that I had the opportunity to contribute to, where navigation is possible for some of them. Some of these projects are still active, others have been discontinued and more are not listed here for contractual reasons.",
+  "button_text": "Load more projects",
+  "end_list": "You've reached the end of the list.",
   "projects": [
     {
       "id": 1,
@@ -18,89 +20,97 @@
       "id": 2,
       "title": "projects 2",
       "develop_at_text": "Made at ",
-      "develop_at": "",
-      "develop_at_site": "",
+      "develop_at": "Nav9.tech",
+      "develop_at_site": "https://nav9.tech/",
       "develop_at_button": "Visit the project",
       "description": "project 2",
       "image": "/images/me_coding.jpeg",
-      "link": "https://doveresearch.org/"
+      "link": "https://doveresearch.org/",
+      "technologies": ["React", "CSS"]
     },
     {
       "id": 3,
       "title": "projects 3",
       "develop_at_text": "Made at ",
-      "develop_at": "",
-      "develop_at_site": "",
+      "develop_at": "Nav9.tech",
+      "develop_at_site": "https://nav9.tech/",
       "develop_at_button": "Visit the project",
       "description": "project 3",
       "image": "/images/me_coding.jpeg",
-      "link": "https://doveresearch.org/"
+      "link": "https://doveresearch.org/",
+      "technologies": ["React", "CSS"]
     },
     {
       "id": 4,
       "title": "projects 1",
       "develop_at_text": "Made at ",
-      "develop_at": "",
-      "develop_at_site": "",
+      "develop_at": "Nav9.tech",
+      "develop_at_site": "https://nav9.tech/",
       "description": "project 1",
       "develop_at_button": "Visit the project",
       "image": "/images/me_coding.jpeg",
-      "link": "https://doveresearch.org/"
+      "link": "https://doveresearch.org/",
+      "technologies": ["React", "CSS"]
     },
     {
       "id": 5,
       "title": "projects 2",
       "develop_at_text": "Made at ",
-      "develop_at": "",
-      "develop_at_site": "",
+      "develop_at": "Nav9.tech",
+      "develop_at_site": "https://nav9.tech/",
       "description": "project 2",
       "develop_at_button": "Visit the project",
       "image": "/images/me_coding.jpeg",
-      "link": "https://doveresearch.org/"
+      "link": "https://doveresearch.org/",
+      "technologies": ["React", "CSS"]
     },
     {
       "id": 6,
       "title": "projects 3",
       "develop_at_text": "Made at ",
-      "develop_at": "",
-      "develop_at_site": "",
+      "develop_at": "Nav9.tech",
+      "develop_at_site": "https://nav9.tech/",
       "description": "project 3",
       "develop_at_button": "Visit the project",
       "image": "/images/me_coding.jpeg",
-      "link": "https://doveresearch.org/"
+      "link": "https://doveresearch.org/",
+      "technologies": ["React", "CSS"]
     },
     {
       "id": 7,
       "title": "projects 1",
       "develop_at_text": "Made at ",
-      "develop_at": "",
-      "develop_at_site": "",
+      "develop_at": "Nav9.tech",
+      "develop_at_site": "https://nav9.tech/",
       "description": "project 1",
       "develop_at_button": "Visit the project",
       "image": "/images/me_coding.jpeg",
-      "link": "https://doveresearch.org/"
+      "link": "https://doveresearch.org/",
+      "technologies": ["React", "CSS"]
     },
     {
       "id": 8,
       "title": "projects 2",
       "develop_at_text": "Made at ",
-      "develop_at": "",
-      "develop_at_site": "",
+      "develop_at": "Nav9.tech",
+      "develop_at_site": "https://nav9.tech/",
       "description": "project 2",
       "develop_at_button": "Visit the project",
       "image": "/images/me_coding.jpeg",
-      "link": "https://doveresearch.org/"
+      "link": "https://doveresearch.org/",
+      "technologies": ["React", "CSS"]
     },
     {
       "id": 9,
       "title": "projects 3",
       "develop_at_text": "Made at ",
-      "develop_at": "",
-      "develop_at_site": "",
+      "develop_at": "Nav9.tech",
+      "develop_at_site": "https://nav9.tech/",
       "description": "project 3",
       "develop_at_button": "Visit the project",
       "image": "/images/me_coding.jpeg",
-      "link": "https://doveresearch.org/"
+      "link": "https://doveresearch.org/",
+      "technologies": ["React", "CSS"]
     }
   ]
 }

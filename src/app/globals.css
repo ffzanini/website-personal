@@ -100,6 +100,6 @@ input:focus, textarea:focus {
 .alter-section:nth-child(even) {
 	flex-direction: row-reverse;
 	@media (max-width: 984px) {
-		flex-direction: column;
+		flex-direction: column-reverse;
 	}
 }

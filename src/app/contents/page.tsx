@@ -75,12 +75,12 @@ export default function Contact() {
 
           {translations.contents.game_development.games.map((game) => (
             <div
-              className="flex flex-col lg:flex-row justify-between gap-4 pb-4 pt-4 lg:pt-8 lg:pb-12 alter-section"
+              className="flex flex-col-reverse lg:flex-row justify-between gap-8 pb-4 pt-4 lg:pt-8 lg:pb-12 alter-section"
               key={game.id}
             >
               <div className="text-justify w-full">
-                <h2 className="font-bold">{game.title}</h2>
-                <RichTextViewer content={game.description} />
+                <h2 className="font-bold pb-4">{game.title}</h2>
+                <h3 className="pb-4">{game.description}</h3>
                 <Link
                   className="underline font-bold"
                   href={game.link}
