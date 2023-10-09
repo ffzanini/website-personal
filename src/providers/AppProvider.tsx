@@ -8,10 +8,14 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     <ThemeProvider attribute="class" defaultTheme="dark">
       <InternacionalizaionProvider>
         <Toaster
-          position="bottom-right"
+          position="top-center"
           toastOptions={{
             style: {
               background: 'var(--bg)',
+              paddingTop: '1rem',
+              paddingBottom: '1rem',
+              paddingLeft: '2rem',
+              paddingRight: '2rem',
               border: '1px solid var(--text-color)',
               color: 'var(--text-color)',
             },

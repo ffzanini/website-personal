@@ -12,11 +12,17 @@ export function RichTextViewer({ content, typeText }: RichTextViewerProps) {
 
   switch (typeText) {
     case 'h1':
-      return <h1 dangerouslySetInnerHTML={{ __html }} />
+      return (
+        <h1 className="text-justify" dangerouslySetInnerHTML={{ __html }} />
+      )
     case 'h2':
-      return <h2 dangerouslySetInnerHTML={{ __html }} />
+      return (
+        <h2 className="text-justify" dangerouslySetInnerHTML={{ __html }} />
+      )
     case 'h3':
-      return <h3 dangerouslySetInnerHTML={{ __html }} />
+      return (
+        <h3 className="text-justify" dangerouslySetInnerHTML={{ __html }} />
+      )
     default:
       return <h3 dangerouslySetInnerHTML={{ __html }} />
   }
