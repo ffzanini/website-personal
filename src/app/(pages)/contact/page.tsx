@@ -28,8 +28,7 @@ export default function Contact() {
 
 function ContactForm() {
   const { translations } = useTranslation()
-  console.log('env', process.env.NEXT_PUBLIC_NOTION_API_KEY)
-  console.log('data', process.env.NEXT_PUBLIC_NOTION_DATABASE_KEY)
+
   const { register, handleSubmit, formState, reset } = useForm<{
     name: string
     email: string
