@@ -11,12 +11,12 @@ const config: Config = {
     extend: {
       colors: {
         'primary-main': '#127A79',
-        'primary-light': '#55AFAD',
-        'primary-dark': '#004949',
+        'primary-light': '#295756',
+        'primary-dark': '#5CB2B1',
 
         'primary-main-low-opacity': 'rgba(18, 122, 121, 0.1)',
-        'primary-light-low-opacity': 'rgba(	85, 175, 173, 0.1)',
-        'primary-dark-low-opacity': 'rgba(62, 122, 121, 0.1)',
+        'primary-light-low-opacity': 'rgba( 41, 87, 86, 0.1)',
+        'primary-dark-low-opacity': 'rgba(92, 178, 177, 0.1)',
 
         'gray-900': '#090909',
         'gray-800': '#1A1A1A',
