@@ -37,6 +37,23 @@
       }
     ]
   },
+  "skills":{
+    "title": "Habilidades",
+    "strong": {
+      "title": "Meus pontos fortes são:",
+      "description": "Frameworks e libs baseadas em JavaScript, especialmente React e Vue. CSS e seus frameworks, como Tailwind, MUI, Bootstrap e Bulma. Criacão de Design Systems, Style-Directory e Storybook. Boas práticas, código limpo, web performance e acessibilidade."
+    }
+    ,
+    "medium": {
+      "title": "Conheço e me dou bem com:",
+      "description": "Angular, React-Native, SSRs (Nuxt e Next). Testes unitários, backend com Node, Express, PHP, Laravel, CodeIgniter e manipulação de banco de dados (MySQL e MongoDB)."
+    }
+    ,
+    "weak": {
+      "title": "Sou capaz de dar suporte em:",
+      "description": "GDScript, Python, Ruby, Rails e tecnologias nativas."
+    }
+  },
   "education": {
     "title": "Educação",
     "graduations": [

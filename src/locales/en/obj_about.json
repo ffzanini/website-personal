@@ -8,6 +8,23 @@
     "description_four": "I currently hold the position of Frontend Developer & Tech Lead specializing in web development at <b><u><a href=\"https://www.nav9.tech\" target=\"_blank\">Nav9</a></u></b>, where I have the opportunity to be a technology partner for many companies such as: Shoppings Iguatemi, UFC, NBA, EducaCross, Grupo SEB, Rede AZ, research groups, among others. Always assisting them create the best product solution for the web.",
     "description_five": "My goal is to create a completely independent game and document the entire process on my <b><u><a href=\"https://www.youtube.com/channel/UCVHgTgRK0M5kt2Gvi60b7Eg\" target=\"_blank\">YouTube channel</a></u></b>. To bring these game development and content projects to life, I have been investing time and energy in specializing in many areas, including scriptwriting, game design, level design, pixel art, color theory, as well as studying piano and music theory."
   },
+  "skills":{
+    "title": "Skills",
+    "strong": {
+      "title": "Most confident with:",
+      "description": "Frameworks and libs JavaScript based, especially React and Vue. CSS and some frameworks like Tailwind, MUI, Bootstrap and Bulma. Design Systems, Style-Directory and Storybook. Good practices, clean code, web performance and accessibility."
+    }
+    ,
+    "medium": {
+      "title": "I have good knowledge on:",
+      "description": "Angular, React-Native, SSRs (Nuxt e Next). Unit tests, backend with Node, Express, PHP, Laravel, CodeIgniter and database manipulation (MySQL e MongoDB)."
+    }
+    ,
+    "weak": {
+      "title": "I can manage with some help:",
+      "description": "GDScript, Python, Ruby, Rails and native technologies."
+    }
+  },
   "carrer": {
     "title": "Carrer",
     "jobs": [

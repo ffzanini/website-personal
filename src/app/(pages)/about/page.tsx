@@ -74,6 +74,29 @@ export default function About() {
           />
         </div>
         <div className="flex flex-col gap-2 pb-6">
+          <h2 className="font-bold">{translations.about.skills.title}</h2>
+          <div className="flex flex-col gap-4 text-justify">
+            <h3 className="font-bold">
+              {translations.about.skills.strong.title}
+            </h3>
+            <h3 className="font-thin">
+              {translations.about.skills.strong.description}
+            </h3>
+            <h3 className="font-bold">
+              {translations.about.skills.medium.title}
+            </h3>
+            <h3 className="font-thin">
+              {translations.about.skills.medium.description}
+            </h3>
+            <h3 className="font-bold">
+              {translations.about.skills.weak.title}
+            </h3>
+            <h3 className="font-thin">
+              {translations.about.skills.weak.description}
+            </h3>
+          </div>
+        </div>
+        <div className="flex flex-col gap-2 pb-6">
           <h2 className="font-bold">{translations.about.carrer.title}</h2>
           <div className="lg:grid grid-cols-2 flex flex-col justify-start gap-2">
             {translations.about.carrer.jobs.map((job) => (

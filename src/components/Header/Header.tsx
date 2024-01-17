@@ -137,14 +137,14 @@ export function Header() {
                 <h2>{translations.navbar.aboutPage}</h2>
               </Link>
             </motion.li>
-            <motion.li
+            {/* <motion.li
               variants={item}
               className="p-3 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
             >
               <Link href="/contents" onClick={() => setNavbarOpen(false)}>
                 <h2>{translations.navbar.contentsPage}</h2>
               </Link>
-            </motion.li>
+            </motion.li> */}
             <motion.li
               variants={item}
               className="p-3 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
