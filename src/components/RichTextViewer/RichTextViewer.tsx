@@ -7,7 +7,7 @@ type RichTextViewerProps = {
 
 export function RichTextViewer({ content, typeText }: RichTextViewerProps) {
   const __html = DOMPurify.sanitize(content, {
-    ALLOWED_TAGS: ['strong', 'b', 'u', 'a', 'p', 'em'],
+    ALLOWED_TAGS: ['strong', 'b', 'u', 'a', 'p', 'em', 'img'],
   })
 
   switch (typeText) {
@@ -23,7 +23,11 @@ export function RichTextViewer({ content, typeText }: RichTextViewerProps) {
       return (
         <h3 className="text-justify" dangerouslySetInnerHTML={{ __html }} />
       )
+    case 'h4':
+      return (
+        <h4 className="text-justify" dangerouslySetInnerHTML={{ __html }} />
+      )
     default:
-      return <h3 dangerouslySetInnerHTML={{ __html }} />
+      return <p dangerouslySetInnerHTML={{ __html }} />
   }
 }

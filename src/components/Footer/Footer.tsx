@@ -10,7 +10,7 @@ export function Footer() {
 
   return (
     <motion.footer
-      className="flex flex-col md:flex-row bg-white dark:bg-gray-900 justify-between items-center"
+      className="flex flex-col md:flex-row bg-gray-0 dark:bg-gray-900 justify-between items-center"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -18,9 +18,9 @@ export function Footer() {
     >
       <div className="px-6 pt-6 md:pt-0">
         <div className="container flex justify-center">
-          <h3 className="flex flex-col md:flex-row ">
+          <p className="flex flex-col md:flex-row text-black dark:text-white">
             ©{yearNow} {translations.footer.by}
-          </h3>
+          </p>
         </div>
       </div>
       <div className="px-6 pt-6">
@@ -33,9 +33,9 @@ export function Footer() {
                 key={href}
                 href={href}
                 whileHover={{ scale: 1.2 }}
-                className="bg-primary-light-low-opacity dark:bg-primary-dark-low-opacity rounded-full p-2 flex justify-center items-center hover:brightness-250 transition-all duration-300"
+                className="hover:bg-primary-light-low-opacity dark:hover:bg-primary-dark-low-opacity rounded-full p-2 flex justify-center items-center hover:brightness-250 transition-all duration-300"
               >
-                <Icon width={24} height={24} />
+                <Icon width={21} height={21} />
               </motion.a>
             ))}
           </div>

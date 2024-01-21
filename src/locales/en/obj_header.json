@@ -1,7 +1,7 @@
 {
-  "aboutPage": "About me",
-  "contentsPage": "Contents",
-  "projectsPage": "Projects",
-  "contactPage": "Contact",
-  "resumePage": "Resume"
+  "aboutPage": "ABOUT",
+  "contentsPage": "CONTENTS",
+  "projectsPage": "PROJECTS",
+  "contactPage": "CONTACT",
+  "resumePage": "RESUME"
 }

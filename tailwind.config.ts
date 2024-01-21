@@ -11,12 +11,12 @@ const config: Config = {
     extend: {
       colors: {
         'primary-main': '#127A79',
-        'primary-light': '#295756',
-        'primary-dark': '#5CB2B1',
+        'primary-light': '#0E5D5B',
+        'primary-dark': '#1BACAA',
 
-        'primary-main-low-opacity': 'rgba(18, 122, 121, 0.1)',
-        'primary-light-low-opacity': 'rgba( 41, 87, 86, 0.1)',
-        'primary-dark-low-opacity': 'rgba(92, 178, 177, 0.1)',
+        'primary-main-opacity': 'rgba(18, 122, 121, 0.4)',
+        'primary-light-low-opacity': 'rgba(14, 93, 91, 0.4)',
+        'primary-dark-low-opacity': 'rgba(27, 172, 170, 0.4)',
 
         'gray-900': '#090909',
         'gray-800': '#1A1A1A',
@@ -28,15 +28,17 @@ const config: Config = {
         'gray-200': '#A5A5A5',
         'gray-100': '#CACACA',
         'gray-50': '#EFEFEF',
+        'gray-0': '#FAF9F6',
 
-        'gray-opacity-900': 'rgba(9,9,9, 0.7)',
-        'opacity-white': 'rgba(255,255,255, 0.7)',
+        'opacity-gray-900': 'rgba(9,9,9, 0.7)',
+        'opacity-gray-0': 'rgba(250, 249, 246, 0.7)',
       },
       fontSize: {
         caption: '0.875rem',
         body: '1rem',
-        h3: '1.2rem',
-        h2: '1.5rem',
+        h4: '1.2rem',
+        h3: '1.5rem',
+        h2: '2rem',
         h1: '3rem',
       },
       container: {

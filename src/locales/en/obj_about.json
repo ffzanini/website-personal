@@ -12,7 +12,7 @@
     "title": "Skills",
     "strong": {
       "title": "Most confident with:",
-      "description": "Frameworks and libs JavaScript based, especially React and Vue. CSS and some frameworks like Tailwind, MUI, Bootstrap and Bulma. Design Systems, Style-Directory and Storybook. Good practices, clean code, web performance and accessibility."
+      "description": "Frameworks and libs JavaScript based, especially React and Vue. CSS and some frameworks like Tailwind, Material UI, Bootstrap and Bulma. Design Systems, Style-Directory and Storybook. Good practices, clean code, web performance and accessibility."
     }
     ,
     "medium": {
@@ -30,7 +30,7 @@
     "jobs": [
       {
         "id": 1,
-        "title": "Nav9.tech",
+        "title": "Nav9",
         "description": "Frontend Developer & Tech Lead",
         "date": "Apr 2021 - Present"
       },

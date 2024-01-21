@@ -59,17 +59,17 @@ export function Header() {
   }
 
   return (
-    <nav className="fixed w-full backdrop-filter backdrop-blur bg-white dark:bg-gray-900 md:bg-opacity-white md:dark:bg-gray-opacity-900 z-10">
+    <nav className="fixed w-full backdrop-filter backdrop-blur bg-gray-0 dark:bg-gray-900 md:bg-opacity-gray-0 md:dark:bg-opacity-gray-900 z-10">
       <div className="px-4 py-2 mx-auto flex flex-wrap items-center justify-between">
         <Link href="/">
-          <motion.h1
+          <motion.h2
             className={fontRyanaLovely.className}
             variants={container}
             initial="hidden"
             animate="show"
           >
-            2fz
-          </motion.h1>
+            2fZ
+          </motion.h2>
         </Link>
         <div className="flex md:order-2 gap-3 md:min-w-[100px]">
           <motion.button
@@ -80,12 +80,12 @@ export function Header() {
             variants={container}
             initial="hidden"
             animate="show"
-            className="p-2 hover:bg-primary-light-low-opacity rounded-full dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
+            className="p-3 hover:bg-primary-light-low-opacity rounded-full dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
           >
             {theme === 'dark' ? (
-              <MoonIcon width={24} height={24} />
+              <MoonIcon width={21} height={21} />
             ) : (
-              <SunIcon width={24} height={24} />
+              <SunIcon width={21} height={21} />
             )}
           </motion.button>
           <motion.button
@@ -96,9 +96,13 @@ export function Header() {
             variants={container}
             initial="hidden"
             animate="show"
-            className="p-2 hover:bg-primary-light-low-opacity rounded-full dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
+            className="px-3 py-2 hover:bg-primary-light-low-opacity rounded-full dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
           >
-            {location !== 'en' ? <h3>PT</h3> : <h3>EN</h3>}
+            {location !== 'en' ? (
+              <p className="text-black dark:text-white">PT</p>
+            ) : (
+              <p className="text-black dark:text-white">EN</p>
+            )}
           </motion.button>
           <motion.button
             aria-label="Open menu"
@@ -110,9 +114,9 @@ export function Header() {
             onClick={() => setNavbarOpen(!navbarOpen)}
           >
             {!navbarOpen ? (
-              <HamburgerMenuIcon width={24} height={24} />
+              <HamburgerMenuIcon width={21} height={21} />
             ) : (
-              <Cross1Icon width={24} height={24} />
+              <Cross1Icon width={21} height={21} />
             )}
           </motion.button>
         </div>
@@ -131,34 +135,40 @@ export function Header() {
           >
             <motion.li
               variants={item}
-              className="p-3 text-center justify-center hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
+              className="px-5 py-3 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
             >
               <Link href="/about" onClick={() => setNavbarOpen(false)}>
-                <h2>{translations.navbar.aboutPage}</h2>
+                <p className="font-thin text-black dark:text-white">
+                  {translations.navbar.aboutPage}
+                </p>
               </Link>
             </motion.li>
             {/* <motion.li
               variants={item}
-              className="p-3 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
+              className="px-5 py-3 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
             >
               <Link href="/contents" onClick={() => setNavbarOpen(false)}>
-                <h2>{translations.navbar.contentsPage}</h2>
+                <p className="font-thin text-black dark:text-white">{translations.navbar.contentsPage}</p>
               </Link>
             </motion.li> */}
             <motion.li
               variants={item}
-              className="p-3 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
+              className="px-5 py-3 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
             >
               <Link href="/projects" onClick={() => setNavbarOpen(false)}>
-                <h2>{translations.navbar.projectsPage}</h2>
+                <p className="font-thin text-black dark:text-white">
+                  {translations.navbar.projectsPage}
+                </p>
               </Link>
             </motion.li>
             <motion.li
               variants={item}
-              className="p-3 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
+              className="px-5 py-3 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
             >
               <Link href="/contact" onClick={() => setNavbarOpen(false)}>
-                <h2>{translations.navbar.contactPage}</h2>
+                <p className="font-thin text-black dark:text-white">
+                  {translations.navbar.contactPage}
+                </p>
               </Link>
             </motion.li>
           </motion.ul>

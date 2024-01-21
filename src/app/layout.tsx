@@ -1,12 +1,12 @@
 import type { Metadata } from 'next'
 
-import { Background, Header, Footer } from '@/components'
+import { Header, Footer } from '@/components'
 import { AppProvider } from '@/providers'
 import { fontMavenPro } from './fonts'
 
 import './globals.css'
 
-const description = `A simple men, software engineer, artist, musician, writer and a indie developer enthusiast`
+const description = `software engineer, artist, musician, writer and a indie developer enthusiast`
 export const metadata: Metadata = {
   title: 'Felipe Frant Zanini | Software Engineer',
   icons: '/favicon.ico',
@@ -36,7 +36,6 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body className={fontMavenPro.className}>
         <AppProvider>
-          <Background />
           <Header />
           {children}
           <Footer />

@@ -14,10 +14,7 @@ export default function Contact() {
     <Wrapper>
       <div className="flex flex-col gap-2 p-4">
         <h1 className="font-bold">{translations.contact.title}</h1>
-        <RichTextViewer
-          typeText="h3"
-          content={translations.contact.sub_title}
-        />
+        <RichTextViewer content={translations.contact.sub_title} />
         <div className="flex pt-12 gap-20 lg:gap-8 flex-col">
           <ContactForm />
         </div>
@@ -79,9 +76,9 @@ function ContactForm() {
         <button
           disabled={!enableSubmit}
           type="submit"
-          className="disabled:grayscale disabled:cursor-not-allowed px-2 py-2 md:px-12 md:py-4 bg-white text-center border border-gray-200 focus:outline-none hover:bg-primary-light rounded-full dark:bg-gray-900 dark:border-gray-600 dark:hover:bg-primary-dark dark:hover:border-gray-600 dark:focus:ring-gray-700"
+          className="disabled:grayscale disabled:cursor-not-allowed px-2 py-2 md:px-12 md:py-4 bg-white text-center border border-gray-200 focus:outline-none hover:bg-primary-light rounded-full dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-primary-dark dark:hover:border-gray-600 dark:focus:ring-gray-700"
         >
-          <h3>{translations.contact.button_text}</h3>
+          <p>{translations.contact.button_text}</p>
         </button>
       </div>
     </form>

@@ -12,17 +12,19 @@
 }
 
 html[class="dark"] {
-	--bg: theme("colors.gray-800");
+	--bg: theme("colors.gray-900");
 	--heading-color: theme("colors.gray-50");
-	--text-color: theme("colors.gray-50");
+	--text-color: theme("colors.gray-200");
+	--text-color-bold: theme("colors.gray-50");
 	--text-hover-link: theme("colors.primary-dark");
 }
 
 
 html[class="light"] {
-	--bg: theme("colors.gray-50");
-	--heading-color: theme("colors.gray-800");
-	--text-color: theme("colors.gray-800");
+	--bg: theme("colors.gray-0");
+	--heading-color: theme("colors.gray-700");
+	--text-color: theme("colors.gray-700");
+	--text-color-bold: theme("colors.gray-900");
 	--text-hover-link: theme("colors.primary-light");
 }
 
@@ -43,18 +45,22 @@ h2 {
 	font-size: theme("fontSize.h2");
 }
 
-h3, a {
+h3 {
 	font-size: theme("fontSize.h3");
-	color: var(--text-color);
 }
 
-p, u, span, li, input, button, label, select, option, textarea {
+h4 {
+	font-size: theme("fontSize.h4");
+}
+
+ p, u, span, li, input, button, label, select, option, textarea {
 	font-size: theme("fontSize.body");
 	color: var(--text-color);
 }
 
-b {
-	color: var(--text-color);
+b, a {
+	font-size: theme("fontSize.body");
+	color: var(--text-color-bold);
 	font-weight: bold;
 }
 

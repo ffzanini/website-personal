@@ -75,25 +75,25 @@ export default function About() {
         </div>
         <div className="flex flex-col gap-2 pb-6">
           <h2 className="font-bold">{translations.about.skills.title}</h2>
-          <div className="flex flex-col gap-4 text-justify">
-            <h3 className="font-bold">
-              {translations.about.skills.strong.title}
-            </h3>
-            <h3 className="font-thin">
-              {translations.about.skills.strong.description}
-            </h3>
-            <h3 className="font-bold">
-              {translations.about.skills.medium.title}
-            </h3>
-            <h3 className="font-thin">
-              {translations.about.skills.medium.description}
-            </h3>
-            <h3 className="font-bold">
-              {translations.about.skills.weak.title}
-            </h3>
-            <h3 className="font-thin">
-              {translations.about.skills.weak.description}
-            </h3>
+          <div className="lg:grid grid-cols-3 flex flex-col justify-start gap-8 lg:gap-8">
+            <div className="flex flex-col gap-2">
+              <h3 className="font-bold">
+                {translations.about.skills.strong.title}
+              </h3>
+              <p>{translations.about.skills.strong.description}</p>
+            </div>
+            <div className="flex flex-col gap-2">
+              <h3 className="font-bold">
+                {translations.about.skills.medium.title}
+              </h3>
+              <p>{translations.about.skills.medium.description}</p>
+            </div>
+            <div className="flex flex-col gap-2">
+              <h3 className="font-bold">
+                {translations.about.skills.weak.title}
+              </h3>
+              <p>{translations.about.skills.weak.description}</p>
+            </div>
           </div>
         </div>
         <div className="flex flex-col gap-2 pb-6">
@@ -101,8 +101,8 @@ export default function About() {
           <div className="lg:grid grid-cols-2 flex flex-col justify-start gap-2">
             {translations.about.carrer.jobs.map((job) => (
               <div key={job.id}>
-                <h3 className="font-bold">{job.title}</h3>
-                <h3>{job.description}</h3>
+                <h4 className="font-bold">{job.title}</h4>
+                <h4>{job.description}</h4>
                 <p className="font-thin">{job.date}</p>
               </div>
             ))}
@@ -113,8 +113,8 @@ export default function About() {
             <h2 className="font-bold">{translations.about.education.title}</h2>
             {translations.about.education.graduations.map((graduation) => (
               <div key={graduation.id}>
-                <h3 className="font-bold">{graduation.title}</h3>
-                <h3>{graduation.description}</h3>
+                <h4 className="font-bold">{graduation.title}</h4>
+                <h4>{graduation.description}</h4>
                 <p className="font-thin">{graduation.date}</p>
               </div>
             ))}
@@ -123,28 +123,27 @@ export default function About() {
             <h2 className="font-bold">{translations.about.courses.title}</h2>
             {translations.about.courses.graduations_extra.map((course) => (
               <div key={course.id}>
-                <h3 className="font-bold">{course.title}</h3>
-                <h3>{course.description}</h3>
+                <h4 className="font-bold">{course.title}</h4>
+                <h4>{course.description}</h4>
                 <p className="font-thin">{course.date}</p>
               </div>
             ))}
           </div>
         </div>
-        <div className="flex flex-col lg:grid grid-cols-2 pb-6 gap-8 lg:gap-2">
+        <div className="flex flex-col pb-6 gap-8 lg:w-3/5 ">
           <div className="text-justify lg:text-left">
-            <h2 className="font-bold">
+            <h3 className="font-bold">
               {translations.about.about_section.about_title}
-            </h2>
-
+            </h3>
             <RichTextViewer
               content={translations.about.about_section.about_description}
             />
           </div>
           <div className="text-justify lg:text-left">
-            <h2 className="font-bold">
+            <h3 className="font-bold">
               {translations.about.about_contact.contact_title}
-            </h2>
-            <h3>
+            </h3>
+            <p>
               {translations.about.about_contact.contact_description_one}
               <Link href="/contact" className="underline font-bold">
                 {translations.about.about_contact.contact_link_one}
@@ -158,7 +157,7 @@ export default function About() {
                 {translations.about.about_contact.contact_link_two}
               </Link>
               .
-            </h3>
+            </p>
           </div>
         </div>
       </div>

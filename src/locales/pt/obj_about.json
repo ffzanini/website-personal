@@ -13,7 +13,7 @@
     "jobs": [
       {
         "id": 1,
-        "title": "Nav9.tech",
+        "title": "Nav9",
         "description": "Frontend Developer & Tech Lead",
         "date": "Abr 2021 - Present"
       },
@@ -41,7 +41,7 @@
     "title": "Habilidades",
     "strong": {
       "title": "Meus pontos fortes são:",
-      "description": "Frameworks e libs baseadas em JavaScript, especialmente React e Vue. CSS e seus frameworks, como Tailwind, MUI, Bootstrap e Bulma. Criacão de Design Systems, Style-Directory e Storybook. Boas práticas, código limpo, web performance e acessibilidade."
+      "description": "Frameworks e libs baseadas em JavaScript, especialmente React e Vue. CSS e seus frameworks, como Tailwind, Material UI, Bootstrap e Bulma. Criacão de Design Systems, Style-Directory e Storybook. Boas práticas, código limpo, web performance e acessibilidade."
     }
     ,
     "medium": {
