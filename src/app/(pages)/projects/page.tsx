@@ -114,7 +114,9 @@ export default function Contact() {
                 onClick={showMore}
                 className="px-2 py-2 md:px-8 md:py-4 bg-white text-center border border-gray-200 focus:outline-none hover:bg-primary-light rounded-full dark:bg-gray-900 dark:border-gray-600 dark:hover:bg-primary-dark dark:hover:border-gray-600 dark:focus:ring-gray-700"
               >
-                <p>{translations.projects.button_text}</p>
+                <p className="text-black dark:text-white hover:text-white dark:hover:text-black">
+                  {translations.projects.button_text}
+                </p>
               </button>
             </div>
           ) : (
