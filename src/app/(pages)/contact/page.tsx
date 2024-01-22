@@ -76,9 +76,9 @@ function ContactForm() {
         <button
           disabled={!enableSubmit}
           type="submit"
-          className="disabled:grayscale disabled:cursor-not-allowed px-2 py-2 md:px-12 md:py-4 bg-white text-center border border-gray-200 focus:outline-none hover:bg-primary-light rounded-full dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-primary-dark dark:hover:border-gray-600 dark:focus:ring-gray-700"
+          className="disabled:grayscale disabled:cursor-not-allowed bg-white text-center border border-gray-200 focus:outline-none hover:bg-primary-light rounded-full dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-primary-dark dark:hover:border-gray-600 dark:focus:ring-gray-700"
         >
-          <p className="text-black dark:text-white hover:text-white dark:hover:text-black">
+          <p className="text-black dark:text-white hover:text-white dark:hover:text-black px-2 py-2 md:px-12 md:py-4">
             {translations.contact.button_text}
           </p>
         </button>

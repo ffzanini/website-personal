@@ -103,7 +103,7 @@ export default function About() {
               <div key={job.id}>
                 <h4 className="font-bold">{job.title}</h4>
                 <h4>{job.description}</h4>
-                <p className="font-thin">{job.date}</p>
+                <p>{job.date}</p>
               </div>
             ))}
           </div>
@@ -115,7 +115,7 @@ export default function About() {
               <div key={graduation.id}>
                 <h4 className="font-bold">{graduation.title}</h4>
                 <h4>{graduation.description}</h4>
-                <p className="font-thin">{graduation.date}</p>
+                <p>{graduation.date}</p>
               </div>
             ))}
           </div>
@@ -125,7 +125,7 @@ export default function About() {
               <div key={course.id}>
                 <h4 className="font-bold">{course.title}</h4>
                 <h4>{course.description}</h4>
-                <p className="font-thin">{course.date}</p>
+                <p>{course.date}</p>
               </div>
             ))}
           </div>

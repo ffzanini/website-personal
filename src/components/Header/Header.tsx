@@ -138,7 +138,7 @@ export function Header() {
               className="px-5 py-3 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
             >
               <Link href="/about" onClick={() => setNavbarOpen(false)}>
-                <p className="font-thin text-black dark:text-white">
+                <p className="font-light text-black dark:text-white">
                   {translations.navbar.aboutPage}
                 </p>
               </Link>
@@ -148,7 +148,7 @@ export function Header() {
               className="px-5 py-3 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
             >
               <Link href="/contents" onClick={() => setNavbarOpen(false)}>
-                <p className="font-thin text-black dark:text-white">{translations.navbar.contentsPage}</p>
+                <p className="font-light text-black dark:text-white">{translations.navbar.contentsPage}</p>
               </Link>
             </motion.li> */}
             <motion.li
@@ -156,7 +156,7 @@ export function Header() {
               className="px-5 py-3 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
             >
               <Link href="/projects" onClick={() => setNavbarOpen(false)}>
-                <p className="font-thin text-black dark:text-white">
+                <p className="font-light text-black dark:text-white">
                   {translations.navbar.projectsPage}
                 </p>
               </Link>
@@ -166,7 +166,7 @@ export function Header() {
               className="px-5 py-3 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
             >
               <Link href="/contact" onClick={() => setNavbarOpen(false)}>
-                <p className="font-thin text-black dark:text-white">
+                <p className="font-light text-black dark:text-white">
                   {translations.navbar.contactPage}
                 </p>
               </Link>
