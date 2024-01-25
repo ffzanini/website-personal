@@ -95,12 +95,12 @@ input:focus, textarea:focus {
 }
 
 *::-webkit-scrollbar{
-	width:0.2rem;
-	background-color: #EFEFEF;
+	width:0.1rem;
+	background-color: var(--bg);
 }
 
 *::-webkit-scrollbar-thumb{
-	background-color: #5B5B5B;
+	background-color: var(--bg);
 }
 
 .alter-section:nth-child(even) {
