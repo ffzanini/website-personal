@@ -6,111 +6,63 @@
   "projects": [
     {
       "id": 1,
-      "title": "projects 1",
+      "title": "Conexia Educação",
       "develop_at_text": "Made at ",
-      "develop_at": "Nav9.tech",
+      "develop_at": "Nav9",
       "develop_at_site": "https://nav9.tech/",
       "develop_at_button": "Visit the project",
-      "description": "project 1",
-      "image": "/images/me_coding.jpeg",
-      "link": "https://doveresearch.org/",
-      "technologies": ["React", "CSS"]
+      "description": "Education plataform.",
+      "image": "/images/projects/project-conexia.png",
+      "link": "https://www.conexia.com.br/",
+      "technologies": ["JavaScript", "TypeScript", "React", "CSS", "Material UI"]
     },
     {
       "id": 2,
-      "title": "projects 2",
-      "develop_at_text": "Made at ",
-      "develop_at": "Nav9.tech",
-      "develop_at_site": "https://nav9.tech/",
+      "title": "Dove Research",
+      "develop_at_text": "Made autonomus: ",
+      "develop_at": "Felipe Frantz Zanini",
+      "develop_at_site": "https://ffzanini.dev/",
       "develop_at_button": "Visit the project",
-      "description": "project 2",
-      "image": "/images/me_coding.jpeg",
+      "description": "Website designed to inform project vacancies, centralize articles and works from the research group.",
+      "image": "/images/projects/project-doveresearch.png",
       "link": "https://doveresearch.org/",
-      "technologies": ["React", "CSS"]
+      "technologies": ["PHP", "CodeIgniter", "MySQL", "CSS", "Bootstrap", "Hostgator"]
     },
     {
       "id": 3,
-      "title": "projects 3",
+      "title": "EducaCross",
       "develop_at_text": "Made at ",
-      "develop_at": "Nav9.tech",
+      "develop_at": "Nav9",
       "develop_at_site": "https://nav9.tech/",
       "develop_at_button": "Visit the project",
-      "description": "project 3",
-      "image": "/images/me_coding.jpeg",
-      "link": "https://doveresearch.org/",
-      "technologies": ["React", "CSS"]
+      "description": "Education plataform.",
+      "image": "/images/projects/project-educacross.png",
+      "link": "https://www.educacross.com.br/",
+      "technologies": ["JavaScript","TypeScript", "Angular", "Vue", "CSS", "Tailwind"]
     },
     {
       "id": 4,
-      "title": "projects 1",
+      "title": "Iguatemi",
       "develop_at_text": "Made at ",
-      "develop_at": "Nav9.tech",
+      "develop_at": "Nav9",
       "develop_at_site": "https://nav9.tech/",
-      "description": "project 1",
+      "description": "Creation of the shopkeeper portal, the main tool used for sales metrics, service requests, and other services offered to the customers.",
       "develop_at_button": "Visit the project",
-      "image": "/images/me_coding.jpeg",
-      "link": "https://doveresearch.org/",
-      "technologies": ["React", "CSS"]
+      "image": "/images/projects/project-iguatemi.png",
+      "link": "https://www.portaliguatemi.com.br/",
+      "technologies": ["JavaScript", "TypeScript","React", "Vite", "CSS", "Material UI", "Java", "MongoDB", "SalesForce", "SAP"]
     },
     {
       "id": 5,
-      "title": "projects 2",
+      "title": "Vittude",
       "develop_at_text": "Made at ",
-      "develop_at": "Nav9.tech",
+      "develop_at": "Nav9",
       "develop_at_site": "https://nav9.tech/",
-      "description": "project 2",
+      "description": "Platform created to connect psychologists and patients, offering a secure system where consultations can be carried out.",
       "develop_at_button": "Visit the project",
-      "image": "/images/me_coding.jpeg",
-      "link": "https://doveresearch.org/",
-      "technologies": ["React", "CSS"]
-    },
-    {
-      "id": 6,
-      "title": "projects 3",
-      "develop_at_text": "Made at ",
-      "develop_at": "Nav9.tech",
-      "develop_at_site": "https://nav9.tech/",
-      "description": "project 3",
-      "develop_at_button": "Visit the project",
-      "image": "/images/me_coding.jpeg",
-      "link": "https://doveresearch.org/",
-      "technologies": ["React", "CSS"]
-    },
-    {
-      "id": 7,
-      "title": "projects 1",
-      "develop_at_text": "Made at ",
-      "develop_at": "Nav9.tech",
-      "develop_at_site": "https://nav9.tech/",
-      "description": "project 1",
-      "develop_at_button": "Visit the project",
-      "image": "/images/me_coding.jpeg",
-      "link": "https://doveresearch.org/",
-      "technologies": ["React", "CSS"]
-    },
-    {
-      "id": 8,
-      "title": "projects 2",
-      "develop_at_text": "Made at ",
-      "develop_at": "Nav9.tech",
-      "develop_at_site": "https://nav9.tech/",
-      "description": "project 2",
-      "develop_at_button": "Visit the project",
-      "image": "/images/me_coding.jpeg",
-      "link": "https://doveresearch.org/",
-      "technologies": ["React", "CSS"]
-    },
-    {
-      "id": 9,
-      "title": "projects 3",
-      "develop_at_text": "Made at ",
-      "develop_at": "Nav9.tech",
-      "develop_at_site": "https://nav9.tech/",
-      "description": "project 3",
-      "develop_at_button": "Visit the project",
-      "image": "/images/me_coding.jpeg",
-      "link": "https://doveresearch.org/",
-      "technologies": ["React", "CSS"]
+      "image": "/images/projects/project-vittude.png",
+      "link": "https://www.vittude.com/",
+      "technologies": ["JavaScript", "React", "CSS", "SASS", "Material UI"]
     }
   ]
 }

@@ -40,11 +40,7 @@ export default function Contact() {
   }
 
   useEffect(() => {
-    const records =
-      translations.projects.projects.slice(
-        indexOfFirstRecord,
-        indexOfLastRecord,
-      ) || []
+    const records = translations.projects.projects.slice(0, 3) || []
 
     setCurrentRecords(records)
     setCurrentPage(1)
@@ -59,16 +55,16 @@ export default function Contact() {
     <Wrapper>
       <div className="flex flex-col gap-2 p-4">
         <h1 className="font-bold">{translations.projects.title}</h1>
-        <p className="text-justify">{translations.projects.sub_title}</p>
+        <p>{translations.projects.sub_title}</p>
         <div className="flex flex-col gap-4">
           {currentRecords.map((project) => (
             <div
-              className="flex flex-col-reverse lg:flex-row justify-between gap-8 pb-4 pt-4 lg:pb-8 alter-section"
+              className="flex flex-col-reverse lg:flex-row justify-between gap-8 pb-4 pt-8 lg:pb-8 lg:pt-12 alter-section"
               key={project.id}
             >
-              <div className="text-justify w-full">
+              <div className="w-full">
                 <h3 className="font-bold pb-2">{project.title}</h3>
-                <h4 className="pb-4">
+                <p className="pb-2 md:pb-4">
                   {project.develop_at_text}
                   <Link
                     className="underline font-bold"
@@ -77,9 +73,9 @@ export default function Contact() {
                   >
                     {project.develop_at}
                   </Link>
-                </h4>
+                </p>
                 <p className="pb-4">{project.description}</p>
-                <div className="flex flex-row pb-4">
+                <div className="flex flex-row flex-wrap pb-4 gap-2">
                   {project.technologies.map((tech) => (
                     <div
                       key={tech}
@@ -97,10 +93,10 @@ export default function Contact() {
                   {project.develop_at_button}
                 </Link>
               </div>
-              <div className="text-justify w-full">
+              <div className="w-full">
                 <Image
                   src={project.image}
-                  className="rounded"
+                  className="rounded border border-gray-900 dark:border-gray-50"
                   alt={project.title}
                   width={600}
                   height={200}

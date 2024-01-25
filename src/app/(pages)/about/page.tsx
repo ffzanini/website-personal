@@ -14,7 +14,7 @@ export default function About() {
         <h1 className="font-bold">{translations.about.title}</h1>
         <h3 className="font-bold">{translations.about.sub_title}</h3>
         <div className="lg:grid grid-cols-1 flex flex-col gap-4 pb-4 lg:pb-12">
-          <div className="flex flex-col gap-4 text-justify">
+          <div className="flex flex-col gap-4">
             <RichTextViewer
               content={translations.about.description.description_one}
             />
@@ -131,7 +131,7 @@ export default function About() {
           </div>
         </div>
         <div className="flex flex-col pb-6 gap-8 lg:w-3/5 ">
-          <div className="text-justify lg:text-left">
+          <div className="text-left">
             <h3 className="font-bold">
               {translations.about.about_section.about_title}
             </h3>
@@ -139,7 +139,7 @@ export default function About() {
               content={translations.about.about_section.about_description}
             />
           </div>
-          <div className="text-justify lg:text-left">
+          <div className="text-left">
             <h3 className="font-bold">
               {translations.about.about_contact.contact_title}
             </h3>

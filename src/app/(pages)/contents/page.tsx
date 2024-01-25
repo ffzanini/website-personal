@@ -14,7 +14,7 @@ export default function Contact() {
         <h1 className="font-bold">{translations.contents.title}</h1>
         <h3 className="font-bold">{translations.contents.sub_title}</h3>
         <div className="lg:grid grid-cols-2 flex flex-col gap-4 pb-4 pt-4 lg:pt-8 lg:pb-12">
-          <div className="flex flex-col gap-4 text-justify">
+          <div className="flex flex-col gap-4">
             <h2 className="font-bold">{translations.contents.youtube.title}</h2>
             <RichTextViewer
               content={translations.contents.youtube.description}
@@ -78,7 +78,7 @@ export default function Contact() {
               className="flex flex-col-reverse lg:flex-row justify-between gap-8 pb-4 pt-4 lg:pt-8 lg:pb-12 alter-section"
               key={game.id}
             >
-              <div className="text-justify w-full">
+              <div className="w-full">
                 <h2 className="font-bold pb-4">{game.title}</h2>
                 <h3 className="pb-4">{game.description}</h3>
                 <Link
@@ -89,7 +89,7 @@ export default function Contact() {
                   link {game.title}
                 </Link>
               </div>
-              <div className="text-justify w-full">
+              <div className="w-full">
                 <Image
                   src={game.image}
                   className="rounded"
