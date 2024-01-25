@@ -26,7 +26,7 @@
       "description": "Site foi criado com o propósito de divulgar vagas do projeto, bem como centralizar artigos e trabalhos produzidos pelo grupo de pesquisa.",
       "image": "/images/projects/project-doveresearch.png",
       "link": "https://doveresearch.org/",
-      "technologies": ["PHP", "CodeIgniter", "MySQL", "CSS", "Bootstrap", "Hostgator"]
+      "technologies": ["JavaScript", "PHP", "CodeIgniter", "MySQL", "CSS", "Bootstrap", "Hostgator"]
     },
     {
       "id": 3,
@@ -50,7 +50,7 @@
       "develop_at_button": "Visite o projeto",
       "image": "/images/projects/project-iguatemi.png",
       "link": "https://www.portaliguatemi.com.br/",
-      "technologies": ["JavaScript", "TypeScript","React", "Vite", "CSS", "Material UI", "Java", "MongoDB", "SalesForce", "SAP"]
+      "technologies": ["JavaScript", "TypeScript","React", "Vite", "CSS", "Material UI", "Java", "Sensedia", "Microsoft Azure", "MongoDB", "SalesForce", "SAP"]
     },
     {
       "id": 5,
