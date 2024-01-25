@@ -62,7 +62,7 @@ export default function Contact() {
               className="flex flex-col-reverse lg:flex-row justify-between gap-8 pb-4 pt-8 lg:pb-8 lg:pt-12 alter-section"
               key={project.id}
             >
-              <div className="w-full">
+              <div className="w-full md:w-2/5">
                 <h3 className="font-bold pb-2">{project.title}</h3>
                 <p className="pb-2 md:pb-4">
                   {project.develop_at_text}
@@ -93,13 +93,13 @@ export default function Contact() {
                   {project.develop_at_button}
                 </Link>
               </div>
-              <div className="w-full">
+              <div className="w-full md:w-3/5">
                 <Image
                   src={project.image}
                   className="rounded border border-gray-900 dark:border-gray-50"
                   alt={project.title}
-                  width={600}
-                  height={200}
+                  width={1200}
+                  height={600}
                 />
               </div>
             </div>
