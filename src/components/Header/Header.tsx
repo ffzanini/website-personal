@@ -1,6 +1,7 @@
 'use client'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { motion, useScroll, useSpring } from 'framer-motion'
 import { useTheme } from 'next-themes'
 
@@ -19,7 +20,10 @@ export function Header() {
   const { theme, setTheme } = useTheme()
   const { scrollYProgress } = useScroll()
 
-  const [navbarOpen, setNavbarOpen] = React.useState(false)
+  const [navbarOpen, setNavbarOpen] = useState(false)
+  const [checkTheme, setCheckTheme] = useState<string | undefined>()
+
+  const pathname = usePathname()
 
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -58,6 +62,12 @@ export function Header() {
     }
   }
 
+  useEffect(() => {
+    if (theme) {
+      setCheckTheme(theme)
+    }
+  }, [theme])
+
   return (
     <nav className="fixed w-full backdrop-filter backdrop-blur bg-gray-0 dark:bg-gray-900 md:bg-opacity-gray-0 md:dark:bg-opacity-gray-900 z-10">
       <div className="px-4 py-2 mx-auto flex flex-wrap items-center justify-between">
@@ -82,7 +92,7 @@ export function Header() {
             animate="show"
             className="p-3 hover:bg-primary-light-low-opacity rounded-full dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
           >
-            {theme === 'dark' ? (
+            {checkTheme === 'dark' ? (
               <MoonIcon width={21} height={21} />
             ) : (
               <SunIcon width={21} height={21} />
@@ -174,8 +184,9 @@ export function Header() {
           </motion.ul>
         </motion.div>
       </div>
-
-      <motion.div className="progress-bar" style={{ scaleX }} />
+      {pathname !== '/' && pathname !== '/contact' && (
+        <motion.div className="progress-bar" style={{ scaleX }} />
+      )}
     </nav>
   )
 }
