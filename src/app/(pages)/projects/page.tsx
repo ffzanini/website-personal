@@ -49,7 +49,7 @@ export default function Contact() {
       top: 0,
       behavior: 'smooth',
     })
-  }, [location])
+  }, [location, translations.projects.projects])
 
   return (
     <Wrapper>

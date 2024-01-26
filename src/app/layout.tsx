@@ -34,7 +34,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className="dark" translate="no">
+      <meta name="google" content="notranslate" />
       <body className={fontMavenPro.className}>
         <AppProvider>
           <Header />
