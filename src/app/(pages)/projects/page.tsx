@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -10,7 +10,7 @@ export default function Contact() {
   const { translations, location } = useTranslation()
 
   const [currentPage, setCurrentPage] = useState(1)
-  const [recordsPerPage] = useState(3)
+  const recordsPerPage = useMemo(() => 3, [])
 
   const indexOfLastRecord = currentPage * recordsPerPage
   const indexOfLastRecordNextPage = (currentPage + 1) * recordsPerPage

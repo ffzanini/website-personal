@@ -12,3 +12,15 @@ export const fontRyanaLovely = localFont({
   variable: '--font-ryanaLovely',
   display: 'swap',
 })
+
+export const pixeloidSans = localFont({
+  src: '../../public/fonts/PixeloidSans.ttf',
+  variable: '--font-pixeloidsans',
+  display: 'swap',
+})
+
+export const pixeloidSansBold = localFont({
+  src: '../../public/fonts/PixeloidSans-Bold.ttf',
+  variable: '--font-pixeloidsans-bold',
+  display: 'swap',
+})

@@ -6,6 +6,6 @@ import navbar from './obj_header.json'
 import home from './obj_home.json'
 import projects from './obj_projects.json'
 
-const en = { about, contact, contents, footer, navbar, home, projects }
+const pt = { about, contact, contents, footer, navbar, home, projects }
 
-export default en
+export default pt
