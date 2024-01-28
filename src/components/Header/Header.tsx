@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion, useScroll, useSpring } from 'framer-motion'
 import { useTheme } from 'next-themes'
+import { US as UsFlag, BR as BrFlag } from 'country-flag-icons/react/3x2'
 
 import {
   MoonIcon,
@@ -109,9 +110,15 @@ export function Header() {
             className="px-3 py-2 hover:bg-primary-light-low-opacity rounded-full dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
           >
             {location !== 'en' ? (
-              <p className="text-black dark:text-white">PT</p>
+              <BrFlag
+                title="Brazil"
+                className="text-black dark:text-white w-8 opacity-70"
+              />
             ) : (
-              <p className="text-black dark:text-white">EN</p>
+              <UsFlag
+                title="United States"
+                className="text-black dark:text-white w-8 opacity-70"
+              />
             )}
           </motion.button>
           <motion.button

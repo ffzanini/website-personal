@@ -38,7 +38,7 @@ const InternacionalizaionProvider = ({
 }: {
   children: React.ReactNode
 }) => {
-  const [location, setLocation] = useState<Locations>('en')
+  const [location, setLocation] = useState<Locations>('pt')
 
   const getTranslations = useCallback(() => {
     if (location === 'en') return en
