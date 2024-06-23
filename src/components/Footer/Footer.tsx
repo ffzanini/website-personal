@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion'
 
 import { useTranslation } from '@/context'
-import { socials } from '@/constants'
+import { socials } from '@/constants/socials'
 
 export function Footer() {
   const { translations } = useTranslation()

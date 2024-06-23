@@ -49,7 +49,7 @@
       "description": "Desenvolvimento do portal do lojista, a principal ferramenta utilizada para métricas de vendas, solicitações de serviços, e outros recursos oferecidos aos seus clientes.",
       "develop_at_button": "Visite o projeto",
       "image": "/images/projects/project-iguatemi.png",
-      "link": "https://www.portaliguatemi.com.br/",
+      "link": "https://www.iguatemi.com.br/",
       "technologies": ["JavaScript", "TypeScript","React", "Vite", "CSS", "Material UI", "Java", "Sensedia", "Microsoft Azure", "MongoDB", "SalesForce", "SAP"]
     },
     {

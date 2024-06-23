@@ -49,7 +49,7 @@
       "description": "Development of the shopkeeper portal, the main tool used for sales metrics, service requests, and other features offered to its clients.",
       "develop_at_button": "Visit the project",
       "image": "/images/projects/project-iguatemi.png",
-      "link": "https://www.portaliguatemi.com.br/",
+      "link": "https://www.iguatemi.com.br/",
       "technologies": ["JavaScript", "TypeScript","React", "Vite", "CSS", "Material UI", "Java", "Sensedia", "Microsoft Azure", "MongoDB", "SalesForce", "SAP"]
     },
     {

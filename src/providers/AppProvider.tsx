@@ -7,7 +7,11 @@ export function AppProvider({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <ThemeProvider attribute="class" defaultTheme="dark">
+    <ThemeProvider
+      attribute="class"
+      defaultTheme="dark"
+      disableTransitionOnChange
+    >
       <InternacionalizaionProvider>
         <Toaster
           position="top-center"

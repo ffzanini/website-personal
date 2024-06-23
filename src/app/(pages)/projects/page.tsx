@@ -79,7 +79,10 @@ export default function Contact() {
                   {project.technologies.map((tech) => (
                     <div
                       key={tech}
-                      className="text-sm font-medium mr-2 px-2.5 py-0.5 bg-primary-main-opacity text-primary-light border border-primary-light rounded-full dark:text-primary-dark dark:border-primary-dark"
+                      className="text-sm font-medium mr-2 px-2.5 py-0.5 
+                      bg-primary-color-300 text-opacity-color-white-theme-text 
+                      border border-primary-color-800 rounded-full 
+                      dark:text-opacity-color-dark-theme-text dark:border-primary-color-300 dark:bg-primary-color-800"
                     >
                       {tech}
                     </div>
