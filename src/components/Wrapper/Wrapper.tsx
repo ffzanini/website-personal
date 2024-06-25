@@ -1,28 +1,7 @@
 'use client'
 import { motion, AnimatePresence } from 'framer-motion'
-import { animate, AnimVariants } from '@/lib/utils'
-
-const contentAnim: AnimVariants = {
-  initial: {
-    opacity: 0,
-    y: 20,
-  },
-  enter: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-    },
-  },
-  exit: {
-    opacity: 0,
-    y: -20,
-    transition: {
-      duration: 0.5,
-      ease: 'easeInOut',
-    },
-  },
-}
+import { animate } from '@/lib/utils'
+import { contentAnim } from '@/constants/animations'
 
 export function Wrapper({ children }: Readonly<{ children: React.ReactNode }>) {
   return (

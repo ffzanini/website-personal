@@ -1,40 +1,40 @@
 import {
-  EnvelopeClosedIcon,
-  GitHubLogoIcon,
-  InstagramLogoIcon,
-  TwitterLogoIcon,
-  LinkedInLogoIcon,
-  VideoIcon,
-} from '@radix-ui/react-icons'
+  RiLinkedinLine,
+  RiGithubLine,
+  RiInstagramLine,
+  RiTwitterXLine,
+  RiYoutubeLine,
+  RiMailLine,
+} from 'react-icons/ri'
 
 export const socials = [
   {
-    icon: LinkedInLogoIcon,
+    icon: RiLinkedinLine,
     href: 'https://www.linkedin.com/in/ffzanini/',
     name: 'LinkedIn',
   },
   {
-    icon: GitHubLogoIcon,
+    icon: RiGithubLine,
     href: 'https://github.com/ffzanini/',
     name: 'GitHub',
   },
   {
-    icon: InstagramLogoIcon,
+    icon: RiInstagramLine,
     href: 'https://instagram.com/ffzanini/',
     name: 'Instagram',
   },
   {
-    icon: TwitterLogoIcon,
+    icon: RiTwitterXLine,
     href: 'https://www.twitter.com/ffzanini/',
     name: 'LinkedIn',
   },
   {
-    icon: VideoIcon,
+    icon: RiYoutubeLine,
     href: 'https://www.youtube.com/channel/UCVHgTgRK0M5kt2Gvi60b7Eg',
     name: 'YouTube',
   },
   {
-    icon: EnvelopeClosedIcon,
+    icon: RiMailLine,
     href: 'mailto:devffzanini@gmail.com',
     name: 'Email',
   },

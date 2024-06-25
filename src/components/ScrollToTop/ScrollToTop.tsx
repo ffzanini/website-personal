@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import { ArrowUpIcon } from '@radix-ui/react-icons'
+import { RxArrowUp } from 'react-icons/rx'
 
 export function ScrollToTopButton() {
   const [isVisible, setIsVisible] = useState(false)
@@ -30,7 +30,7 @@ export function ScrollToTopButton() {
       style={{ display: isVisible ? 'block' : 'none' }}
       onClick={goTop}
     >
-      <ArrowUpIcon width={24} height={24} />
+      <RxArrowUp width={24} height={24} />
     </motion.button>
   )
 }

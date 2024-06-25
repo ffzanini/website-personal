@@ -6,15 +6,13 @@ import { motion, useScroll, useSpring } from 'framer-motion'
 import { useTheme } from 'next-themes'
 import { US as UsFlag, BR as BrFlag } from 'country-flag-icons/react/3x2'
 
-import {
-  MoonIcon,
-  SunIcon,
-  HamburgerMenuIcon,
-  Cross1Icon,
-} from '@radix-ui/react-icons'
+import { RxMoon, RxSun, RxHamburgerMenu, RxCross1 } from 'react-icons/rx'
 
 import { fontRyanaLovely } from '@/app/fonts'
 import { useTranslation } from '@/context'
+import { cn, animate } from '@/lib/utils'
+import { indicator, container, item } from '@/constants/animations'
+import { menu } from '@/constants/menu'
 
 export function Header() {
   const { location, setLocation, translations } = useTranslation()
@@ -23,6 +21,7 @@ export function Header() {
 
   const [navbarOpen, setNavbarOpen] = useState(false)
   const [checkTheme, setCheckTheme] = useState<string | undefined>()
+  const [hover, setHover] = useState<number | null>(null)
 
   const pathname = usePathname()
 
@@ -31,21 +30,6 @@ export function Header() {
     damping: 30,
     restDelta: 0.001,
   })
-
-  const container = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.5,
-      },
-    },
-  }
-
-  const item = {
-    hidden: { opacity: 0 },
-    show: { opacity: 1 },
-  }
 
   function toggleTheme() {
     if (theme === 'dark') {
@@ -63,6 +47,21 @@ export function Header() {
     }
   }
 
+  function renderText(name: string) {
+    switch (name) {
+      case 'about':
+        return translations.navbar.aboutPage
+      case 'contents':
+        return translations.navbar.contentsPage
+      case 'projects':
+        return translations.navbar.projectsPage
+      case 'contact':
+        return translations.navbar.contactPage
+      default:
+        return 'undefined'
+    }
+  }
+
   useEffect(() => {
     if (theme) {
       setCheckTheme(theme)
@@ -71,7 +70,7 @@ export function Header() {
 
   return (
     <nav className="fixed w-full backdrop-filter backdrop-blur bg-gray-0 dark:bg-gray-900 md:bg-opacity-gray-0 md:dark:bg-opacity-gray-900 z-10">
-      <div className="px-4 py-2 mx-auto flex flex-wrap items-center justify-between">
+      <motion.div className="px-4 py-2 mx-auto flex flex-wrap items-center justify-between">
         <Link href="/">
           <motion.h2
             className={fontRyanaLovely.className}
@@ -94,9 +93,9 @@ export function Header() {
             className="p-3 hover:bg-primary-light-low-opacity rounded-full dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
           >
             {checkTheme === 'dark' ? (
-              <MoonIcon width={21} height={21} />
+              <RxMoon width={21} height={21} />
             ) : (
-              <SunIcon width={21} height={21} />
+              <RxSun width={21} height={21} />
             )}
           </motion.button>
           <motion.button
@@ -131,9 +130,9 @@ export function Header() {
             onClick={() => setNavbarOpen(!navbarOpen)}
           >
             {!navbarOpen ? (
-              <HamburgerMenuIcon width={21} height={21} />
+              <RxHamburgerMenu width={21} height={21} />
             ) : (
-              <Cross1Icon width={21} height={21} />
+              <RxCross1 width={21} height={21} />
             )}
           </motion.button>
         </div>
@@ -150,47 +149,40 @@ export function Header() {
             initial="hidden"
             animate="show"
           >
-            <motion.li
-              variants={item}
-              className="px-5 py-3 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
-            >
-              <Link href="/about" onClick={() => setNavbarOpen(false)}>
-                <p className="font-light text-black dark:text-white">
-                  {translations.navbar.aboutPage}
-                </p>
-              </Link>
-            </motion.li>
-            {/* <motion.li
-              variants={item}
-              className="px-5 py-3 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
-            >
-              <Link href="/contents" onClick={() => setNavbarOpen(false)}>
-                <p className="font-light text-black dark:text-white">{translations.navbar.contentsPage}</p>
-              </Link>
-            </motion.li> */}
-            <motion.li
-              variants={item}
-              className="px-5 py-3 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
-            >
-              <Link href="/projects" onClick={() => setNavbarOpen(false)}>
-                <p className="font-light text-black dark:text-white">
-                  {translations.navbar.projectsPage}
-                </p>
-              </Link>
-            </motion.li>
-            <motion.li
-              variants={item}
-              className="px-5 py-3 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
-            >
-              <Link href="/contact" onClick={() => setNavbarOpen(false)}>
-                <p className="font-light text-black dark:text-white">
-                  {translations.navbar.contactPage}
-                </p>
-              </Link>
-            </motion.li>
+            {menu.map((items, index) => (
+              <motion.li
+                key={index}
+                variants={item}
+                className="w-full px-5 py-3 hover:bg-primary-light-low-opacity rounded-sm dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
+                onHoverStart={() => setHover(index)}
+                onHoverEnd={() => setHover(null)}
+              >
+                <Link
+                  href={items.href}
+                  onClick={() => setNavbarOpen(false)}
+                  className={cn(
+                    'opacity-60 transition-opacity duration-200 hover:opacity-100 h-full flex items-center px-6 pb-1',
+                    {
+                      'opacity-100': pathname === items.href,
+                    },
+                  )}
+                >
+                  <p className="font-light text-black dark:text-white">
+                    {renderText(items.name)}
+                    <motion.div
+                      className="bg-black dark:bg-white h-[1px] w-full"
+                      {...animate({
+                        variants: indicator,
+                        custom: hover === index || pathname === items.href,
+                      })}
+                    />
+                  </p>
+                </Link>
+              </motion.li>
+            ))}
           </motion.ul>
         </motion.div>
-      </div>
+      </motion.div>
       {pathname !== '/' && pathname !== '/contact' && (
         <motion.div className="progress-bar" style={{ scaleX }} />
       )}

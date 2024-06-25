@@ -2,10 +2,10 @@
   "title": "Sobre mim",
   "sub_title": "Me conheça um pouco melhor",
   "description": {
-    "description_one": "Meu nome é Felipe Frantz Zanini, um software engineer que atualmente atua diretamente como um frontend developer & tech lead de projetos. Sou apaixonado por jiu jitsu, desenvolvimento de jogos independentes, escrita, arte e música. Tenho 30 anos e atualmente moro em Dom Pedrito, Rio Grande do Sul, Brasil.",
+    "description_one": "Meu nome é Felipe Frantz Zanini, um software engineer que atualmente atua diretamente como um software engineer & tech lead de projetos. Sou apaixonado por jiu jitsu, desenvolvimento de jogos independentes, escrita, arte e música. Tenho 30 anos e atualmente moro em Dom Pedrito, Rio Grande do Sul, Brasil.",
     "description_two": "Ingressei no mundo do desenvolvimento de software em 2008, quando comecei o ensino técnico. Em 2010, ao concluir o curso, conquistei meu primeiro estágio em programação, e desde então, nunca parei de estudar e progredir. Depois de ser efetivado como software engineer, naquela época, contribuí em mais de <b>40 projetos</b>, abrangendo diversas tecnologias, com destaque para o PHP.",
     "description_three": "Apaixonado pela área e buscando me aprimorar, obtive um diploma em Gestão da Tecnologia da Informação, além de uma Especialização em Planejamento Estratégico em TI. Também iniciei um Mestrado em Ciência da Computação, que, por razões pessoais, não consegui concluir, embora tenha mantido consistentemente notas no nível A e B ao longo do programa e atingindo todos os créditos necessários para me formar.",
-    "description_four": "Atualmente ocupo a posição de Frontend Developer & Tech Lead especializado em desenvolvimento web na <b><u><a href=\"https://www.nav9.tech\" target=\"_blank\">nav9</a></u></b>, onde tenho a oportunidade de ser um parceiro de tecnologia de diversas empresas como: Shoppings Iguatemi, UFC, EducaCross, Grupo SEB, Rede AZ, grupos de pesquisa, entre outros. Auxiliando-os sempre na criação da melhor solução de produto para a web.",
+    "description_four": "Atualmente ocupo a posição de Software Engineer & Tech Lead especializado em desenvolvimento web na <b><u><a href=\"https://www.nav9.tech\" target=\"_blank\">nav9</a></u></b>, onde tenho a oportunidade de ser um parceiro de tecnologia de diversas empresas como: Shoppings Iguatemi, UFC, EducaCross, Grupo SEB, Rede AZ, grupos de pesquisa, entre outros. Auxiliando-os sempre na criação da melhor solução de produto para a web.",
     "description_five": "Meu objetivo é criar um jogo completamente independente e documentar todo o processo em meu <b><u><a href=\"https://www.youtube.com/channel/UCVHgTgRK0M5kt2Gvi60b7Eg\" target=\"_blank\">canal do YouTube</a></u></b>. Para dar vida a esses projetos de desenvolvimento de jogos e conteúdos, tenho investido tempo e energia na especialização em diversas áreas, incluindo criação de roteiros, game design, level design, pixel art, teoria das cores, bem como no estudo do piano e teoria musical."
   },
   "carrer": {
@@ -14,7 +14,7 @@
       {
         "id": 1,
         "title": "nav9",
-        "description": "Frontend Developer & Tech Lead",
+        "description": "Software Engineer & Tech Lead",
         "date": "Abr 2021 - Present"
       },
       {
