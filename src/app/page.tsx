@@ -32,7 +32,7 @@ export default function PricipalPage() {
           href="/about"
           className="bg-white text-center border border-gray-200 focus:outline-none hover:bg-primary-color-800 rounded-full dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-primary-color-300 dark:hover:border-gray-600 dark:focus:ring-gray-700"
         >
-          <p className="text-black dark:text-white hover:text-white dark:hover:text-black px-2 py-2 md:px-8 md:py-4">
+          <p className="text-black dark:text-opacity-color-dark-theme-text hover:text-white dark:hover:text-black px-2 py-2 md:px-8 md:py-4">
             {translations.home.textButtonAbout}
           </p>
         </Link>

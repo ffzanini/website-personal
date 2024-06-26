@@ -93,9 +93,9 @@ export function Header() {
             className="p-3 hover:bg-primary-light-low-opacity rounded-full dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
           >
             {checkTheme === 'dark' ? (
-              <RxMoon width={21} height={21} />
+              <RxMoon title="Face the light!" width={21} height={21} />
             ) : (
-              <RxSun width={21} height={21} />
+              <RxSun title="Darkness reigns!" width={21} height={21} />
             )}
           </motion.button>
           <motion.button
@@ -161,7 +161,7 @@ export function Header() {
                   href={items.href}
                   onClick={() => setNavbarOpen(false)}
                   className={cn(
-                    'opacity-60 transition-opacity duration-200 hover:opacity-100 h-full flex items-center px-6 pb-1',
+                    'opacity-60 transition-opacity duration-200 hover:opacity-100 h-full flex items-center px-3 pb-1',
                     {
                       'opacity-100': pathname === items.href,
                     },

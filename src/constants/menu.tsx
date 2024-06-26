@@ -9,10 +9,6 @@ export const menu: MenuItem[] = [
     href: '/about',
   },
   {
-    name: 'contents',
-    href: '/contents',
-  },
-  {
     name: 'projects',
     href: '/projects',
   },
