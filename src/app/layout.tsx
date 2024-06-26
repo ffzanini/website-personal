@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 
-import { Header, Footer } from '@/components'
+import { Header, Footer, Toaster } from '@/components'
 import { AppProvider } from '@/providers'
 import { fontMavenPro } from './fonts'
 
@@ -44,6 +44,7 @@ export default function RootLayout({
       >
         <AppProvider>
           <Header />
+          <Toaster richColors />
           {children}
           <SpeedInsights />
           <Footer />

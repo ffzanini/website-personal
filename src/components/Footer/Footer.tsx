@@ -18,7 +18,7 @@ export function Footer() {
     >
       <div className="px-6 pt-6 md:pt-0">
         <div className="container flex justify-center">
-          <p className="flex flex-col md:flex-row text-black dark:text-white">
+          <p className="flex flex-col md:flex-row">
             ©{yearNow} {translations.footer.by}
           </p>
         </div>
@@ -32,8 +32,11 @@ export function Footer() {
                 target="_blank"
                 key={href}
                 href={href}
-                whileHover={{ scale: 1.2 }}
-                className="hover:bg-primary-light-low-opacity dark:hover:bg-primary-dark-low-opacity rounded-full p-2 flex justify-center items-center hover:brightness-250 transition-all duration-300"
+                whileHover={{
+                  scale: 1.3,
+                  transition: { duration: 0.3 },
+                }}
+                className="p-2 flex justify-center items-center hover:brightness-250 transition-all duration-300"
               >
                 <Icon width={21} height={21} />
               </motion.a>

@@ -11,10 +11,10 @@ const config: Config = {
     fontSize: {
       caption: '1rem',
       body: '1.2rem',
-      h4: '1.5rem',
+      h4: '1.4rem',
       h3: '1.7rem',
-      h2: '2.7rem',
-      h1: '3.7rem',
+      h2: '2.3rem',
+      h1: '3.0rem',
     },
     container: {
       center: true,

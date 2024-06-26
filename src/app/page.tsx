@@ -13,7 +13,7 @@ export default function PricipalPage() {
     <Wrapper>
       <div className="flex flex-col items-center justify-center gap-4 p-4">
         <Image
-          src="/images/me_home.jpeg"
+          src="/images/me-desenho.jpeg"
           alt="Profile photo"
           width={180}
           height={180}
@@ -30,9 +30,10 @@ export default function PricipalPage() {
       <div className="flex flex-col md:flex-row justify-center md:justify-center gap-4 p-6 md:p-6">
         <Link
           href="/about"
-          className="bg-white text-center border border-gray-200 focus:outline-none hover:bg-primary-color-800 rounded-full dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-primary-color-300 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+          className="text-center rounded-full bg-gray-50 hover:bg-primary-color-300 border border-gray-200 
+          dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-primary-color-800 dark:hover:border-gray-600"
         >
-          <p className="text-black dark:text-opacity-color-dark-theme-text hover:text-white dark:hover:text-black px-2 py-2 md:px-8 md:py-4">
+          <p className="px-2 py-2 md:px-8 md:py-4">
             {translations.home.textButtonAbout}
           </p>
         </Link>

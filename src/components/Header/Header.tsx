@@ -3,9 +3,10 @@ import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion, useScroll, useSpring } from 'framer-motion'
+import { toast } from 'sonner'
+
 import { useTheme } from 'next-themes'
 import { US as UsFlag, BR as BrFlag } from 'country-flag-icons/react/3x2'
-
 import { RxMoon, RxSun, RxHamburgerMenu, RxCross1 } from 'react-icons/rx'
 
 import { fontRyanaLovely } from '@/app/fonts'
@@ -13,12 +14,16 @@ import { useTranslation } from '@/context'
 import { cn, animate } from '@/lib/utils'
 import { indicator, container, item } from '@/constants/animations'
 import { menu } from '@/constants/menu'
+import { nightStalker, dawnbreaker } from '@/constants/phrases'
 
 export function Header() {
   const { location, setLocation, translations } = useTranslation()
   const { theme, setTheme } = useTheme()
   const { scrollYProgress } = useScroll()
 
+  const [phrases, setPhrases] = useState(
+    theme === 'dark' ? 'Face the light!' : 'Darkness reigns!',
+  )
   const [navbarOpen, setNavbarOpen] = useState(false)
   const [checkTheme, setCheckTheme] = useState<string | undefined>()
   const [hover, setHover] = useState<number | null>(null)
@@ -47,6 +52,17 @@ export function Header() {
     }
   }
 
+  function showRandomPhrases() {
+    let randomIndex
+    if (theme === 'dark') {
+      randomIndex = Math.floor(Math.random() * nightStalker.length)
+      setPhrases(nightStalker[randomIndex])
+    } else {
+      randomIndex = Math.floor(Math.random() * dawnbreaker.length)
+      setPhrases(dawnbreaker[randomIndex])
+    }
+  }
+
   function renderText(name: string) {
     switch (name) {
       case 'about':
@@ -69,7 +85,7 @@ export function Header() {
   }, [theme])
 
   return (
-    <nav className="fixed w-full backdrop-filter backdrop-blur bg-gray-0 dark:bg-gray-900 md:bg-opacity-gray-0 md:dark:bg-opacity-gray-900 z-10">
+    <nav className="fixed w-full backdrop-filter backdrop-blur bg-white-theme-background/40 dark:bg-dark-theme-background/40 z-10">
       <motion.div className="px-4 py-2 mx-auto flex flex-wrap items-center justify-between">
         <Link href="/">
           <motion.h2
@@ -84,40 +100,49 @@ export function Header() {
         <div className="flex md:order-2 gap-3 md:min-w-[100px]">
           <motion.button
             aria-label="Toggle theme"
-            onClick={toggleTheme}
+            onClick={() => {
+              showRandomPhrases()
+              toggleTheme()
+
+              toast(
+                <div className="flex flex-col">
+                  &apos;{phrases}&apos;{' '}
+                  <span className="opacity-60 italic">
+                    - {theme === 'dark' ? 'Dawnbringer' : 'Night Stalker'}
+                  </span>
+                </div>,
+                {
+                  duration: 1500,
+                },
+              )
+            }}
             type="button"
-            whileHover={{ scale: 1.1 }}
+            whileHover={{ scale: 1.3, transition: { duration: 0.3 } }}
             variants={container}
             initial="hidden"
             animate="show"
-            className="p-3 hover:bg-primary-light-low-opacity rounded-full dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
+            className="p-3"
           >
-            {checkTheme === 'dark' ? (
-              <RxMoon title="Face the light!" width={21} height={21} />
+            {checkTheme !== 'dark' ? (
+              <RxMoon width={21} height={21} />
             ) : (
-              <RxSun title="Darkness reigns!" width={21} height={21} />
+              <RxSun width={21} height={21} />
             )}
           </motion.button>
           <motion.button
             aria-label="Toggle language"
             onClick={toggleLocaltion}
             type="button"
-            whileHover={{ scale: 1.1 }}
+            whileHover={{ scale: 1.3, transition: { duration: 0.3 } }}
             variants={container}
             initial="hidden"
             animate="show"
-            className="px-3 py-2 hover:bg-primary-light-low-opacity rounded-full dark:hover:bg-primary-dark-low-opacity hover:transition-all duration-300"
+            className="px-3 py-2"
           >
-            {location !== 'en' ? (
-              <BrFlag
-                title="Brazil"
-                className="text-black dark:text-white w-8 opacity-70"
-              />
+            {location === 'en' ? (
+              <BrFlag title="Brazil" className=" w-8 opacity-70" />
             ) : (
-              <UsFlag
-                title="United States"
-                className="text-black dark:text-white w-8 opacity-70"
-              />
+              <UsFlag title="United States" className=" w-8 opacity-70" />
             )}
           </motion.button>
           <motion.button
@@ -167,7 +192,7 @@ export function Header() {
                     },
                   )}
                 >
-                  <p className="font-light text-black dark:text-white">
+                  <motion.div className="font-light text-black dark:text-white">
                     {renderText(items.name)}
                     <motion.div
                       className="bg-black dark:bg-white h-[1px] w-full"
@@ -176,7 +201,7 @@ export function Header() {
                         custom: hover === index || pathname === items.href,
                       })}
                     />
-                  </p>
+                  </motion.div>
                 </Link>
               </motion.li>
             ))}

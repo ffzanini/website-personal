@@ -2,7 +2,7 @@
   "title": "About",
   "sub_title": "Know me a little more",
   "description": {
-    "description_one": "My name is Felipe Frantz Zanini, a software engineer who currently operates as a software engineer & tech lead. I'm passionate about jiu jitsu, independent game development, writing, art and music. I’m 30 years old and currently live in Dom Pedrito, Rio Grande do Sul, Brazil.",
+    "description_one": "My name is Felipe Frantz Zanini, a software engineer who currently operates as a frontend developer & tech lead. I'm passionate about jiu jitsu, independent game development, dota 2, writing, art and music. I’m 30 years old and currently live in Pelotas, Rio Grande do Sul, Brazil.",
     "description_two": "I started in the development world in 2008 when I began my technical education. In 2010, upon completing the program, I secured my first programming internship, and since then, I have never stopped studying and advancing. After being hired as a software engineer, at that time, I contributed to over <b>40 projects</b> encompassing many technologies, with PHP being the standout.",
     "description_three": "Passionate about the field and committed to improvement, I earned a degree in Information Technology Management, along with a specialization in IT Strategic Planning. I also embarked on a Master's in Computer Science, which, due to personal reasons, I was unable to complete, despite consistently maintaining grades at levels A and B throughout the program and fulfilling all necessary credits for graduation.",
     "description_four": "I currently hold the position of Software Engineer & Tech Lead specializing in web development at <b><u><a href=\"https://www.nav9.tech\" target=\"_blank\">nav9</a></u></b>, where I have the opportunity to be a technology partner for many companies such as: Shoppings Iguatemi, UFC, EducaCross, Grupo SEB, Rede AZ, research groups, among others. Always assisting them create the best product solution for the web.",
@@ -103,7 +103,7 @@
   },
   "about_section": {
     "about_title": "About this website",
-    "about_description": "This website was developed using <b><u><a href='https://nextjs.org/'>Next.js</a></u></b> as a framework, deployed with <b><u><a href='https://vercel.com/'>Vercel</a></u></b>, styled using <b><u><a href='https://tailwindcss.com/'>Tailwind</a></u></b>, and with icons powered by the library <b><u><a href='https://www.radix-ui.com/icons'>Radix UI</a></u></b>. All text is set in the <b><u><a href='https://fonts.google.com/specimen/Maven+Pro'>MavenPro</a></u></b> typeface."
+    "about_description": "This website was developed using <b><u><a href='https://nextjs.org/'>Next.js</a></u></b> as a framework, deployed with <b><u><a href='https://vercel.com/'>Vercel</a></u></b>, styled using <b><u><a href='https://tailwindcss.com/'>Tailwind</a></u></b>, and with icons powered by the library <b><u><a href='https://react-icons.github.io/react-icons/'>React Icons</a></u></b>. All text is set in the <b><u><a href='https://fonts.google.com/specimen/Maven+Pro'>MavenPro</a></u></b> typeface."
   },
   "about_contact": {
     "contact_title": "Let's connect!",

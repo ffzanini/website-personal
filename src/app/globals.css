@@ -15,7 +15,7 @@ html[class="dark"] {
 	--bg: theme("colors.dark-theme-background");
 	--heading-color: theme("colors.primary-color-dark-theme-text");
 	--text-color: theme("colors.opacity-color-dark-theme-text");
-	--text-color-bold: theme("colors.gray-50");
+	--text-color-bold: theme("colors.primary-color-dark-theme-text");
 	--text-hover-link: theme("colors.primary-color-300");
 }
 
@@ -24,7 +24,7 @@ html[class="light"] {
 	--bg: theme("colors.white-theme-background");
 	--heading-color: theme("colors.primary-color-white-theme-text");
 	--text-color: theme("colors.opacity-color-white-theme-text");
-	--text-color-bold: theme("colors.gray-900");
+	--text-color-bold: theme("colors.primary-color-white-theme-text");
 	--text-hover-link: theme("colors.primary-color-800");
 }
 
@@ -97,7 +97,7 @@ input:focus, textarea:focus {
  /* change scroll bars layout */
 
 *::-webkit-scrollbar{
-	width:0.1rem;
+	width:0.01px;
 	background-color: var(--bg);
 }
 
