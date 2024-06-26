@@ -87,13 +87,16 @@ export function Header() {
   return (
     <nav className="fixed w-full backdrop-filter backdrop-blur bg-white-theme-background/40 dark:bg-dark-theme-background/40 z-10">
       <motion.div className="px-4 py-2 mx-auto flex flex-wrap items-center justify-between">
-        <Link href="/">
-          <motion.h2
-            className={fontRyanaLovely.className}
-            variants={container}
-            initial="hidden"
-            animate="show"
-          >
+        <Link
+          href="/"
+          className={cn(
+            `${fontRyanaLovely.className} opacity-60 transition-opacity duration-200 hover:opacity-100 h-full flex items-center px-3 pb-1`,
+            {
+              'opacity-100': pathname === '/',
+            },
+          )}
+        >
+          <motion.h2 variants={container} initial="hidden" animate="show">
             2fZ
           </motion.h2>
         </Link>
