@@ -12,9 +12,12 @@ export const menu: MenuItem[] = [
     name: 'projects',
     href: '/projects',
   },
-
   {
     name: 'contact',
     href: '/contact',
+  },
+  {
+    name: 'resume',
+    href: '/resume',
   },
 ]

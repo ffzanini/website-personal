@@ -22,20 +22,23 @@ export default function PricipalPage() {
         <div className="flex flex-col items-center justify-center gap-2 p-2">
           <h2>{translations.home.name}</h2>
           <h3>{translations.home.roles}</h3>
-          <div className="flex flex-col items-center justify-center md:text-center gap-6 pt-6">
+          <div className="flex flex-col items-center justify-center lg:text-center gap-6 pt-6">
             <RichTextViewer content={translations.home.description} />
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-center md:justify-center gap-4 p-6 md:p-6">
+      <div className="flex flex-col lg:flex-row justify-center lg:justify-center gap-4 lg:gap-12 p-6 items-center">
         <Link
           href="/about"
-          className="text-center rounded-full bg-gray-50 hover:bg-primary-color-300 border border-gray-200 
-          dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-primary-color-800 dark:hover:border-gray-600"
+          className="w-full lg:w-auto text-center rounded-full bg-black hover:bg-primary-color-800 border border-gray-200 
+          dark:bg-white  dark:border-gray-600 dark:hover:bg-primary-color-300 dark:hover:border-gray-600"
         >
-          <p className="px-2 py-2 md:px-8 md:py-4">
+          <p className="text-white dark:text-black px-2 py-2 lg:px-8 lg:py-4">
             {translations.home.textButtonAbout}
           </p>
+        </Link>
+        <Link className="underline font-bold" href="/resume">
+          {translations.home.textButtonResume}
         </Link>
       </div>
       <div className="hidden lg:flex">

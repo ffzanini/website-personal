@@ -62,9 +62,9 @@ export default function Contact() {
               className="flex flex-col-reverse lg:flex-row justify-between gap-8 pb-4 pt-8 lg:pb-8 lg:pt-12 alter-section"
               key={project.id}
             >
-              <div className="w-full md:w-2/5">
+              <div className="w-full lg:w-2/5">
                 <h3 className="font-bold pb-2">{project.title}</h3>
-                <p className="pb-2 md:pb-4">
+                <p className="pb-2 lg:pb-4">
                   {project.develop_at_text}
                   <Link
                     className="underline font-bold"
@@ -96,7 +96,7 @@ export default function Contact() {
                   {project.develop_at_button}
                 </Link>
               </div>
-              <div className="w-full md:w-3/5">
+              <div className="w-full lg:w-3/5">
                 <Image
                   src={project.image}
                   className="rounded border border-gray-900 dark:border-gray-50"
@@ -108,13 +108,13 @@ export default function Contact() {
             </div>
           ))}
           {currentPage !== nPages ? (
-            <div className="flex flex-col md:flex-row justify-center md:justify-center gap-4 p-8">
+            <div className="flex flex-col lg:flex-row justify-center lg:justify-center gap-4 p-8">
               <button
                 onClick={showMore}
-                className="text-center rounded-full bg-gray-50 hover:bg-primary-color-300 border border-gray-200 
-                dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-primary-color-800 dark:hover:border-gray-600"
+                className="text-center rounded-full bg-black hover:bg-primary-color-800 border border-gray-200 
+          dark:bg-white  dark:border-gray-600 dark:hover:bg-primary-color-300 dark:hover:border-gray-600"
               >
-                <p className="px-2 py-2 md:px-8 md:py-4">
+                <p className="text-white dark:text-black px-2 py-2 lg:px-8 lg:py-4">
                   {translations.projects.button_text}
                 </p>
               </button>

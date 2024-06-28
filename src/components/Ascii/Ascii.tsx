@@ -6,7 +6,7 @@ interface CoffeBackgroundProps {
 }
 export function Ascii({ className, children }: Readonly<CoffeBackgroundProps>) {
   return (
-    <pre className={cn('text-2xl pointer-events-none', className)}>
+    <pre className={cn('text-base pointer-events-none', className)}>
       {children}
     </pre>
   )

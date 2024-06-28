@@ -73,8 +73,9 @@ export function Header() {
         return translations.navbar.projectsPage
       case 'contact':
         return translations.navbar.contactPage
+      case 'resume':
+        return translations.navbar.resumePage
       default:
-        return 'undefined'
     }
   }
 
@@ -86,7 +87,7 @@ export function Header() {
 
   return (
     <nav className="fixed w-full backdrop-filter backdrop-blur bg-white-theme-background/40 dark:bg-dark-theme-background/40 z-10">
-      <motion.div className="px-4 py-2 mx-auto flex flex-wrap items-center justify-between">
+      <motion.div className="pl-1 pr-2 lg:px-4 py-2 mx-auto flex flex-wrap items-center justify-between">
         <Link
           href="/"
           className={cn(
@@ -100,7 +101,7 @@ export function Header() {
             2fZ
           </motion.h2>
         </Link>
-        <div className="flex md:order-2 gap-3 md:min-w-[100px]">
+        <div className="flex lg:order-2 gap-3 lg:min-w-[100px]">
           <motion.button
             aria-label="Toggle theme"
             onClick={() => {
@@ -154,7 +155,7 @@ export function Header() {
             variants={container}
             initial="hidden"
             animate="show"
-            className="inline-flex items-center p-2 justify-center md:hidden hover:transition-all duration-300"
+            className="inline-flex items-center p-2 justify-center lg:hidden hover:transition-all duration-300"
             onClick={() => setNavbarOpen(!navbarOpen)}
           >
             {!navbarOpen ? (
@@ -166,13 +167,13 @@ export function Header() {
         </div>
         <motion.div
           className={
-            'items-center justify-between w-full md:flex md:w-auto md:order-1' +
+            'items-center justify-between w-full lg:flex lg:w-auto lg:order-1' +
             (navbarOpen ? ' flex' : ' hidden')
           }
           id="navbar-sticky"
         >
           <motion.ul
-            className="flex flex-col md:flex-row list-none lg:ml-auto gap-2 pt-6 md:pt-0"
+            className="flex flex-col lg:flex-row list-none lg:ml-auto gap-2 pt-6 lg:pt-0"
             variants={container}
             initial="hidden"
             animate="show"
@@ -195,7 +196,7 @@ export function Header() {
                     },
                   )}
                 >
-                  <motion.div className="font-light text-black dark:text-white">
+                  <motion.div className="font-normal text-black dark:text-white">
                     {renderText(items.name)}
                     <motion.div
                       className="bg-black dark:bg-white h-[1px] w-full"

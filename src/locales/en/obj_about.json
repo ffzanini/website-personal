@@ -2,10 +2,10 @@
   "title": "About",
   "sub_title": "Know me a little more",
   "description": {
-    "description_one": "My name is Felipe Frantz Zanini, a software engineer who currently operates as a frontend developer & tech lead. I'm passionate about jiu jitsu, independent game development, dota 2, writing, art and music. I’m 30 years old and currently live in Pelotas, Rio Grande do Sul, Brazil.",
-    "description_two": "I started in the development world in 2008 when I began my technical education. In 2010, upon completing the program, I secured my first programming internship, and since then, I have never stopped studying and advancing. After being hired as a software engineer, at that time, I contributed to over <b>40 projects</b> encompassing many technologies, with PHP being the standout.",
-    "description_three": "Passionate about the field and committed to improvement, I earned a degree in Information Technology Management, along with a specialization in IT Strategic Planning. I also embarked on a Master's in Computer Science, which, due to personal reasons, I was unable to complete, despite consistently maintaining grades at levels A and B throughout the program and fulfilling all necessary credits for graduation.",
-    "description_four": "I currently hold the position of Software Engineer & Tech Lead specializing in web development at <b><u><a href=\"https://www.nav9.tech\" target=\"_blank\">nav9</a></u></b>, where I have the opportunity to be a technology partner for many companies such as: Shoppings Iguatemi, UFC, EducaCross, Grupo SEB, Rede AZ, research groups, among others. Always assisting them create the best product solution for the web.",
+    "description_one": "My name is Felipe Frantz Zanini. I am a software engineer and passionate about jiu-jitsu, indie game development, Dota 2, writing, art, and music. I am 30 years old and live in Pelotas, Rio Grande do Sul, Brazil.",
+    "description_two": "Mine journey in software development began in 2008 during technical school. In 2010, after completing the course, I started my first programming internship and have never stopped studying and evolving since. Upon becoming a full-time software engineer, I participated in over <b>40 projects</b>, using many technologies, with an emphasis on PHP.",
+    "description_three": "Passionate about the field and always seeking improvement, I obtained a Degree in Technology Management IT and a Specialization in IT Strategic Planning. I also started a Master's in Computer Science.",
+    "description_four": "I currently hold the position of Senior Software Engineer and Tech Lead specializing in web development at <b><u><a href=\"https://www.nav9.tech\" target=\"_blank\">nav9</a></u></b>. I have the privilege of being a technology partner for companies such as Shoppings Iguatemi, UFC, EducaCross, Grupo SEB, Rede AZ, among others, helping to create the best web product solutions.",
     "description_five": "My goal is to create a completely independent game and document the entire process on my <b><u><a href=\"https://www.youtube.com/channel/UCVHgTgRK0M5kt2Gvi60b7Eg\" target=\"_blank\">YouTube channel</a></u></b>. To bring these game development and content projects to life, I have been investing time and energy in specializing in many areas, including scriptwriting, game design, level design, pixel art, color theory, as well as studying piano and music theory."
   },
   "skills":{
@@ -103,7 +103,7 @@
   },
   "about_section": {
     "about_title": "About this website",
-    "about_description": "This website was developed using <b><u><a href='https://nextjs.org/'>Next.js</a></u></b> as a framework, deployed with <b><u><a href='https://vercel.com/'>Vercel</a></u></b>, styled using <b><u><a href='https://tailwindcss.com/'>Tailwind</a></u></b>, and with icons powered by the library <b><u><a href='https://react-icons.github.io/react-icons/'>React Icons</a></u></b>. All text is set in the <b><u><a href='https://fonts.google.com/specimen/Maven+Pro'>MavenPro</a></u></b> typeface."
+    "about_description": "This website was developed using <b><u><a href='https://nextjs.org/' target='_blank'>Next.js</a></u></b> as a framework, deployed with <b><u><a href='https://vercel.com/' target='_blank'>Vercel</a></u></b>, styled using <b><u><a href='https://tailwindcss.com/' target='_blank'>Tailwind</a></u></b>, and with icons powered by the library <b><u><a href='https://react-icons.github.io/react-icons/' target='_blank'>React Icons</a></u></b>. All text is set in the <b><u><a href='https://fonts.google.com/specimen/Maven+Pro' target='_blank'>MavenPro</a></u></b> typeface."
   },
   "about_contact": {
     "contact_title": "Let's connect!",

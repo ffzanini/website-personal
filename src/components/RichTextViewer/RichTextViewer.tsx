@@ -5,9 +5,16 @@ type RichTextViewerProps = {
   typeText?: string
 }
 
-export function RichTextViewer({ content, typeText }: RichTextViewerProps) {
+export function RichTextViewer({
+  content,
+  typeText,
+}: Readonly<RichTextViewerProps>) {
   const __html = DOMPurify.sanitize(content, {
-    ALLOWED_TAGS: ['strong', 'b', 'u', 'a', 'p', 'em', 'img'],
+    ALLOWED_TAGS: ['strong', 'b', 'u', 'a', 'p', 'em', 'img', 'br', 'target'],
+    ALLOWED_ATTR: ['href', 'target'],
+    ADD_ATTR: ['target'],
+    FORCE_BODY: true,
+    USE_PROFILES: { html: true },
   })
 
   switch (typeText) {

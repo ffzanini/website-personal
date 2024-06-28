@@ -1,8 +1,8 @@
 {
   "name": "Olá, sou Felipe Frantz Zanini",
-  "roles": "software engineer, artista, músico, escritor e desenvolvedor de jogos indie",
-  "company": "nav9",
+  "roles": "engenheiro de software, artista, músico, escritor e desenvolvedor de jogos indie",
   "link": "https://nav9.tech",
-  "description": "Software Engineer & Tech Lead especializado em desenvolvimento web, tenho 30 anos e moro no Brasil. Atualmente trabalho na <b><u><a href=\"https://www.nav9.tech\" target=\"_blank\">nav9</a></u></b> como um parceiro de tecnologia auxiliando a construir a próxima geração de aplicações web.",
-  "textButtonAbout": "Leia mais sobre mim"
+  "description": "Atualmente sou Engenheiro de Software Sênior & Tech Lead na <b><u><a href=\"https://www.nav9.tech\" target=\"_blank\">nav9</a></u></b> trabalhando como um parceiro de tecnologia e auxiliando a construir a próxima geração de aplicações web. Tenho 30 anos e moro em Pelotas, Brasil. ",
+  "textButtonAbout": "Leia mais sobre mim",
+  "textButtonResume": "Visite meu resume"
 }

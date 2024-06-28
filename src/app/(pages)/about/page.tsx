@@ -27,9 +27,6 @@ export default function About() {
             <RichTextViewer
               content={translations.about.description.description_four}
             />
-            <RichTextViewer
-              content={translations.about.description.description_five}
-            />
           </div>
         </div>
         <div className="lg:grid grid-cols-5 flex flex-col gap-4 pb-6 hidden lg:block">

@@ -36,12 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark" translate="no">
       <meta name="google" content="notranslate" />
-      <body
-        className={
-          'min-h-screen bg-background font-sans antialiased' +
-          fontMavenPro.className
-        }
-      >
+      <body className={'min-h-screen' + fontMavenPro.className}>
         <AppProvider>
           <Header />
           <Toaster richColors />

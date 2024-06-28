@@ -8,14 +8,6 @@ const config: Config = {
   ],
   darkMode: 'class',
   theme: {
-    fontSize: {
-      caption: '1rem',
-      body: '1.2rem',
-      h4: '1.4rem',
-      h3: '1.7rem',
-      h2: '2.3rem',
-      h1: '3.0rem',
-    },
     container: {
       center: true,
       screens: {
@@ -26,7 +18,16 @@ const config: Config = {
         '2xl': 'calc(1216px + 16px)',
       },
     },
+
     extend: {
+      fontSize: {
+        caption: '1rem',
+        body: '1.2rem',
+        h4: '1.4rem',
+        h3: '1.7rem',
+        h2: '2.3rem',
+        h1: '3.0rem',
+      },
       colors: {
         'dark-theme-background': '#121212',
         'white-theme-background': '#FFFFFF',

@@ -9,7 +9,7 @@ export function Wrapper({ children }: Readonly<{ children: React.ReactNode }>) {
       onExitComplete={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
     >
       <motion.section
-        className="container min-h-[calc(100vh-14.20rem)] items-center justify-center pt-24 md:pt-36 overflow-hidden"
+        className="container min-h-[calc(100vh-14.20rem)] items-center justify-center pt-24 lg:pt-36 overflow-hidden"
         {...animate({
           variants: contentAnim,
         })}
