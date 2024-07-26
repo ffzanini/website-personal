@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { Analytics } from '@vercel/analytics/react'
 
 import { Header, Footer, Toaster } from '@/components'
 import { AppProvider } from '@/providers'
@@ -41,6 +42,7 @@ export default function RootLayout({
           <Header />
           <Toaster richColors />
           {children}
+          <Analytics />
           <SpeedInsights />
           <Footer />
         </AppProvider>
