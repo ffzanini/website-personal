@@ -87,7 +87,7 @@ export function Header() {
 
   return (
     <nav className="fixed w-full backdrop-filter backdrop-blur bg-white-theme-background/40 dark:bg-dark-theme-background/40 z-10">
-      <motion.div className="pl-1 pr-2 lg:px-4 py-2 mx-auto flex flex-wrap items-center justify-between">
+      <motion.div className="pl-1 pr-2 2xl:px-4 py-2 mx-auto flex flex-wrap items-center justify-between">
         <Link
           href="/"
           className={cn(
@@ -101,7 +101,7 @@ export function Header() {
             2fZ
           </motion.h2>
         </Link>
-        <div className="flex lg:order-2 gap-3 lg:min-w-[100px]">
+        <div className="flex 2xl:order-2 gap-3 2xl:min-w-[100px]">
           <motion.button
             aria-label="Toggle theme"
             onClick={() => {
@@ -155,7 +155,7 @@ export function Header() {
             variants={container}
             initial="hidden"
             animate="show"
-            className="inline-flex items-center p-2 justify-center lg:hidden hover:transition-all duration-300"
+            className="inline-flex items-center p-2 justify-center 2xl:hidden hover:transition-all duration-300"
             onClick={() => setNavbarOpen(!navbarOpen)}
           >
             {!navbarOpen ? (
@@ -167,13 +167,13 @@ export function Header() {
         </div>
         <motion.div
           className={
-            'items-center justify-between w-full lg:flex lg:w-auto lg:order-1' +
+            'items-center justify-between w-full 2xl:flex 2xl:w-auto 2xl:order-1' +
             (navbarOpen ? ' flex' : ' hidden')
           }
           id="navbar-sticky"
         >
           <motion.ul
-            className="flex flex-col lg:flex-row list-none lg:ml-auto gap-2 pt-6 lg:pt-0"
+            className="flex flex-col 2xl:flex-row list-none 2xl:ml-auto gap-2 pt-6 2xl:pt-0"
             variants={container}
             initial="hidden"
             animate="show"

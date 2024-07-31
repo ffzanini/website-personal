@@ -15,7 +15,7 @@ export default function Contact() {
       <div className="flex flex-col gap-2 p-4">
         <h1 className="font-bold">{translations.contact.title}</h1>
         <RichTextViewer content={translations.contact.sub_title} />
-        <div className="flex pt-12 gap-20 lg:gap-8 flex-col">
+        <div className="flex pt-20 gap-20 2xl:gap-8 flex-col">
           <ContactForm />
         </div>
       </div>
@@ -72,7 +72,7 @@ function ContactForm() {
         {...register('message', { required: true })}
         placeholder={translations.contact.form.message}
       />
-      <div className="flex flex-col lg:flex-row justify-center pb-4 lg:pb-0 lg:justify-center">
+      <div className="flex flex-col 2xl:flex-row justify-center pb-4 2xl:pb-0 2xl:justify-center">
         <button
           disabled={!enableSubmit}
           type="submit"
@@ -80,7 +80,7 @@ function ContactForm() {
           text-center rounded-full bg-black hover:bg-primary-color-800 border border-gray-200 
           dark:bg-white  dark:border-gray-600 dark:hover:bg-primary-color-300 dark:hover:border-gray-600"
         >
-          <p className="text-white dark:text-black px-2 py-2 lg:px-12 lg:py-4">
+          <p className="text-white dark:text-black px-2 py-2 2xl:px-12 2xl:py-4">
             {translations.contact.button_text}
           </p>
         </button>

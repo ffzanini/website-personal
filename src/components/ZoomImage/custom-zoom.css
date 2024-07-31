@@ -1,0 +1,32 @@
+html[class="dark"] {
+	--bg: theme("colors.dark-theme-background");
+}
+
+html[class="light"] {
+	--bg: theme("colors.white-theme-background");
+}
+
+.custom-zoom [data-rmiz-modal-overlay],
+.custom-zoom [data-rmiz-modal-img] {
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+.custom-zoom [data-rmiz-modal-overlay="hidden"] {
+  transition: color 0.1s ease-in-out, background-color 0.2s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
+}
+.custom-zoom [data-rmiz-modal-overlay="visible"] {
+  transition: color 0.1s ease-in-out, background-color 0.2s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
+}
+.custom-zoom [data-rmiz-btn-unzoom] {
+  height: 1.4rem;
+  width: 1.4rem;
+  background-color: var(--bg);
+}
+
+.custom-zoom [data-rmiz-btn-unzoom]:focus-visible {
+  outline: 0rem none;
+}

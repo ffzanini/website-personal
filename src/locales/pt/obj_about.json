@@ -2,7 +2,7 @@
   "title": "Sobre mim",
   "sub_title": "Me conheça um pouco melhor",
   "description": {
-    "description_one": "Meu nome é Felipe Frantz Zanini, sou engenheiro de software e apaixonado por jiu-jitsu, desenvolvimento de jogos independentes, Dota 2, escrita, arte e música. Tenho 30 anos e moro em Pelotas, Rio Grande do Sul, Brasil.",
+    "description_one": "Meu nome é Felipe Frantz Zanini, sou engenheiro de software e apaixonado por jiu-jitsu, desenvolvimento de jogos independentes, Dota 2, escrita, arte e música. Tenho 31 anos e moro em Pelotas, Rio Grande do Sul, Brasil.",
     "description_two": "Minha jornada no desenvolvimento de software começou em 2008, durante o ensino técnico. Em 2010, após concluir o curso, iniciei meu primeiro estágio em programação e, desde então, nunca parei de estudar e evoluir. Ao ser efetivado como engenheiro de software, participei de mais de <b>40 projetos</b>, utilizando diversas tecnologias, com ênfase em PHP.",
     "description_three": "Apaixonado pela área e sempre buscando aprimoramento, obtive a Graduação em Tecnologia em Gestão da TI e uma Especialização em Gestão de TI. Também iniciei um Mestrado em Ciência da Computação.",
     "description_four": "Atualmente ocupo o cargo de Engenheiro de Software Sênior e Tech Lead especializado em desenvolvimento web na <b><u><a href=\"https://www.nav9.tech\" target=\"_blank\">nav9</a></u></b>. Tenho o privilégio de ser parceiro tecnológico de empresas como Shoppings Iguatemi, UFC, EducaCross, Grupo SEB, Rede AZ, entre outros, auxiliando na criação das melhores soluções de produtos para a web.",
@@ -103,7 +103,9 @@
   },
   "about_section": {
     "about_title": "Informações sobre este site",
-    "about_description": "Este site foi desenvolvido utilizando o framework <b><u><a href='https://nextjs.org/' target='_blank'>Next.js</a></u></b>, seu deploy realizado na <b><u><a href='https://vercel.com/' target='_blank'>Vercel</a></u></b>, estilizado com <b><u><a href='https://tailwindcss.com/' target='_blank'>Tailwind</a></u></b> e seus icones foram fornecidos pela biblioteca <b><u><a href='https://react-icons.github.io/react-icons/' target='_blank'>React Icons</a></u></b>. A fonte de todos os textos são do estilo <b><u><a href='https://fonts.google.com/specimen/Maven+Pro' target='_blank'>MavenPro</a></u></b>."
+    "about_description_text": "projetos",
+    "about_description_one": "Este site foi desenvolvido utilizando o framework <b><u><a href='https://nextjs.org/' target='_blank'>Next.js</a></u></b>, seu deploy realizado na <b><u><a href='https://vercel.com/' target='_blank'>Vercel</a></u></b>, estilizado com <b><u><a href='https://tailwindcss.com/' target='_blank'>Tailwind</a></u></b> e seus icones foram fornecidos pela biblioteca <b><u><a href='https://react-icons.github.io/react-icons/' target='_blank'>React Icons</a></u></b>. A fonte de todos os textos são do estilo <b><u><a href='https://fonts.google.com/specimen/Maven+Pro' target='_blank'>MavenPro</a></u></b>. Além disso, esse portifólio serve tanto de vitrine para meus ",
+    "about_description_two": ", futuros conteúdos, como também é meu laboratório de testes, onde experimento diversas bibliotecas e ferramentas."
   },
   "about_contact": {
     "contact_title": "Vamos conversar!",

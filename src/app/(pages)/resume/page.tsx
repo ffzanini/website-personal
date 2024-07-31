@@ -29,7 +29,7 @@ export default function Resume() {
   return (
     <Wrapper>
       <div className="flex flex-col gap-6 p-4">
-        <div className="flex flex-row space-x-4 lg:space-x-12 items-center">
+        <div className="flex flex-row space-x-4 2xl:space-x-12 items-center">
           <Image
             src="/images/me_home.jpeg"
             alt="Profile photo"
@@ -83,14 +83,14 @@ export default function Resume() {
           ))}
         </div>
         {/* experience section */}
-        <div className="flex flex-col gap-6 lg:gap-3">
+        <div className="flex flex-col gap-6 2xl:gap-3">
           <h3>{translations.resume.experience.title}</h3>
           {translations.resume.experience.information.map((exp) => (
             <div
               key={exp.id}
-              className="flex flex-col lg:flex-row gap-1 pt-3 lg:gap-4"
+              className="flex flex-col 2xl:flex-row gap-1 pt-3 2xl:gap-4"
             >
-              <div className="flex flex-row min-w-0 lg:min-w-[220px]">
+              <div className="flex flex-row min-w-0 2xl:min-w-[220px]">
                 <p>
                   {exp.initial_date} — {exp.final_date}
                 </p>
@@ -114,9 +114,9 @@ export default function Resume() {
           {translations.resume.education.information.map((edu) => (
             <div
               key={edu.id}
-              className="flex flex-col lg:flex-row gap-1 pt-3 lg:gap-4"
+              className="flex flex-col 2xl:flex-row gap-1 pt-3 2xl:gap-4"
             >
-              <div className="flex flex-row min-w-0 lg:min-w-[220px]">
+              <div className="flex flex-row min-w-0 2xl:min-w-[220px]">
                 <p>
                   {edu.initial_date} — {edu.final_date}
                 </p>
@@ -140,9 +140,9 @@ export default function Resume() {
           {translations.resume.certifications.information.map((cert) => (
             <div
               key={cert.id}
-              className="flex flex-col lg:flex-row gap-1 pt-3 lg:gap-4"
+              className="flex flex-col 2xl:flex-row gap-1 pt-3 2xl:gap-4"
             >
-              <div className="flex flex-row min-w-0 lg:min-w-[220px]">
+              <div className="flex flex-row min-w-0 2xl:min-w-[220px]">
                 <p>
                   {cert.initial_date} — {cert.final_date}
                 </p>

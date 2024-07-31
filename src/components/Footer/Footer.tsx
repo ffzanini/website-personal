@@ -10,15 +10,15 @@ export function Footer() {
 
   return (
     <motion.footer
-      className="flex flex-col lg:flex-row bg-gray-0 dark:bg-gray-900 justify-between items-center"
+      className="flex flex-col 2xl:flex-row bg-gray-0 dark:bg-gray-900 justify-between items-center"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 1 }}
     >
-      <div className="px-6 pt-6 lg:pt-0">
+      <div className="px-6 pt-6 2xl:pt-0">
         <div className="container flex justify-center">
-          <p className="flex flex-col lg:flex-row">
+          <p className="flex flex-col 2xl:flex-row">
             ©{yearNow} {translations.footer.by}
           </p>
         </div>
