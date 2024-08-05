@@ -1,7 +1,7 @@
 'use client'
 import { ThemeProvider } from 'next-themes'
 import { Toaster } from 'react-hot-toast'
-import { InternacionalizaionProvider } from '@/context/internacionalization-context'
+import { InternacionalizationProvider } from '@/context/internacionalization-context'
 
 export function AppProvider({
   children,
@@ -12,7 +12,7 @@ export function AppProvider({
       defaultTheme="dark"
       disableTransitionOnChange
     >
-      <InternacionalizaionProvider>
+      <InternacionalizationProvider>
         <Toaster
           position="top-center"
           toastOptions={{
@@ -28,7 +28,7 @@ export function AppProvider({
           }}
         />
         {children}
-      </InternacionalizaionProvider>
+      </InternacionalizationProvider>
     </ThemeProvider>
   )
 }

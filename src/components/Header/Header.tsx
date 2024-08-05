@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
+
 import { usePathname } from 'next/navigation'
 import { motion, useScroll, useSpring } from 'framer-motion'
 import { toast } from 'sonner'
@@ -47,8 +48,20 @@ export function Header() {
   function toggleLocaltion() {
     if (location === 'en') {
       setLocation('pt')
+      const url = new URL(window.location.href)
+      url.searchParams.set('lang', 'pt')
+      window.history.pushState({}, '', url.toString())
+
+      url.searchParams.delete('lang')
+      window.history.replaceState({}, '', url.pathname)
     } else {
       setLocation('en')
+      const url = new URL(window.location.href)
+      url.searchParams.set('lang', 'en')
+      window.history.pushState({}, '', url.toString())
+
+      url.searchParams.delete('lang')
+      window.history.replaceState({}, '', url.pathname)
     }
   }
 

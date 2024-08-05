@@ -1,17 +1,20 @@
 'use client'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
 
 import toast from 'react-hot-toast'
 import { motion } from 'framer-motion'
-import { RiMailLine, RiFileCopy2Line } from 'react-icons/ri'
+import { RiMailLine, RiFileCopy2Line, RiFilePdfLine } from 'react-icons/ri'
 
 import { useTranslation } from '@/context'
 import { RichTextViewer, ScrollToTopButton, Wrapper } from '@/components'
 import { socialsResume } from '@/constants/socials'
 
 export default function Resume() {
-  const { translations } = useTranslation()
+  const { translations, location } = useTranslation()
+
+  const [loading, setLoading] = useState(false)
 
   const text = translations.resume.about.description
 
@@ -26,9 +29,43 @@ export default function Resume() {
       })
   }
 
+  const handleGeneratePDF = async () => {
+    setLoading(true)
+    try {
+      const response = await fetch('/api/generate-pdf', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          url: `${window.location.origin}${window.location.pathname}?lang=${location}`,
+          language: location,
+        }),
+      })
+
+      if (!response.ok) {
+        throw new Error('Failed to generate PDF')
+      }
+
+      const blob = await response.blob()
+      const url = window.URL.createObjectURL(blob)
+      const a = document.createElement('a')
+      a.href = url
+      a.download = `resume-${location}.pdf`
+      document.body.appendChild(a)
+      a.click()
+      a.remove()
+    } catch (error) {
+      console.error(error)
+      alert('Failed to generate PDF')
+    } finally {
+      setLoading(false)
+    }
+  }
+
   return (
     <Wrapper>
-      <div className="flex flex-col gap-6 p-4">
+      <div className="flex flex-col gap-6 p-4 page-break-before: always">
         <div className="flex flex-row space-x-4 2xl:space-x-12 items-center">
           <Image
             src="/images/me_home.jpeg"
@@ -50,16 +87,29 @@ export default function Resume() {
           </div>
         </div>
         {/* about section */}
-        <div className="flex flex-row gap-3">
+        <div className="flex flex-col 2xl:flex-row gap-2 2xl:gap-6">
           <motion.a href="mailto:devffzanini@gmail.com" target="_blank">
-            <div className="flex flex-row gap-3 items-center font-extrabold opacity-100 hover:opacity-80">
+            <div className="flex flex-row gap-1 items-center font-extrabold opacity-100 hover:opacity-80">
               <RiMailLine style={{ width: '24px', height: '24px' }} />
               <p>{translations.resume.icos.mail}</p>
             </div>
           </motion.a>
-
-          <button onClick={copyToClipboard}>
-            <div className="flex flex-row gap-3 items-center font-extrabold opacity-100 hover:opacity-80">
+          <button
+            onClick={handleGeneratePDF}
+            disabled={loading}
+            className="no-print"
+          >
+            <div className="flex flex-row gap-1 items-center font-extrabold opacity-100 hover:opacity-80">
+              <RiFilePdfLine style={{ width: '24px', height: '24px' }} />
+              <p>
+                {loading
+                  ? translations.resume.icos.pdf_loading
+                  : translations.resume.icos.pdf_click}
+              </p>
+            </div>
+          </button>
+          <button onClick={copyToClipboard} className="no-print">
+            <div className="flex flex-row gap-1 items-center font-extrabold opacity-100 hover:opacity-80">
               <RiFileCopy2Line style={{ width: '24px', height: '24px' }} />
               <p>{translations.resume.icos.bio}</p>
             </div>

@@ -5,7 +5,9 @@
   "icos": 
     {
       "mail": "Enviar e-mail",
-      "bio": "Copiar bio"
+      "bio": "Copiar bio",
+      "pdf_click": "Baixar PDF",
+      "pdf_loading": "Carregando..."
     }
   ,
   "about": {

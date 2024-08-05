@@ -1,12 +1,14 @@
 'use client'
+
 import {
   createContext,
   useContext,
   useState,
   useMemo,
   useCallback,
+  useEffect,
+  ReactNode,
 } from 'react'
-
 import { en, pt } from '../locales'
 
 type Locations = 'pt' | 'en'
@@ -26,19 +28,27 @@ const useTranslation = () => {
 
   if (context === undefined) {
     throw new Error(
-      'useTranslation must be used within IternacionalizationProvider',
+      'useTranslation must be used within InternacionalizationProvider',
     )
   }
 
   return context
 }
 
-const InternacionalizaionProvider = ({
+const InternacionalizationProvider = ({
   children,
 }: {
-  children: React.ReactNode
+  children: ReactNode
 }) => {
   const [location, setLocation] = useState<Locations>('pt')
+
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search)
+    const lang = urlParams.get('lang')
+    if (lang && (lang === 'pt' || lang === 'en')) {
+      setLocation(lang as Locations)
+    }
+  }, [])
 
   const getTranslations = useCallback(() => {
     if (location === 'en') return en
@@ -49,6 +59,7 @@ const InternacionalizaionProvider = ({
     () => ({ location, setLocation, translations: getTranslations() }),
     [location, getTranslations],
   )
+
   return (
     <InternacionalizationContext.Provider value={objTranslations}>
       {children}
@@ -56,4 +67,4 @@ const InternacionalizaionProvider = ({
   )
 }
 
-export { InternacionalizaionProvider, useTranslation }
+export { InternacionalizationProvider, useTranslation }
