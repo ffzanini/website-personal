@@ -129,3 +129,30 @@ input:focus, textarea:focus {
 		flex-direction: column-reverse;
 	}
 }
+
+ /* icons colors and hovers */
+
+.icon-body {
+	width: 24px;
+	height: 24px;
+}
+
+.icon-body:hover {
+	transition: color 0.3s ease-in-out;
+	fill: var(--text-hover-link);
+}
+
+.icon-footer {
+	width: 20px;
+	height: 20px;
+}
+
+.icon-footer:hover {
+	transition: color 0.3s ease-in-out;
+	fill: var(--text-hover-link);
+}
+
+.div-github:hover .icon-body {
+	transition: color 0.3s ease-in-out;
+	fill: var(--text-hover-link);
+}

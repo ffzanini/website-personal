@@ -1,80 +1,166 @@
 {
   "title": "Projects",
   "sub_title": "During my professional life, I have developed several projects with incredible experiences that have had a positive impact on people and their businesses. Here you can find several projects and libraries that I had the opportunity to contribute to, where navigation is possible for some of them. Some of these projects are still active, others have been discontinued and more are not listed here for contractual reasons.",
-  "button_text": "Load more projects",
-  "end_list": "You've reached the end of the list.",
+  "title_study": "Study",
+  "sub_title_study": "Last study projects developed",
+  "description_study": "Developed personal projects, pages under construction.",
+  "button_text_study": "See all study projects",
+  "title_professional": "Professional",
+  "sub_title_professional": "Last professional projects developed",
+  "description_professional": "Developed professional projects, pages under construction.",
+  "button_text_professional": "See all professional projects",
+  "end_list": "You've reached the end of the list",
+  "back": "Back",
   "projects": [
     {
       "id": 1,
-      "title": "Conexia Educação",
-      "develop_at_text": "Made at ",
-      "develop_at": "nav9",
-      "develop_at_site": "https://nav9.tech/",
-      "develop_at_button": "Visit the project",
-      "description": "Education plataform.",
-      "image": "/images/projects/project-conexia.png",
-      "link": "https://www.conexia.com.br/",
-      "technologies": ["JavaScript", "TypeScript", "React", "CSS", "Material UI"]
+      "title": "A personal portifolio made with Next.js, Tailwind and TypeScript",
+      "page_content": [
+        {
+          "title": "Overview",
+          "description": ["Welcome to my portfolio! This project was created and designed to serve as a showcase of my skills, experiences, and projects completed throughout my career. Here, you will find a detailed collection of my work, highlighting my competencies and the dedication I put into each project.", "The design was inspired by usability and mobile-first principles, ensuring an intuitive navigation experience so that you can easily explore each section and gain a comprehensive view of my work and information about me.", "Additionally, this project also serves as my testing lab, where I implement new libraries and technologies before using them in real projects. This allows me to stay updated with the latest market technologies and ensure quality and efficiency in my work."]
+        },
+        {
+          "title": "Stack",
+          "description": [
+            "<b><u><a href=\"https://nextjs.org/\" target=\"_blank\">Next.js</a></u></b>: Next.js is a React framework that enables server-side rendering, static site generation, and other optimizations out of the box. It provides a smooth development experience and excellent performance for web applications.",
+            
+            "<b><u><a href=\"https://www.framer.com/motion/\" target=\"_blank\">Framer Motion</a></u></b>: Framer Motion is a library for creating animations in React applications. It offers a simple and intuitive API for building complex animations, enhancing the user experience of the application.",
+            
+            "<b><u><a href=\"https://react-hook-form.com/\" target=\"_blank\">React-hook-form</a></u></b>: React-hook-form is a library for managing forms in React applications. It provides a declarative approach to form validation and handling form state, improving the usability and maintainability of the application's contact page.",
+            
+            "<b><u><a href=\"https://tailwindcss.com/\" target=\"_blank\">Tailwind CSS</a></u></b>: Tailwind CSS is a utility-first CSS framework for creating custom designs without having to leave your HTML. It streamlines the styling process and facilitates rapid prototyping and development in the application.",
+            
+            "<b><u><a href=\"https://axios-http.com/\" target=\"_blank\">Axios</a></u></b>: Axios is a promise-based HTTP client for JavaScript. It simplifies making HTTP requests, such as GET, POST, PUT, and DELETE, from both the browser and Node.js. Axios handles request/response transformations and supports older browsers, making API interactions easier and more reliable.",
+            
+            "<b><u><a href=\"https://www.npmjs.com/package/@notionhq/client/\" target=\"_blank\">@notionhq/client</a></u></b>: @notionhq/client is the official JavaScript client for the Notion API. It allows developers to interact with Notion data programmatically, enabling the creation, update, and retrieval of pages and databases. This client simplifies automating workflows and building custom integrations with Notion.",
+            
+            "<b><u><a href=\"https://react-icons.github.io/react-icons/\" target=\"_blank\">React-icons</a></u></b>: React-icons is a library for using popular icon packs in React applications. It includes icons from collections like Font Awesome and Material Design. React-icons offers a simple API to add and customize icons, enhancing the visual appeal of React projects.",
+            
+            "<b><u><a href=\"https://vercel.com/docs/speed-insights/\" target=\"_blank\">@vercel/speed-insights</a></u></b>: @vercel/speed-insights integrates Google's PageSpeed Insights with Vercel deployments. It helps developers monitor and analyze their web application's performance, providing insights and suggestions for improvement. This ensures applications are optimized for speed and deliver a better user experience."
+          ]
+        },
+        {
+          "title": "Development Tools",
+          "description": [  
+            "<b><u><a href=\"https://vercel.com/\" target=\"_blank\">Vercel</a></u></b>: Vercel is a cloud platform for static sites and serverless functions. It is used for deploying and hosting the application, providing a seamless deployment experience with built-in CI/CD integration.",
+          
+            "<b><u><a href=\"https://vercel.com/docs/speed-insights/\" target=\"_blank\">Speed Insights</a></u></b>: @vercel/speed-insights integrates Google's PageSpeed Insights with Vercel deployments. It helps developers monitor and analyze their web application's performance, providing insights and suggestions for improvement. This ensures applications are optimized for speed and deliver a better user experience.",
+
+            "<b><u><a href=\"https://vercel.com/docs/analytics\" target=\"_blank\">Analytics</a></u></b>: Vercel Analytics is employed for monitoring visitors and analyzing traffic to the application. It provides valuable insights into user behavior and helps optimize the application for better engagement and usability.",
+          
+            "<b><u>ESLint, Prettier and SonarQube</u></b>: ESLint, Prettier and SonarQube are used for maintaining code quality and consistency in the application. They enforce coding standards and best practices, ensuring clean and readable code across the codebase."
+          ]
+        }
+      ]
     },
     {
       "id": 2,
-      "title": "Dove Research",
-      "develop_at_text": "Made autonomus: ",
-      "develop_at": "Felipe Frantz Zanini",
-      "develop_at_site": "https://ffzanini.dev/",
-      "develop_at_button": "Visit the project",
-      "description": "Website was created with the purpose of disseminating project job opportunities, as well as centralizing articles and works produced by the research group.",
-      "image": "/images/projects/project-doveresearch.png",
-      "link": "https://doveresearch.org/",
-      "technologies": ["JavaScript", "PHP", "CodeIgniter", "MySQL", "CSS", "Bootstrap", "Hostgator"]
+      "title": "Conexia",
+      "page_content": [
+        {
+          "title": "Overview",
+          "description": ["text under construction"]
+        },
+        {
+          "title": "Stack",
+          "description": ["text under construction"]
+        },
+        {
+          "title": "Development Tools",
+          "description": ["text under construction"]
+        }
+      ]
     },
     {
       "id": 3,
-      "title": "EducaCross",
-      "develop_at_text": "Made at ",
-      "develop_at": "nav9",
-      "develop_at_site": "https://nav9.tech/",
-      "develop_at_button": "Visit the project",
-      "description": "Education plataform.",
-      "image": "/images/projects/project-educacross.png",
-      "link": "https://www.educacross.com.br/",
-      "technologies": ["JavaScript","TypeScript", "Angular", "Vue", "CSS", "Tailwind"]
+      "title": "Dove Research",
+      "page_content": [
+        {
+          "title": "Overview",
+          "description": ["text under construction"]
+        },
+        {
+          "title": "Stack",
+          "description": ["text under construction"]
+        },
+        {
+          "title": "Development Tools",
+          "description": ["text under construction"]
+        }
+      ]
     },
     {
       "id": 4,
-      "title": "Iguatemi",
-      "develop_at_text": "Made at ",
-      "develop_at": "nav9",
-      "develop_at_site": "https://nav9.tech/",
-      "description": "Development of the shopkeeper portal, the main tool used for sales metrics, service requests, and other features offered to its clients.",
-      "develop_at_button": "Visit the project",
-      "image": "/images/projects/project-iguatemi.png",
-      "link": "https://www.iguatemi.com.br/",
-      "technologies": ["JavaScript", "TypeScript","React", "Vite", "CSS", "Material UI", "Java", "Sensedia", "Microsoft Azure", "MongoDB", "SalesForce", "SAP"]
+      "title": "EducaCross",
+      "page_content": [
+        {
+          "title": "Overview",
+          "description": ["text under construction"]
+        },
+        {
+          "title": "Stack",
+          "description": ["text under construction"]
+        },
+        {
+          "title": "Development Tools",
+          "description": ["text under construction"]
+        }
+      ]
     },
     {
       "id": 5,
-      "title": "UFC Fantasy",
-      "develop_at_text": "Made at ",
-      "develop_at": "nav9",
-      "develop_at_site": "https://nav9.tech/",
-      "description": "This website was developed with the aim of providing more entertainment for combat sports enthusiasts. Here, you can create and join leagues, make predictions, and compete with your friends, with the opportunity to be rewarded by accumulating more points throughout your participation period, involving your favorite predictions and events.",
-      "develop_at_button": "Visit the project",
-      "image": "/images/projects/project-ufcfantasy.png",
-      "link": "https://www.vittude.com/",
-      "technologies": ["JavaScript", "React", "Next", "CSS", "Material UI"]
+      "title": "Iguatemi",
+      "page_content": [
+        {
+          "title": "Overview",
+          "description": ["text under construction"]
+        },
+        {
+          "title": "Stack",
+          "description": ["text under construction"]
+        },
+        {
+          "title": "Development Tools",
+          "description": ["text under construction"]
+        }
+      ]
     },
     {
       "id": 6,
+      "title": "UFC Fantasy",
+      "page_content": [
+        {
+          "title": "Overview",
+          "description": ["text under construction"]
+        },
+        {
+          "title": "Stack",
+          "description": ["text under construction"]
+        },
+        {
+          "title": "Development Tools",
+          "description": ["text under construction"]
+        }
+      ]
+    },
+    {
+      "id": 7,
       "title": "Vittude",
-      "develop_at_text": "Made at ",
-      "develop_at": "nav9",
-      "develop_at_site": "https://nav9.tech/",
-      "description": "A platform dedicated to connecting psychologists and patients, providing a secure environment for conducting consultations.",
-      "develop_at_button": "Visit the project",
-      "image": "/images/projects/project-vittude.png",
-      "link": "https://www.vittude.com/",
-      "technologies": ["JavaScript", "React", "CSS", "SASS", "Material UI"]
+      "page_content": [
+        {
+          "title": "Overview",
+          "description": ["text under construction"]
+        },
+        {
+          "title": "Stack",
+          "description": ["text under construction"]
+        },
+        {
+          "title": "Development Tools",
+          "description": ["text under construction"]
+        }
+      ]
     }
   ]
 }

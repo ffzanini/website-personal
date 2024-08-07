@@ -38,7 +38,7 @@ export function Footer() {
                 }}
                 className="p-2 flex justify-center items-center hover:brightness-250 transition-all duration-300"
               >
-                <Icon width={21} height={21} />
+                <Icon className="icon-footer" />
               </motion.a>
             ))}
           </div>

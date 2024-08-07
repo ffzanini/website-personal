@@ -12,7 +12,7 @@ export async function POST(req: Request) {
   try {
     await notion.pages.create({
       parent: {
-        database_id: process.env.NEXT_PUBLIC_NOTION_DATABASE_KEY || '',
+        database_id: process.env.NEXT_PUBLIC_NOTION_DATABASE_KEY ?? '',
         type: 'database_id',
       },
       properties: {

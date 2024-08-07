@@ -1,80 +1,166 @@
 {
   "title": "Projetos",
   "sub_title": "No decorrer da minha vida profissional, desenvolvi diversos projetos com experiências incríveis que impactaram de uma forma positivo nas pessoas e nos seus negócios. Aqui pode ser encontrado diversos projetos e bibliotecas que tive a oportunidade de contribuir, onde alguns deles, a navegação é possível. Alguns destes projetos ainda estão ativos, outros foram descontinuados e mais aqueles que não estão listados aqui por motivos contratuais.",
-  "button_text": "Carregar mais projetos",
-  "end_list": "Você chegou ao final da lista.",
+  "title_study": "Estudo",
+  "description_study": "Projetos pessoais desenvolvidos, páginas em construção.",
+  "sub_title_study": "Últimos projetos de estudo desenvolvidos",
+  "button_text_study": "Ver todos projetos de estudo",
+  "title_professional": "Profissional",
+  "sub_title_professional": "Últimos projetos profissionais desenvolvidos",
+  "description_professional": "Projetos profissionais desenvolvidos, páginas em construção.",
+  "button_text_professional": "Ver todos projetos profissionais",
+  "end_list": "Você chegou ao final da lista",
+  "back": "Voltar",
   "projects": [
     {
       "id": 1,
-      "title": "Conexia Educação",
-      "develop_at_text": "Feito na ",
-      "develop_at": "nav9",
-      "develop_at_site": "https://nav9.tech/",
-      "develop_at_button": "Visite o projeto",
-      "description": "Plataforma de educação.",
-      "image": "/images/projects/project-conexia.png",
-      "link": "https://www.conexia.com.br/",
-      "technologies": ["JavaScript", "TypeScript", "React", "CSS", "Material UI"]
+      "title": "Portifólio pessoal feito com Next.js, Tailwind e TypeScript",
+      "page_content": [
+        {
+          "title": "Visão Geral",
+          "description": ["Bem-vindo ao meu portfólio! Este projeto foi criado e pensado para servir como uma vitrine das minhas habilidades, experiências e projetos realizados ao longo da minha carreira. Aqui, você encontrará uma coleção detalhada do meu trabalho, destacando minhas competências e a dedicação que coloco em cada projeto.", "O design foi inspirado pelos princípios de usabilidade e mobile first, garantindo ao máximo uma navegação intuitiva para que se possa explorar facilmente cada seção e com isso, fornecer uma visão completa das minhas dos meus trabalhos como também, ao meu respeito.", "Além disso, este projeto também serve como meu laboratório de testes, onde implemento novas bibliotecas e tecnologias antes de utilizá-las em projetos reais. Isso me permite estar sempre atualizado com as últimas tecnologias do mercado e garantir a qualidade e eficiência em meus trabalhos."]
+        },
+        {
+          "title": "Tecnologias",
+          "description": [
+            "<b><u><a href=\"https://nextjs.org/\" target=\"_blank\">Next.js</a></u></b>: Next.js é um framework React que permite a renderização no lado do servidor, geração de site estático e outras otimizações prontas para uso. Ele proporciona uma experiência de desenvolvimento suave e excelente desempenho para aplicações web.",
+            
+            "<b><u><a href=\"https://www.framer.com/motion/\" target=\"_blank\">Framer Motion</a></u></b>: Framer Motion é uma biblioteca para criar animações em aplicações React. Ela oferece uma API simples e intuitiva para construir animações complexas, aprimorando a experiência do usuário da aplicação.",
+            
+            "<b><u><a href=\"https://react-hook-form.com/\" target=\"_blank\">React-hook-form</a></u></b>: React-hook-form é uma biblioteca para gerenciar formulários em aplicações React. Ela fornece uma abordagem declarativa para validação de formulários e gerenciamento de estado de formulários, melhorando a usabilidade e a manutenção da página de contato da aplicação.",
+            
+            "<b><u><a href=\"https://tailwindcss.com/\" target=\"_blank\">Tailwind CSS</a></u></b>: Tailwind CSS é um framework CSS utilitário que facilita a criação de designs personalizados sem precisar sair do HTML. Ele simplifica o processo de estilização e facilita a prototipagem rápida e o desenvolvimento da aplicação.",
+            
+            "<b><u><a href=\"https://axios-http.com/\" target=\"_blank\">Axios</a></u></b>: Axios é um cliente HTTP baseado em promessas para JavaScript. Ele simplifica a realização de requisições HTTP, como GET, POST, PUT e DELETE, tanto do navegador quanto do Node.js. Axios lida com transformações de requisições/respostas e suporta navegadores mais antigos, tornando as interações com APIs mais fáceis e confiáveis.",
+            
+            "<b><u><a href=\"https://www.npmjs.com/package/@notionhq/client/\" target=\"_blank\">@notionhq/client</a></u></b>: @notionhq/client é o cliente JavaScript oficial para a API do Notion. Ele permite que os desenvolvedores interajam com os dados do Notion programaticamente, possibilitando a criação, atualização e recuperação de páginas e bancos de dados. Este cliente simplifica a automação de fluxos de trabalho e a construção de integrações personalizadas com o Notion.",
+            
+            "<b><u><a href=\"https://react-icons.github.io/react-icons/\" target=\"_blank\">React-icons</a></u></b>: React-icons é uma biblioteca para usar pacotes de ícones populares em aplicações React. Ela inclui ícones de coleções como Font Awesome e Material Design. React-icons oferece uma API simples para adicionar e personalizar ícones, aprimorando o apelo visual dos projetos React.",
+            
+            "<b><u><a href=\"https://vercel.com/docs/speed-insights/\" target=\"_blank\">@vercel/speed-insights</a></u></b>: @vercel/speed-insights integra o Google PageSpeed Insights com implantações Vercel. Ele ajuda os desenvolvedores a monitorar e analisar o desempenho de suas aplicações web, fornecendo insights e sugestões para melhorias. Isso garante que as aplicações estejam otimizadas para velocidade e ofereçam uma melhor experiência ao usuário."
+          ]
+        },
+        {
+          "title": "Ferramentas de Desenvolvimento",
+          "description": [
+            "<b><u><a href=\"https://vercel.com/\" target=\"_blank\">Vercel</a></u></b>: Vercel é uma plataforma de nuvem para sites estáticos e funções serverless. É usada para implantar e hospedar a aplicação, proporcionando uma experiência de implantação perfeita com integração CI/CD integrada.",
+            
+            "<b><u><a href=\"https://vercel.com/docs/speed-insights/\" target=\"_blank\">Speed Insights</a></u></b>: @vercel/speed-insights integra o Google PageSpeed Insights com implantações Vercel. Ele ajuda os desenvolvedores a monitorar e analisar o desempenho de suas aplicações web, fornecendo insights e sugestões para melhorias. Isso garante que as aplicações estejam otimizadas para velocidade e ofereçam uma melhor experiência ao usuário.",
+
+            "<b><u><a href=\"https://vercel.com/docs/analytics\" target=\"_blank\">Analytics</a></u></b>: Vercel Analytics é utilizada para monitorar visitantes e analisar o tráfego da aplicação. Ela fornece insights valiosos sobre o comportamento dos usuários e ajuda a otimizar a aplicação para melhor engajamento e usabilidade.",
+            
+            "<b><u>ESLint, Prettier e SonarQube</u></b>: ESLint, Prettier e SonarQube são usados para manter a qualidade e consistência do código na aplicação. Eles aplicam padrões de codificação e melhores práticas, garantindo um código limpo e legível em toda a base de código."
+          ]
+        }
+      ]
     },
     {
       "id": 2,
-      "title": "Dove Research",
-      "develop_at_text": "Feito autônomo: ",
-      "develop_at": "Felipe Frantz Zanini",
-      "develop_at_site": "https://ffzanini.dev/",
-      "develop_at_button": "Visite o projeto",
-      "description": "Site foi criado com o propósito de divulgar vagas do projeto, bem como centralizar artigos e trabalhos produzidos pelo grupo de pesquisa.",
-      "image": "/images/projects/project-doveresearch.png",
-      "link": "https://doveresearch.org/",
-      "technologies": ["JavaScript", "PHP", "CodeIgniter", "MySQL", "CSS", "Bootstrap", "Hostgator"]
+      "title": "Conexia",
+      "page_content": [
+        {
+          "title": "Visão Geral",
+          "description": ["texto em construção"]
+        },
+        {
+          "title": "Tecnologias",
+          "description": ["texto em construção"]
+        },
+        {
+          "title": "Ferramentas de Desenvolvimento",
+          "description": ["texto em construção"]
+        }
+      ]
     },
     {
       "id": 3,
-      "title": "EducaCross",
-      "develop_at_text": "Feito na ",
-      "develop_at": "nav9",
-      "develop_at_site": "https://nav9.tech/",
-      "develop_at_button": "Visite o projeto",
-      "description": "Plataforma de educação.",
-      "image": "/images/projects/project-educacross.png",
-      "link": "https://www.educacross.com.br/",
-      "technologies": ["JavaScript","TypeScript", "Angular", "Vue", "CSS", "Tailwind"]
+      "title": "Dove Research",
+      "page_content": [
+        {
+          "title": "Visão Geral",
+          "description": ["texto em construção"]
+        },
+        {
+          "title": "Tecnologias",
+          "description": ["texto em construção"]
+        },
+        {
+          "title": "Ferramentas de Desenvolvimento",
+          "description": ["texto em construção"]
+        }
+      ]
     },
     {
       "id": 4,
-      "title": "Iguatemi",
-      "develop_at_text": "Feito na ",
-      "develop_at": "nav9",
-      "develop_at_site": "https://nav9.tech/",
-      "description": "Desenvolvimento do portal do lojista, a principal ferramenta utilizada para métricas de vendas, solicitações de serviços, e outros recursos oferecidos aos seus clientes.",
-      "develop_at_button": "Visite o projeto",
-      "image": "/images/projects/project-iguatemi.png",
-      "link": "https://www.iguatemi.com.br/",
-      "technologies": ["JavaScript", "TypeScript","React", "Vite", "CSS", "Material UI", "Java", "Sensedia", "Microsoft Azure", "MongoDB", "SalesForce", "SAP"]
+      "title": "EducaCross",
+      "page_content": [
+        {
+          "title": "Visão Geral",
+          "description": ["texto em construção"]
+        },
+        {
+          "title": "Tecnologias",
+          "description": ["texto em construção"]
+        },
+        {
+          "title": "Ferramentas de Desenvolvimento",
+          "description": ["texto em construção"]
+        }
+      ]
     },
     {
       "id": 5,
-      "title": "UFC Fantasy",
-      "develop_at_text": "Feito na ",
-      "develop_at": "nav9",
-      "develop_at_site": "https://nav9.tech/",
-      "description": "Este site foi desenvolvido com o objetivo de proporcionar mais entretenimento aos apaixonados por lutas. Aqui, você pode criar e participar de ligas, palpitar e competir com seus amigos, tendo a oportunidade de ser premiado ao acumular mais pontos ao longo do seu período de participação, envolvendo seus palpites e eventos favoritos.",
-      "develop_at_button": "Visite o projeto",
-      "image": "/images/projects/project-ufcfantasy.png",
-      "link": "https://www.ufcfantasy.com.br/",
-      "technologies": ["JavaScript", "React", "Next", "CSS", "Material UI"]
+      "title": "Iguatemi",
+      "page_content": [
+        {
+          "title": "Visão Geral",
+          "description": ["texto em construção"]
+        },
+        {
+          "title": "Tecnologias",
+          "description": ["texto em construção"]
+        },
+        {
+          "title": "Ferramentas de Desenvolvimento",
+          "description": ["texto em construção"]
+        }
+      ]
     },
     {
       "id": 6,
+      "title": "UFC Fantasy",
+      "page_content": [
+        {
+          "title": "Visão Geral",
+          "description": ["texto em construção"]
+        },
+        {
+          "title": "Tecnologias",
+          "description": ["texto em construção"]
+        },
+        {
+          "title": "Ferramentas de Desenvolvimento",
+          "description": ["texto em construção"]
+        }
+      ]
+    },
+    {
+      "id": 7,
       "title": "Vittude",
-      "develop_at_text": "Feito na ",
-      "develop_at": "nav9",
-      "develop_at_site": "https://nav9.tech/",
-      "description": "Plataforma dedicada a conectar psicólogos e pacientes, proporcionando um ambiente seguro para a realização de consultas.",
-      "develop_at_button": "Visite o projeto",
-      "image": "/images/projects/project-vittude.png",
-      "link": "https://www.vittude.com/",
-      "technologies": ["JavaScript", "React", "CSS", "SASS", "Material UI"]
+      "page_content": [
+        {
+          "title": "Visão Geral",
+          "description": ["texto em construção"]
+        },
+        {
+          "title": "Tecnologias",
+          "description": ["texto em construção"]
+        },
+        {
+          "title": "Ferramentas de Desenvolvimento",
+          "description": ["texto em construção"]
+        }
+      ]
     }
   ]
 }

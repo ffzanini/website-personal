@@ -141,9 +141,9 @@ export function Header() {
             className="p-3"
           >
             {checkTheme !== 'dark' ? (
-              <RxMoon width={21} height={21} />
+              <RxMoon className="icon-footer" />
             ) : (
-              <RxSun width={21} height={21} />
+              <RxSun className="icon-footer" />
             )}
           </motion.button>
           <motion.button
@@ -157,9 +157,9 @@ export function Header() {
             className="px-3 py-2"
           >
             {location === 'en' ? (
-              <BrFlag title="Brazil" className=" w-8 opacity-70" />
+              <BrFlag title="Brazil" className="w-8 opacity-70" />
             ) : (
-              <UsFlag title="United States" className=" w-8 opacity-70" />
+              <UsFlag title="United States" className="w-8 opacity-70" />
             )}
           </motion.button>
           <motion.button
@@ -225,9 +225,11 @@ export function Header() {
           </motion.ul>
         </motion.div>
       </motion.div>
-      {pathname !== '/' && pathname !== '/contact' && (
-        <motion.div className="progress-bar" style={{ scaleX }} />
-      )}
+      {pathname !== '/' &&
+        pathname !== '/contact' &&
+        pathname !== '/projects/study' && (
+          <motion.div className="progress-bar" style={{ scaleX }} />
+        )}
     </nav>
   )
 }

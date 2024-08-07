@@ -46,3 +46,15 @@ export const item = {
   hidden: { opacity: 0 },
   show: { opacity: 1 },
 }
+
+export const cardAnim: AnimVariants = {
+  initial: {
+    opacity: 0,
+  },
+  enter: {
+    opacity: 1,
+  },
+  exit: {
+    opacity: 0,
+  },
+}

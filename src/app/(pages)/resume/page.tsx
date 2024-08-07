@@ -90,7 +90,7 @@ export default function Resume() {
         <div className="flex flex-col 2xl:flex-row gap-2 2xl:gap-6">
           <motion.a href="mailto:devffzanini@gmail.com" target="_blank">
             <div className="flex flex-row gap-1 items-center font-extrabold opacity-100 hover:opacity-80">
-              <RiMailLine style={{ width: '24px', height: '24px' }} />
+              <RiMailLine className="icon-body" />
               <p>{translations.resume.icos.mail}</p>
             </div>
           </motion.a>
@@ -100,7 +100,7 @@ export default function Resume() {
             className="no-print"
           >
             <div className="flex flex-row gap-1 items-center font-extrabold opacity-100 hover:opacity-80">
-              <RiFilePdfLine style={{ width: '24px', height: '24px' }} />
+              <RiFilePdfLine className="icon-body" />
               <p>
                 {loading
                   ? translations.resume.icos.pdf_loading
@@ -110,7 +110,7 @@ export default function Resume() {
           </button>
           <button onClick={copyToClipboard} className="no-print">
             <div className="flex flex-row gap-1 items-center font-extrabold opacity-100 hover:opacity-80">
-              <RiFileCopy2Line style={{ width: '24px', height: '24px' }} />
+              <RiFileCopy2Line className="icon-body" />
               <p>{translations.resume.icos.bio}</p>
             </div>
           </button>
@@ -124,7 +124,7 @@ export default function Resume() {
         <div className="flex flex-col gap-2">
           {socialsResume.map(({ href, icon: Icon, name, label }) => (
             <div key={name} className="flex flex-row gap-3 items-center">
-              <Icon width={21} height={21} />
+              <Icon className="icon-footer" />
               <p>{name}</p>
               <motion.a href={href} target="_blank">
                 {label}
