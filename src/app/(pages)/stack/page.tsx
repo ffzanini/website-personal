@@ -1,6 +1,6 @@
 'use client'
 import { useTranslation } from '@/context'
-import { RichTextViewer, Wrapper } from '@/components'
+import { RichTextViewer, ScrollToTopButton, Wrapper } from '@/components'
 import {
   stackBackEnd,
   stackDevOps,
@@ -90,6 +90,7 @@ export default function Stack() {
           </div>
         </div>
       </div>
+      <ScrollToTopButton />
     </Wrapper>
   )
 }
