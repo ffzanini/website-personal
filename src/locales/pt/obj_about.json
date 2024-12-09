@@ -2,56 +2,27 @@
   "title": "Sobre mim",
   "sub_title": "Me conheça um pouco melhor",
   "description": {
-    "description_one": "Meu nome é Felipe Frantz Zanini, sou engenheiro de software e apaixonado por jiu-jitsu, desenvolvimento de jogos independentes, Dota 2, escrita, arte e música. Tenho 31 anos e moro em Pelotas, Rio Grande do Sul, Brasil.",
+    "description_one": "Prazer, sou Felipe Frantz Zanini. Engenheiro de software e apaixonado por jiu-jitsu, desenvolvimento de jogos independentes, Dota 2, escrita, arte e música. Tenho 31 anos e moro em Pelotas, Rio Grande do Sul, Brasil.",
     "description_two": "Minha jornada no desenvolvimento de software começou em 2008, durante o ensino técnico. Em 2010, após concluir o curso, iniciei meu primeiro estágio em programação e, desde então, nunca parei de estudar e evoluir. Ao ser efetivado como engenheiro de software, participei de mais de <b>40 projetos</b>, utilizando diversas tecnologias, com ênfase em PHP.",
     "description_three": "Apaixonado pela área e sempre buscando aprimoramento, obtive a Graduação em Tecnologia em Gestão da TI e uma Especialização em Gestão de TI. Também iniciei um Mestrado em Ciência da Computação.",
     "description_four": "Atualmente ocupo o cargo de Engenheiro de Software Sênior e Tech Lead especializado em desenvolvimento web na <b><u><a href=\"https://www.nav9.tech\" target=\"_blank\">nav9</a></u></b>. Tenho o privilégio de ser parceiro tecnológico de empresas como Shoppings Iguatemi, UFC, EducaCross, Grupo SEB, Rede AZ, entre outros, auxiliando na criação das melhores soluções de produtos para a web.",
     "description_five": "Meu objetivo é criar um jogo completamente independente e documentar todo o processo em meu <b><u><a href=\"https://www.youtube.com/channel/UCVHgTgRK0M5kt2Gvi60b7Eg\" target=\"_blank\">canal do YouTube</a></u></b>. Para dar vida a esses projetos de desenvolvimento de jogos e conteúdos, tenho investido tempo e energia na especialização em diversas áreas, incluindo criação de roteiros, game design, level design, pixel art, teoria das cores, bem como no estudo do piano e teoria musical."
   },
-  "carrer": {
-    "title": "Carreira",
-    "jobs": [
-      {
-        "id": 1,
-        "title": "nav9",
-        "description": "Software Engineer & Tech Lead",
-        "date": "Abr 2021 - Present"
-      },
-      {
-        "id": 2,
-        "title": "Uni. Fed. de Pelotas - UFPel",
-        "description": "Bolsista CAPES",
-        "date": "Mar 2020 - Abr 2021"
-      },
-      {
-        "id": 3,
-        "title": "Alpago",
-        "description": "Founder & CTO",
-        "date": "Jan 2016 - Mar 2020"
-      },
-      {
-        "id": 4,
-        "title": "Zapshop Informática",
-        "description": "Software Engineer",
-        "date": "Jan 2011 - Dez 2015"
-      }
-    ]
-  },
   "skills":{
     "title": "Habilidades",
     "strong": {
       "title": "Meus pontos fortes são:",
-      "description": "Frameworks e libs baseadas em JavaScript, especialmente React e Vue. CSS e seus frameworks, como Tailwind, Material UI, Bootstrap e Bulma. Criacão de Design Systems, Style-Directory e Storybook. Boas práticas, código limpo, web performance e acessibilidade."
+      "description": "Frameworks e libs baseadas em JavaScript e/ou com Typescript, especialmente React, Vue, Vite e SSRs (Nuxt e Next). CSS e seus frameworks, como Tailwind, MUI, Bootstrap e Bulma. Criacão de Design Systems, Style-Directory e Storybook. Boas práticas, código limpo, web performance e acessibilidade."
     }
     ,
     "medium": {
       "title": "Conheço e me dou bem com:",
-      "description": "Angular, React-Native, SSRs (Nuxt e Next). Testes unitários, backend com Node, Express, PHP, Laravel, CodeIgniter e manipulação de banco de dados (MySQL e MongoDB)."
+      "description": "Angular, React-Native e Redux. Testes unitários, backend com Node, Express, PHP, Laravel, CodeIgniter e manipulação de banco de dados (MySQL e MongoDB)."
     }
     ,
     "weak": {
-      "title": "Sou capaz de dar suporte em:",
-      "description": "GDScript, Python, Ruby, Rails e tecnologias nativas."
+      "title": "Capaz de dar suporte em:",
+      "description": "GDScript, Python, Ruby, Rails, Firebase e tecnologias nativas."
     }
   },
   "education": {

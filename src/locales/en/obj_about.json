@@ -2,7 +2,7 @@
   "title": "About",
   "sub_title": "Know me a little more",
   "description": {
-    "description_one": "My name is Felipe Frantz Zanini. I am a software engineer and passionate about jiu-jitsu, indie game development, Dota 2, writing, art, and music. I am 31 years old and live in Pelotas, Rio Grande do Sul, Brazil.",
+    "description_one": "Hello, i'm Felipe Frantz Zanini. Software engineer and passionate about jiu-jitsu, indie game development, Dota 2, writing, art, and music. I am 31 years old and live in Pelotas, Rio Grande do Sul, Brazil.",
     "description_two": "Mine journey in software development began in 2008 during technical school. In 2010, after completing the course, I started my first programming internship and have never stopped studying and evolving since. Upon becoming a full-time software engineer, I participated in over <b>40 projects</b>, using many technologies, with an emphasis on PHP.",
     "description_three": "Passionate about the field and always seeking improvement, I obtained a Degree in Technology Management IT and a Specialization in IT Strategic Planning. I also started a Master's in Computer Science.",
     "description_four": "I currently hold the position of Senior Software Engineer and Tech Lead specializing in web development at <b><u><a href=\"https://www.nav9.tech\" target=\"_blank\">nav9</a></u></b>. I have the privilege of being a technology partner for companies such as Shoppings Iguatemi, UFC, EducaCross, Grupo SEB, Rede AZ, among others, helping to create the best web product solutions.",
@@ -12,17 +12,17 @@
     "title": "Skills",
     "strong": {
       "title": "Most confident with:",
-      "description": "Frameworks and libs JavaScript based, especially React and Vue. CSS and some frameworks like Tailwind, Material UI, Bootstrap and Bulma. Design Systems, Style-Directory and Storybook. Good practices, clean code, web performance and accessibility."
+      "description": "Frameworks and libs JavaScript and/or Typescript based, especially React and Vue, Vite and SSRs (Nuxt e Next). CSS and some frameworks like Tailwind, MUI, Bootstrap and Bulma. Design Systems, Style-Directory and Storybook. Good practices, clean code, web performance and accessibility."
     }
     ,
     "medium": {
       "title": "I have good knowledge on:",
-      "description": "Angular, React-Native, SSRs (Nuxt e Next). Unit tests, backend with Node, Express, PHP, Laravel, CodeIgniter and database manipulation (MySQL e MongoDB)."
+      "description": "Angular, React-Native and Redux. Unit tests, backend with Node, Express, PHP, Laravel, CodeIgniter and database manipulation (MySQL e MongoDB)."
     }
     ,
     "weak": {
-      "title": "I can manage with some help:",
-      "description": "GDScript, Python, Ruby, Rails and native technologies."
+      "title": "Able to provide support:",
+      "description": "GDScript, Python, Ruby, Rails, Firebase and native technologies."
     }
   },
   "carrer": {
@@ -31,7 +31,7 @@
       {
         "id": 1,
         "title": "nav9",
-        "description": "Software Engineer & Tech Lead",
+        "description": "Senior Software Engineer & Tech Lead",
         "date": "Apr 2021 - Present"
       },
       {

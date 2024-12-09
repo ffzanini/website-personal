@@ -1,0 +1,14 @@
+{
+  "title": "Stack",
+  "sub_title": "Abaixo você encontra a lista das tecnologias que trabalho ou já trabalhei em algum momento da minha carreira.",
+  "front": "Frontend",
+  "back": "Backend",
+  "game": "Desenvolvimento de Jogos",
+  "devops": "DevOps",
+  "footer":{
+    "title": "Quer saber mais?",
+    "link": "resumo",
+    "message_one": "Acesse meu ",
+    "message_two": " e leia em detalhes sobre tudo o que já produzi nesses mais de 10 anos trabalhando com tecnologia."
+  }
+}

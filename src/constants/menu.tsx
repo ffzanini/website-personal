@@ -24,6 +24,10 @@ export const menu: MenuItem[] = [
     ],
   },
   {
+    name: 'stack',
+    href: '/stack',
+  },
+  {
     name: 'projects',
     href: '/projects',
   },

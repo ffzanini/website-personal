@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 import toast from 'react-hot-toast'
 import { motion } from 'framer-motion'
-import { RiMailLine, RiFileCopy2Line, RiFilePdfLine } from 'react-icons/ri'
+import { RiMailLine, RiFileCopy2Line } from 'react-icons/ri'
 
 import { useTranslation } from '@/context'
 import { RichTextViewer, ScrollToTopButton, Wrapper } from '@/components'
@@ -98,16 +98,7 @@ export default function Resume() {
             onClick={handleGeneratePDF}
             disabled={loading}
             className="no-print"
-          >
-            <div className="flex flex-row gap-1 items-center font-extrabold opacity-100 hover:opacity-80">
-              <RiFilePdfLine className="icon-body" />
-              <p>
-                {loading
-                  ? translations.resume.icos.pdf_loading
-                  : translations.resume.icos.pdf_click}
-              </p>
-            </div>
-          </button>
+          ></button>
           <button onClick={copyToClipboard} className="no-print">
             <div className="flex flex-row gap-1 items-center font-extrabold opacity-100 hover:opacity-80">
               <RiFileCopy2Line className="icon-body" />

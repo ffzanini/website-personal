@@ -1,0 +1,14 @@
+{
+  "title": "Stack",
+  "sub_title": "Below you will find the list of technologies that I work or have worked on at some point in my career.",
+  "front": "Frontend",
+  "back": "Backend",
+  "game": "Game Development",
+  "devops": "DevOps",
+  "footer":{
+    "title": "Wanna know more?",
+    "link": "resume",
+    "message_one": "Access my ",
+    "message_two": " and read more about everything I've produced in over 10 years working with technology."
+  }
+}

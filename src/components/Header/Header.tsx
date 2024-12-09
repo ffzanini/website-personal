@@ -80,6 +80,8 @@ export function Header() {
     switch (name) {
       case 'about':
         return translations.navbar.aboutPage
+      case 'stack':
+        return translations.navbar.stackPage
       case 'contents':
         return translations.navbar.contentsPage
       case 'projects':

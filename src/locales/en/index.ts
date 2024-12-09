@@ -6,7 +6,18 @@ import navbar from './obj_header.json'
 import home from './obj_home.json'
 import projects from './obj_projects.json'
 import resume from './obj_resume.json'
+import stack from './obj_stack.json'
 
-const en = { about, contact, contents, footer, navbar, home, projects, resume }
+const en = {
+  about,
+  contact,
+  contents,
+  footer,
+  navbar,
+  home,
+  projects,
+  resume,
+  stack,
+}
 
 export default en

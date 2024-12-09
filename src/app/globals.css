@@ -131,6 +131,21 @@ input:focus, textarea:focus {
 }
 
  /* icons colors and hovers */
+ a:hover .icon-stack {
+	transition: color 0.3s ease-in-out, fill 0.3s ease-in-out;
+	color: var(--text-hover-link);
+	fill: var(--text-hover-link);
+}
+
+.icon-stack {
+	width: 35px;
+	height: 35px;
+}
+
+.icon-stack:hover {
+	transition: color 0.3s ease-in-out;
+	fill: var(--text-hover-link);
+}
 
 .icon-body {
 	width: 24px;

@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { useTranslation } from '@/context'
-import { Card, ScrollToTopButton, Wrapper } from '@/components'
+import { Card, RichTextViewer, ScrollToTopButton, Wrapper } from '@/components'
 import { motion } from 'framer-motion'
 import { cardAnim } from '@/constants/animations'
 import { animate } from '@/lib/utils'
@@ -16,6 +16,7 @@ export default function Contact() {
   const projectsSliceStudy = projects
     .filter((project) => project.type === 'Study')
     .slice(0, 3)
+
   return (
     <Wrapper>
       <div className="flex flex-col gap-2 p-4">
@@ -72,6 +73,21 @@ export default function Contact() {
               {translations.projects.button_text_study}
             </p>
           </Link>
+        </div>
+        <div className="flex flex-col pt-6 gap-8">
+          <div className="text-left">
+            <h3 className="font-bold">{translations.stack.footer.title}</h3>
+            <p className="inline-block">
+              <RichTextViewer
+                content={translations.stack.footer.message_one}
+                typeText="span"
+              />
+              <Link href="/resume" className="underline font-bold">
+                {translations.stack.footer.link}
+              </Link>
+              {translations.stack.footer.message_two}
+            </p>
+          </div>
         </div>
       </div>
       <ScrollToTopButton />
