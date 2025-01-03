@@ -5,14 +5,8 @@ const nextConfig = {
   images: {
     domains: ['source.unsplash.com'],
   },
-  async redirects() {
-    return [
-      {
-        source: '/brief',
-        destination: 'https://resume.ffzanini.dev',
-        permanent: true,
-      },
-    ]
+  experimental: {
+    middlewarePrefetch: true,
   },
 }
 
