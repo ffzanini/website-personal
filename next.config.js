@@ -8,6 +8,16 @@ const nextConfig = {
   experimental: {
     middlewarePrefetch: true,
   },
+  async redirects() {
+    return [
+      {
+        source: '/resume',
+        has: [{ type: 'host', value: 'ffzanini.dev' }],
+        destination: 'https://resume.ffzanini.dev',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 module.exports = nextConfig
