@@ -10,7 +10,7 @@ const nextConfig = {
       {
         source: '/resume',
         destination: 'https://resume.ffzanini.dev',
-        permanent: true, // 301 redirect
+        permanent: true,
       },
     ]
   },
