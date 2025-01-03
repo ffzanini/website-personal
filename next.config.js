@@ -8,7 +8,7 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/resume',
+        source: '/brief',
         destination: 'https://resume.ffzanini.dev',
         permanent: true,
       },
