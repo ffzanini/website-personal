@@ -5,6 +5,15 @@ const nextConfig = {
   images: {
     domains: ['source.unsplash.com'],
   },
+  async redirects() {
+    return [
+      {
+        source: '/resume',
+        destination: 'https://resume.ffzanini.dev',
+        permanent: true, // 301 redirect
+      },
+    ]
+  },
 }
 
 module.exports = nextConfig
