@@ -4,7 +4,6 @@ export function middleware(request: NextRequest) {
   const hostname = request.headers.get('host') || ''
   const url = request.nextUrl
 
-  console.log('middleware ok')
   if (url.pathname === '/resume' && hostname === 'ffzanini.dev') {
     const subdomainUrl = new URL(request.url)
     subdomainUrl.hostname = 'resume.ffzanini.dev'

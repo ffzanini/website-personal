@@ -9,6 +9,7 @@ import { fontMavenPro } from './fonts'
 import './globals.css'
 
 const description = `software engineer, artist, musician, writer and a indie developer enthusiast`
+
 export const metadata: Metadata = {
   title: 'Felipe Frant Zanini | Software Engineer',
   icons: '/favicon.ico',
@@ -35,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="dark" translate="no">
+    <html lang="pt-BR" className="dark" translate="no">
       <meta name="google" content="notranslate" />
       <body className={fontMavenPro.className}>
         <AppProvider>
