@@ -1,13 +1,25 @@
-'use client'
-import Image from 'next/image'
-import Link from 'next/link'
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect } from "react";
 
-import { useTranslation } from '@/context'
-import { Ascii, RichTextViewer, Wrapper } from '@/components'
-import { coffeAscii } from '@/constants/ascii'
+import { useTranslation } from "@/context";
+import { Ascii, RichTextViewer, Wrapper } from "@/components";
+import { coffeAscii } from "@/constants/ascii";
+import { getBrowserLanguage } from "@/lib/utils";
 
 export default function PricipalPage() {
-  const { translations } = useTranslation()
+  const { translations, setLocation } = useTranslation();
+
+  const initialLanguage = getBrowserLanguage();
+
+  useEffect(() => {
+    if (initialLanguage === "pt") {
+      setLocation("pt");
+    } else {
+      setLocation("en");
+    }
+  }, [initialLanguage, setLocation]);
 
   return (
     <Wrapper>
@@ -47,5 +59,5 @@ export default function PricipalPage() {
         </Ascii>
       </div>
     </Wrapper>
-  )
+  );
 }
