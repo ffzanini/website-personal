@@ -36,7 +36,7 @@ export const animate = ({ variants, custom, ...rest }: AnimProps) => {
 
 export const getBrowserLanguage = (): string => {
   if (typeof navigator !== 'undefined' && navigator.language) {
-    return navigator.language.split('-')[0] // ex: "pt-BR" → "pt"
+    return navigator.language.split('-')[0]
   }
   return 'en'
 }

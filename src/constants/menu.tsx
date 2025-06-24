@@ -35,8 +35,4 @@ export const menu: MenuItem[] = [
     name: 'contact',
     href: '/contact',
   },
-  {
-    name: 'resume',
-    href: '/resume',
-  },
 ]

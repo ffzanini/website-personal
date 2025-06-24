@@ -82,7 +82,10 @@ export default function Stack() {
                 content={translations.stack.footer.message_one}
                 typeText="span"
               />
-              <Link href="/resume" className="underline font-bold">
+              <Link
+                href="https://resume.ffzanini.dev/"
+                className="underline font-bold"
+              >
                 {translations.stack.footer.link}
               </Link>
               {translations.stack.footer.message_two}

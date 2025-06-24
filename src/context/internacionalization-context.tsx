@@ -1,5 +1,4 @@
 'use client'
-
 import {
   createContext,
   useContext,
@@ -9,9 +8,10 @@ import {
   useEffect,
   ReactNode,
 } from 'react'
+
 import { en, pt } from '../locales'
 
-type Locations = 'pt' | 'en'
+type Locations = 'en' | 'pt'
 
 export interface InternacionalizationInterface {
   location: Locations
@@ -35,19 +35,32 @@ const useTranslation = () => {
   return context
 }
 
+const getInitialLanguage = (): Locations => {
+  if (typeof window === 'undefined') return 'en'
+
+  const urlParams = new URLSearchParams(window.location.search)
+  const lang = urlParams.get('lang')
+
+  if (lang === 'pt' || lang === 'en') return lang as Locations
+
+  const browserLang = navigator.language?.split('-')[0]
+  if (browserLang === 'pt' || browserLang === 'en') {
+    return browserLang as Locations
+  }
+
+  return 'en'
+}
+
 const InternacionalizationProvider = ({
   children,
 }: {
   children: ReactNode
 }) => {
-  const [location, setLocation] = useState<Locations>('pt')
+  const [location, setLocation] = useState<Locations | null>(null)
 
   useEffect(() => {
-    const urlParams = new URLSearchParams(window.location.search)
-    const lang = urlParams.get('lang')
-    if (lang && (lang === 'pt' || lang === 'en')) {
-      setLocation(lang as Locations)
-    }
+    const initialLang = getInitialLanguage()
+    setLocation(initialLang)
   }, [])
 
   const getTranslations = useCallback(() => {
@@ -55,10 +68,15 @@ const InternacionalizationProvider = ({
     return pt
   }, [location])
 
-  const objTranslations = useMemo(
-    () => ({ location, setLocation, translations: getTranslations() }),
-    [location, getTranslations],
-  )
+  const objTranslations = useMemo(() => {
+    return {
+      location: location || 'pt',
+      setLocation,
+      translations: getTranslations(),
+    }
+  }, [location, getTranslations])
+
+  if (location === null) return null
 
   return (
     <InternacionalizationContext.Provider value={objTranslations}>

@@ -27,7 +27,6 @@ import {
   SiMongodb,
   SiFirebase,
   SiStorybook,
-  SiAzuredevops,
   SiObsstudio,
   SiVercel,
   SiDocker,
@@ -160,10 +159,6 @@ export const stackGameDevelopment = [
 ]
 
 export const stackDevOps = [
-  {
-    icon: SiAzuredevops,
-    name: 'Azure',
-  },
   {
     icon: SiDocker,
     name: 'Docker',

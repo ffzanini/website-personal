@@ -1,25 +1,13 @@
-"use client";
-import Image from "next/image";
-import Link from "next/link";
-import { useEffect } from "react";
+'use client'
+import Image from 'next/image'
+import Link from 'next/link'
 
-import { useTranslation } from "@/context";
-import { Ascii, RichTextViewer, Wrapper } from "@/components";
-import { coffeAscii } from "@/constants/ascii";
-import { getBrowserLanguage } from "@/lib/utils";
+import { useTranslation } from '@/context'
+import { Ascii, RichTextViewer, Wrapper } from '@/components'
+import { coffeAscii } from '@/constants/ascii'
 
 export default function PricipalPage() {
-  const { translations, setLocation } = useTranslation();
-
-  const initialLanguage = getBrowserLanguage();
-
-  useEffect(() => {
-    if (initialLanguage === "pt") {
-      setLocation("pt");
-    } else {
-      setLocation("en");
-    }
-  }, [initialLanguage, setLocation]);
+  const { translations } = useTranslation()
 
   return (
     <Wrapper>
@@ -49,7 +37,10 @@ export default function PricipalPage() {
             {translations.home.textButtonAbout}
           </p>
         </Link>
-        <Link className="underline font-bold" href="/resume">
+        <Link
+          className="underline font-bold"
+          href="https://resume.ffzanini.dev/"
+        >
           {translations.home.textButtonResume}
         </Link>
       </div>
@@ -59,5 +50,5 @@ export default function PricipalPage() {
         </Ascii>
       </div>
     </Wrapper>
-  );
+  )
 }
